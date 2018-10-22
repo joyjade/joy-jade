@@ -1,0 +1,178 @@
+@font-face 
+{
+    font-family: GT Cinetype;
+    font-weight:400;
+    src: url(fonts/gt-cinetype-trial-regular.otf)
+}
+
+/*
+@font-face
+{
+    font-family:GT Cinetype;
+    font-weight:italic;
+    src: url(fonts/gt-cinetype-trial-regular-italic.otf)
+    
+}
+*/
+
+    
+
+body
+
+{
+    display: grid;
+    grid-template-columns: minmax(300px,1fr) minmax(660px,2fr); 
+    grid-template-rows:55px minmax(500px,1fr); 
+    height: 96vh;
+    width: 97vw;
+    padding:1%;
+    grid-column-gap: 10px;
+    
+    font-family: gt cinetype, sans-serif;
+    font-weight:400;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    
+    
+}
+
+nav a {
+    color: black;
+}
+
+nav ul
+{
+    grid-column: 1/3;
+    display: flex;
+    padding-left: 0.5em; 
+}
+
+nav li
+{
+     padding: 10px; 
+
+}
+
+/*menu*/
+
+.project
+{
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+/*    float: left; */
+}
+
+.project h1
+{
+    padding: 0 0 0.3em 8rem;
+}
+
+time
+{
+    position: absolute;
+}
+
+.sub-project
+{
+    position: relative;
+    padding: 0 0 0.2em 8rem
+   
+}
+
+.project-description
+
+{
+/*
+    position: relative;
+    float: left;  
+*/
+    margin-left: 20px;
+    display: none;
+}
+
+
+
+.sidebar
+{   
+    grid-column: 1/2;
+    padding: 0.5em;
+    border-top: 0.4em solid black;
+    border-bottom: 0.4em solid black;
+    
+/*  flex for inline
+    display: flex;
+    align-items: flex-start;
+*/
+    
+    overflow-y: scroll;
+
+    
+    /*    cursor: url(links/icons/arrow.png),auto;*/
+
+}
+
+
+.sidebar::-webkit-scrollbar {
+ display: none;
+}
+ 
+
+
+.display
+{
+    grid-column: 2 / 3;
+    
+    display: grid;
+    grid-template-rows: repeat (autofit, );
+    grid-row-gap: 10px;
+        
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    
+    border-top: 0.4em solid black;
+    border-bottom: 0.4em solid black;
+    
+    overflow-y: scroll;    
+}    
+
+.display::-webkit-scrollbar {
+ display: none;
+}
+
+
+/*click through images*/
+
+.project-wrapper 
+{
+    
+}
+
+
+.project-photo
+
+{
+    position: relative;
+}
+
+.image
+{
+    position: absolute;
+    top: 0px;
+    left:0px;
+}
+
+
+/*
+.info {
+    display: none;
+}
+*/
+
+
+
