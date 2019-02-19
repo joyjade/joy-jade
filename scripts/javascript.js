@@ -1,9 +1,21 @@
+$(document).ready(function(){
+  //scrolls
+  var $projectname = $('.project-name')
+  $projectname.on('click', function(e) {
+    e.preventDefault;
+    $projectname.removeClass('active');
 
-$(function(){
-  $('#table-of-contents a').click(function(){
-      $('html, body').animate({
-          scrollTop: $( $(this).attr('href') ).offset().top
-      }, 500);
-      return false;
+    var $projectid = $(this).data('id');
+    $('.contents').scrollTo(('#' + $projectid), 800);
+    $(this).addClass('active');
+  });
+
+  $('.project-photos').on('click', function (e) {
+    e.preventDefault;
+    $('.project-name').removeClass('active');
+
+    var photoId = $(this).attr('id');
+    $('.contents').scrollTo(('#' + photoId), 800);
+    $('.project-name[data-id="' + photoId + '"]').addClass('active');
   });
 });

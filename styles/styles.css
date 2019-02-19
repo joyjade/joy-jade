@@ -1,150 +1,48 @@
-/* GT Cinetype-------------------------------------- */
+/* TYPEFACES-------------------------------------- */
 
-@font-face
-{
+@font-face {
     font-family: GT Cinetype;
     font-weight:400;
     src: url(fonts/gt-cinetype-trial-regular.otf)
 }
 
-/* Resets-----------------------------------------*/
-
-
-::-moz-selection {
-	color:rgba(0,0,0,.5);
-	text-shadow:none;
-    background: transparent;
-}
-
-::selection {
-	color:rgba(0,0,0,.5);
-	text-shadow:none;
-    background: transparent;
-}
-
-hr {
-    height: 2px;
-    margin: 0 0 0;
-    border: white;
-}
-
-span {
-    cursor: default;
-}
-
-a {
-    text-decoration: none;
-    cursor: pointer;
-}
-
-a, a:active, a:focus {
-    outline: none;
-}
-
-a:hover {
-    color: rgba(0,0,0,.5);
-}
-
-img {
-	margin:0;
-/*	vertical-align:bottom;*/
-}
-
-ul {
-	margin:0;
-	padding:0;
-}
-
-li {
-	list-style:none;
-}
-
+/* GLOBAL -------------------------------------- */
 * {
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-/*    background-color: rgba(0,0,0,.05);*/
-}
-
-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-	margin: 0;
 	padding: 0;
-	border: 0;
-	outline: 0;
-	font-weight: inherit;
-	font-style: inherit;
-	font-size: 100%;
-	font-family: inherit;
-	vertical-align: baseline;
+	margin: 0;
 }
-/* remember to define focus styles! */
-:focus {
-	outline: 0;
+
+html, body 	{
+	margin: 0;
+	height: 100%;
+	}
+
+.hide {
+	display: none;
 }
+
+
+/* STYLES-------------------------------------- */
+
 body {
-	line-height: 1;
-	color: black;
-	background: white;
+  display: grid;
+  grid-template-columns: minmax(300px,1fr) minmax(660px,2fr);
+  grid-template-rows:55px minmax(500px,1fr);
+  height: 98vh;
+  padding:1%;
+  grid-column-gap: 10px;
 }
 
-ol, ul {
-	list-style: none;
-}
-/* tables still need 'cellspacing="0"' in the markup */
-table {
-	border-collapse: separate;
-	border-spacing: 0;
-}
-caption, th, td {
-	text-align: left;
-	font-weight: normal;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: "";
-}
-blockquote, q {
-	quotes: "" "";
+.cinetype {
+  font-family: gt cinetype, sans-serif;
 }
 
-
-/* Styles-------------------------------------- */
-
-
-body
-
-{
-    display: grid;
-    grid-template-columns: minmax(300px,1fr) minmax(660px,2fr);
-    grid-template-rows:55px minmax(500px,1fr);
-    height: 96vh;
-    width: 97vw;
-    padding:1%;
-    grid-column-gap: 10px;
-
-    font-family: gt cinetype, sans-serif;
-    font-weight:400;
-    font-size: 1.2em;
-    line-height: 1.2em;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-
-
-
+.title {
+  font-weight:400;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 *::selection {
@@ -152,137 +50,91 @@ body
   color: white;
 }
 
+nav {
+  grid-column: 1/3;
+}
+
 nav a {
-    color: black;
+  color: black;
 }
 
-nav ul
-{
-    grid-column: 1/3;
-    display: flex;
-    padding-left: 0.5em;
+nav ul {
+  display: flex;
+  padding-left: 0.5em;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
-nav li
-{
-     padding: 10px;
-
+nav li {
+   padding: 10px;
 }
 
-/*menu*/
+/*table of contents*/
 
-.project
-{
-    position: relative;
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-/*    float: left; */
+.table-of {
+  grid-column: 1/2;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.project {
+  padding: 2px 0;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-content: center;
+}
+.project:not(:last-of-type) {
+  border-bottom: 2px solid black;
 }
 
-.project h1
-{
-    padding: 0 0 0.3em 8rem;
+.project-name {
+  flex-grow: 1;
+  padding: 8px;
+}
+.project-name:hover, .active {
+  background-color: black;
+  color: white;
 }
 
-time
-{
-    position: absolute;
+.project-name h1 {
+  padding-top: 4px;
 }
 
-.sub-project
-{
-    position: relative;
-    padding: 0 0 0.2em 8rem
-
-}
-
-.project-description
-
-{
-/*
-    position: relative;
-    float: left;
-*/
-    margin-left: 20px;
-    display: none;
-}
-
-
-
-.sidebar
-{
-    grid-column: 1/2;
-    padding: 0.5em;
-    border-top: 0.4em solid black;
-    border-bottom: 0.4em solid black;
-
-/*  flex for inline
-    display: flex;
-    align-items: flex-start;
-*/
-
-    overflow-y: scroll;
-
-
-    /*    cursor: url(links/icons/arrow.png),auto;*/
-
-}
-
-
-.sidebar::-webkit-scrollbar {
+.table-of::-webkit-scrollbar,
+.contents::-webkit-scrollbar {
  display: none;
 }
 
+.contents{
+  grid-column: 2 / 3;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 
-
-.display
-{
-    grid-column: 2 / 3;
-
-    display: grid;
-    grid-template-rows: repeat (autofit, );
-    grid-row-gap: 10px;
-
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-
-    border-top: 0.4em solid black;
-    border-bottom: 0.4em solid black;
-
-    overflow-y: scroll;
+  overflow-y: scroll;
 }
 
-.display::-webkit-scrollbar {
- display: none;
+.projects-container {
+  flex: auto;
 }
 
-
-/*click through images*/
-
-.project-wrapper
-{
-
+.project-photos {
+  white-space: nowrap;
+  width: 925px;
+  padding-bottom: 1rem;
+  padding-top: 0.25rem;
+  /* overflow-x: hidden; */
 }
 
-
-.project-photo
-
-{
-    position: relative;
+.image {
+  display: inline;
 }
 
-.image
-{
-    position: absolute;
-    top: 0px;
-    left:0px;
-}
-
-
-/*
 .info {
-    display: none;
+  grid-column: 1/2;
+  background-color: white;
+  display: none;
 }
-*/
