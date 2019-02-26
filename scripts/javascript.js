@@ -18,4 +18,15 @@ $(document).ready(function(){
     $('.contents').scrollTo(('#' + photoId), 800);
     $('.project-name[data-id="' + photoId + '"]').addClass('active');
   });
+
+  //open info
+
+  $('.open').on('click', function(e) {
+    e.preventDefault;
+    $('.off-canvas').toggleClass('hide');
+    $('.close').on('click', function (e) {
+      $('.off-canvas').addClass('hide');
+    });
+  });
+
 });
