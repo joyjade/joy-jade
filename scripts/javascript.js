@@ -1,23 +1,42 @@
 $(document).ready(function(){
-  //scrolls
+
   var $projectname = $('.project-name')
+
+
+  function clearSelection() {
+    $projectname.removeClass('active');
+    $('.project-description').hide();
+  }
+
+  $(document).click(function(e) {
+      var container = $(".table-of, .contents");
+      if (!container.is(e.target) && container.has(e.target).length === 0) {
+        clearSelection();
+      }
+  });
+
+  //scrolls
   $projectname.on('click', function(e) {
     e.preventDefault;
-    $projectname.removeClass('active');
+    event.stopPropagation();
+    clearSelection();
 
     var $projectid = $(this).data('id');
     $('.contents').scrollTo(('#' + $projectid), 800);
-    $(this).addClass('active');
+    $(this).addClass('active').find('.project-description').show();
   });
 
 
   $('.project-photos').on('click', function (e) {
     e.preventDefault();
-    $('.project-name').removeClass('active');
+    clearSelection();
 
-    var photoId = "#" + $(this).attr('id');
-    $('.contents').scrollTo((photoId), 800);
-    $('.project-name[data-id="' + photoId + '"]').addClass('active');
+    var photoId = $(this).attr('id');
+    $('.contents').scrollTo(("#" + photoId), 800);
+    $('.project-name[data-id="' + photoId + '"]')
+      .addClass('active').find('.project-description').show();
+
+    $(this).addClass('arrow');
 
     //image slide -> this is still super buggy. maybe need to unbind some things
 
@@ -35,8 +54,6 @@ $(document).ready(function(){
 
   // var current = 0;
   // var photoCount = $(photoId).children().length;
-
-
 
 
   //open info
