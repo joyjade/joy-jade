@@ -3,19 +3,19 @@
 @font-face {
     font-family: GT Cinetype;
     font-weight:400;
-    src: url(fonts/gt-cinetype-trial-regular.otf)
+    src: url(/fonts/gt-cinetype-trial-regular.otf)
 }
 
 @font-face {
     font-family: GT Cinetype mono;
     font-style: monospace;
-    src: url(fonts/gt-cinetype-trial-mono.otf)
+    src: url(/fonts/gt-cinetype-trial-mono.otf)
 }
 
 @font-face {
     font-family: Untitled Serif Test;
     font-weight:400;
-    src: url(fonts/untitledseriftest-regularitalic.otf)
+    src: url(/fonts/untitledseriftest-regularitalic.otf)
 }
 
 /* GLOBAL -------------------------------------- */
@@ -143,17 +143,17 @@ nav a {
 .table-of {
   grid-column: 1/2;
   grid-row: 2/3;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
+  display: grid;
+  grid-template-rows: repeat(12, 1fr);
+  align-content: left;
   cursor: pointer;
 }
 .project {
-  padding: 2px 0;
+  padding: 4px 0;
   display: flex;
   flex-grow: 1;
-  justify-content: center;
   align-content: center;
+
 }
 .project:not(:last-of-type) {
   border-bottom: 1px solid black;
@@ -162,15 +162,22 @@ nav a {
 .project-description {
   display: none;
   padding-left: 0.5rem;
+  text-align: right;
 }
 
 .project-name {
   flex-grow: 1;
   padding: 8px;
+  height: inherit;
 }
 .project-name:hover, .active {
   background-color: black;
   color: white;
+}
+
+.active {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
 }
 
 .project-name h1 {

@@ -42,11 +42,11 @@ $(document).ready(function(){
 
     $(this).click(function() {
       e.preventDefault();
-      var $this = $(this).find('.show');
-      if ($this.next('.image').length) {
-        $this.removeClass('show').next('.image').addClass('show');
+      var $this = $(this)
+      if ($this.find('.show').next('.image').length) {
+        $this.find('.show').removeClass('show').next('.image').addClass('show');
       } else {
-        $this.removeClass('show');
+        $this.find('.show').removeClass('show');
         $this.closest('.project-photos').find('.image:first-child').addClass('show');
       }
     })
