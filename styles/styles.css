@@ -65,13 +65,8 @@ nav {
 }
 
 .italic {
-  font-size: 1rem;
   font-style: italic;
   font-weight: 400;
-}
-
-.mono {
-  font-family: 'rubik', monospace;
 }
 
 .display {
@@ -80,6 +75,11 @@ nav {
   font-size: 1.2rem;
   line-height: 1.2em;
   text-decoration: none;
+  letter-spacing: 0.6px;
+}
+
+.mono {
+  font-family: 'rubik', monospace;
 }
 
 .text {
@@ -149,6 +149,8 @@ nav a {
   display: none;
   padding-left: 0.5rem;
   text-align: right;
+  text-transform: capitalize;
+  font-size: 1rem;
 }
 
 .project-name {
@@ -236,6 +238,8 @@ p:nth-of-type(2) {
 
 .close {
   font-size: 2rem;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 /* Mobile */
