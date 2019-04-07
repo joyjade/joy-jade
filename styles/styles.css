@@ -1,6 +1,6 @@
 /* TYPEFACES-------------------------------------- */
 
-@import url('https://fonts.googleapis.com/css?family=Proza+Libre|Rubik');
+@import url('https://fonts.googleapis.com/css?family=Proza+Libre:400i,500i,600|Rubik');
 
 /* GLOBAL -------------------------------------- */
 * {
@@ -67,7 +67,7 @@ nav {
 .italic {
   font-size: 1rem;
   font-style: italic;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 .mono {
@@ -75,7 +75,7 @@ nav {
 }
 
 .display {
-  font-weight:500;
+  font-weight:600;
   text-transform: uppercase;
   font-size: 1.2rem;
   line-height: 1.2em;
@@ -83,7 +83,7 @@ nav {
 }
 
 .text {
-  font-weight: 100;
+  font-weight: 500;
   font-size: 1.5rem;
   line-height: 1.5em;
   padding-right: 5rem;
