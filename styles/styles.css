@@ -1,29 +1,6 @@
 /* TYPEFACES-------------------------------------- */
 
-/* @font-face {
-    font-family: 'Space Mono';
-    font-style: monospace;
-    src: url(fonts/spacemono-regular.ttf);
-}
-
-@font-face {
-    font-family: 'Rubik';
-    font-weight: 400;
-    src: url(fonts/rubik-medium.ttf);
-}
-
-@font-face {
-    font-family: 'Proza Libre';
-    src: url(fonts/prozalibre-mediumitalic.ttf);
-}
-
-@font-face {
-    font-family: 'Proza Italic';
-    font-style: italic;
-    src: url(fonts/prozalibre-italic.ttf);
-} */
-
-@import url('https://fonts.googleapis.com/css?family=Eczar|Space+Mono|Proza+Libre|Rubik');
+@import url('https://fonts.googleapis.com/css?family=Proza+Libre|Rubik');
 
 /* GLOBAL -------------------------------------- */
 * {
@@ -83,21 +60,12 @@ nav {
 
 /* STYLES-------------------------------------- */
 
-.cinetype {
-  font-family: 'proza libre', serif;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-}
-
 .proza {
   font-family: 'proza libre', serif;
-  font-style: italic;
 }
 
-.untitled {
-  font-family: 'proza italic', serif;
+.italic {
   font-size: 1rem;
-  text-transform: lowercase;
   font-style: italic;
   font-weight: 100;
 }
@@ -107,7 +75,8 @@ nav {
 }
 
 .display {
-  font-weight:400;
+  font-weight:500;
+  text-transform: uppercase;
   font-size: 1.2rem;
   line-height: 1.2em;
   text-decoration: none;
