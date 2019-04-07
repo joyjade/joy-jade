@@ -1,22 +1,29 @@
 /* TYPEFACES-------------------------------------- */
 
-@font-face {
-    font-family: GT Cinetype;
-    font-weight:400;
-    src: url(../fonts/worksans-medium.ttf)
-}
-
-@font-face {
-    font-family: GT Cinetype mono;
+/* @font-face {
+    font-family: 'Space Mono';
     font-style: monospace;
-    src: url(untitledsans-regularitalic.otf)
+    src: url(fonts/spacemono-regular.ttf);
 }
 
 @font-face {
-    font-family: Untitled Serif Test;
-    font-weight:400;
-    src: url(../fonts/untitledseriftest-mediumitalic.woff)
+    font-family: 'Rubik';
+    font-weight: 400;
+    src: url(fonts/rubik-medium.ttf);
 }
+
+@font-face {
+    font-family: 'Proza Libre';
+    src: url(fonts/prozalibre-mediumitalic.ttf);
+}
+
+@font-face {
+    font-family: 'Proza Italic';
+    font-style: italic;
+    src: url(fonts/prozalibre-italic.ttf);
+} */
+
+@import url('https://fonts.googleapis.com/css?family=Eczar|Space+Mono|Proza+Libre|Rubik');
 
 /* GLOBAL -------------------------------------- */
 * {
@@ -77,16 +84,26 @@ nav {
 /* STYLES-------------------------------------- */
 
 .cinetype {
-  font-family: gt cinetype, sans-serif;
+  font-family: 'proza libre', serif;
+  text-transform: uppercase;
   letter-spacing: 0.02em;
 }
 
+.proza {
+  font-family: 'proza libre', serif;
+  font-style: italic;
+}
+
 .untitled {
-  font-family: untitled serif test, serif;
+  font-family: 'proza italic', serif;
+  font-size: 1rem;
+  text-transform: lowercase;
+  font-style: italic;
+  font-weight: 100;
 }
 
 .mono {
-  font-family: gt cinetype mono, monospace;
+  font-family: 'rubik', monospace;
 }
 
 .display {
