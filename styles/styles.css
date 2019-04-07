@@ -3,19 +3,19 @@
 @font-face {
     font-family: 'GT Cinetype';
     font-weight:400;
-    src: url('./fonts/gt-cinetype-trial-regular.otf')
+    src: url('..styles/fonts/gt-cinetype-trial-regular.otf')
 }
 
 @font-face {
     font-family: 'GT Cinetype mono';
     font-style: monospace;
-    src: url('./fonts/gt-cinetype-trial-mono.otf')
+    src: url('..styles/fonts/gt-cinetype-trial-mono.otf')
 }
 
 @font-face {
     font-family: 'Untitled Serif Test';
     font-weight:400;
-    src: url('./fonts/untitledseriftest-regularitalic.otf')
+    src: url('..styles/fonts/untitledseriftest-regularitalic.otf')
 }
 
 /* GLOBAL -------------------------------------- */
