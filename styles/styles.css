@@ -15,7 +15,7 @@
 @font-face {
     font-family: 'Untitled Serif Test';
     font-weight:400;
-    src: url('..styles/fonts/untitledseriftest-regularitalic.otf')
+    src: url('..styles/fonts/untitledseriftest-mediumitalic.woff') format('woff')
 }
 
 /* GLOBAL -------------------------------------- */
