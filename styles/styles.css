@@ -1,6 +1,6 @@
 /* TYPEFACES-------------------------------------- */
 
-@font-face {
+/* @font-face {
     font-family: 'GT Cinetype';
     font-weight:400;
     src: url('styles/fonts/gt-cinetype-trial-regular.otf');
@@ -10,12 +10,12 @@
     font-family: 'GT Cinetype mono';
     font-style: monospace;
     src: url('styles/fonts/gt-cinetype-trial-mono.otf');
-}
+} */
 
 @font-face {
     font-family: 'Untitled Serif Test';
     font-weight:400;
-    src: url('styles/fonts/untitledseriftest-mediumitalic.woff') format('woff');
+    src: url('https://raw.githubusercontent.com/joyjade/joy-jade/blob/master/styles/fonts/UntitledSerifTest-MediumItalic.woff') format('woff');
 }
 
 /* GLOBAL -------------------------------------- */
