@@ -147,7 +147,6 @@ nav a {
 
 .project-description {
   display: none;
-  padding-left: 0.5rem;
   text-align: right;
   text-transform: capitalize;
   font-size: 1rem;
@@ -164,12 +163,13 @@ nav a {
 }
 
 .active {
-  display: grid;
-  grid-template-columns: 2fr 3fr;
+  display: flex;
+  flex-direction: row;
 }
 
 .project-name h1 {
   padding-top: 4px;
+	flex: 1 1 auto
 }
 
 .table-of::-webkit-scrollbar,
