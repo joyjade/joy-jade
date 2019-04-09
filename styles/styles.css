@@ -183,10 +183,12 @@ nav a {
 
 .project-photos {
   width: 925px;
-  padding-bottom: 1rem;
   padding-top: 0.25rem;
-  height: 90vh;
+  height: 86vh;
   position: relative;
+}
+.project-photos:not(:last-of-type) {
+  margin-bottom: 1rem;
 }
 
 
