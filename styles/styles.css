@@ -24,7 +24,7 @@ html, body 	{
 body {
   display: grid;
   grid-template-columns: minmax(300px,1fr) minmax(660px,2fr);
-  grid-template-rows:55px minmax(500px,1fr);
+  grid-template-rows:60px minmax(500px,1fr);
   height: 98vh;
   padding: 0 0.5rem;
   grid-column-gap: 10px;
@@ -78,7 +78,6 @@ nav {
   font-weight:600;
   text-transform: uppercase;
   font-size: 1.2rem;
-  /* line-height: 1.2em; */
   text-decoration: none;
   letter-spacing: 0.6px;
 }
@@ -117,7 +116,7 @@ nav {
 
 nav ul {
   display: flex;
-  padding-left: 0.5em;
+  padding: 0.2em;
   flex-direction: row;
   justify-content: flex-end;
 }
@@ -156,6 +155,7 @@ nav a {
   text-align: right;
   text-transform: capitalize;
   font-size: 1rem;
+  margin-top: 0.15em;
 }
 
 .project-name {
@@ -190,13 +190,13 @@ nav a {
 }
 
 .project-photos {
-  width: 925px;
-  padding-top: 0.25rem;
-  height: 86vh;
+  /* width: 925px; */
+  padding-top: 0.5rem;
+  height: 88vh;
   position: relative;
 }
 .project-photos:not(:last-of-type) {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 /* image-slider */
@@ -269,12 +269,11 @@ p:nth-of-type(2) {
 	}
 
 	.project-photos:not(:last-of-type) {
-	    margin-bottom: 1.75rem;
+	    margin-bottom: 2.2rem;
 	}
 
-	.project-name {
-
-
+	.project-description {
+	  margin-top: 0;
 	}
 }
 
@@ -287,8 +286,10 @@ p:nth-of-type(2) {
 
 /* Large */
 
-@media screen and (min-width:64em) {
+@media screen and (min-width:100em) {
 	.project-name h1 {
-		font-size: 1em;
+		font-size: 1.2em;
+		padding: 0.7rem;
+		line-height: 1.5;
 	}
 }
