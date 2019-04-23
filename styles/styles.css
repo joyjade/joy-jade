@@ -80,6 +80,7 @@ nav {
 
 .mono {
   font-family: 'rubik', monospace;
+	font-style: normal;
 }
 
 .text {
@@ -154,9 +155,10 @@ nav a {
 
 .project-name {
   flex-grow: 1;
-  padding: 8px;
+  padding: 0.6em;
   height: inherit;
 }
+
 .project-name:hover, .active {
   background-color: black;
   color: white;
@@ -168,8 +170,9 @@ nav a {
 }
 
 .project-name h1 {
-  padding-top: 4px;
-	flex: 1 1 auto
+	flex: 1 1 auto;
+	font-size: 1.2rem;
+	line-height: 1.25;
 }
 
 .table-of::-webkit-scrollbar,
@@ -189,14 +192,6 @@ nav a {
 }
 .project-photos:not(:last-of-type) {
   margin-bottom: 1rem;
-}
-
-
-@media (max-width:40em) {
-  .project-photos {
-    width: 100%;
-    height: 283px;
-  }
 }
 
 /* image-slider */
@@ -246,7 +241,7 @@ p:nth-of-type(2) {
 
 /* Mobile */
 
-@media (max-width:40em) {
+@media screen and (max-width:40em) {
   body {
     grid-template-columns: 1fr;
   }
@@ -262,4 +257,17 @@ p:nth-of-type(2) {
   .table-of {
     display: none;
   }
+	
+	.project-photos {
+		width: 100%;
+		height: 283px;
+	}
+}
+
+/* Large */
+
+@media screen and (min-width:64em) {
+	.project-name h1 {
+		font-size: 1em;
+	}
 }
