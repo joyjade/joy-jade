@@ -9,7 +9,7 @@ $(document).ready(function(){
   }
 
   $(document).click(function(e) {
-      var container = $(".table-of, .contents");
+      var container = $(".projects, .contents");
       if (!container.is(e.target) && container.has(e.target).length === 0) {
         clearSelection();
       }
@@ -36,33 +36,23 @@ $(document).ready(function(){
     $('.project-name[data-id="' + photoId + '"]')
       .addClass('active').find('.project-description').show();
 
-    $(this).addClass('arrow');
-
-    //image slide -> this is still super buggy. maybe need to unbind some things
-
-    $(this).click(function() {
-      e.preventDefault();
-      var $this = $(this)
-      if ($this.find('.show').next('.image').length) {
-        $this.find('.show').removeClass('show').next('.image').addClass('show');
-      } else {
-        $this.find('.show').removeClass('show');
-        $this.closest('.project-photos').find('.image:first-child').addClass('show');
-      }
-    })
   });
 
-  // var current = 0;
-  // var photoCount = $(photoId).children().length;
+  //Image Slide (Flickity)
 
+  $('.project-photos').flickity({
+    pageDots: false,
+    // prevNextButtons: false,
+    wrapAround: true
+  });
 
   //open info
 
   $('.open').on('click', function(e) {
     e.preventDefault;
-    $('.off-canvas').toggleClass('hide');
+    $('.off-canvas').toggleClass('show');
     $('.close').on('click', function (e) {
-      $('.off-canvas').addClass('hide');
+      $('.off-canvas').removeClass('show');
     });
   });
 
