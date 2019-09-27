@@ -308,6 +308,9 @@ p:nth-of-type(2) {
 /* Large */
 
 @media screen and (min-width:96em) {
+	body {
+		grid-template-columns: minmax(300px,1fr) minmax(660px,3fr);
+	}
 	.project-name h1 {
 		font-size: 1.2em;
 		line-height: 1.5;
