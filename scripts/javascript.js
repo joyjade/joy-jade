@@ -38,10 +38,11 @@ $(document).ready(function(){
 
   });
 
-  //Image Slide (Flickity)
+  //image slide (Flickity)
 
   $('.project-photos').flickity({
     pageDots: false,
+    lazyLoad: true,
     // prevNextButtons: false,
     wrapAround: true
   });
@@ -55,10 +56,6 @@ $(document).ready(function(){
       $('.off-canvas').removeClass('show');
     });
   });
-
-
-
-
 
 
 });
