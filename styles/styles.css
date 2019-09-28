@@ -1,12 +1,12 @@
 /* TYPEFACES-------------------------------------- */
 @font-face {
 	font-family: 'agipo';
-	src: url('agipo_regular.otf');
+	src: url('/styles/fonts/agipo_regular.otf');
 }
 
 @font-face {
 	font-family: 'agipo-mono';
-	src: url('agipo_mono.otf');
+	src: url('/styles/fonts/agipo_mono.otf');
 }
 
 /* @import url('https://fonts.googleapis.com/css?family=Proza+Libre:400i,500i,600|Rubik'); */
