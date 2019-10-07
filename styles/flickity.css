@@ -31,7 +31,7 @@ https://flickity.metafizzy.co
 }
 
 .flickity-enabled.is-draggable .flickity-viewport {
-  /* cursor: move; */
+  cursor: url(http://joy-jade.com/content/icons/left-arrow.svg), e-resize;
   /* cursor: -webkit-grab;
   cursor: grab; */
 }
