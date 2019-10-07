@@ -36,7 +36,7 @@ html, body 	{
 body {
   display: grid;
   grid-template-columns: minmax(300px,2fr) minmax(660px,5fr);
-  grid-template-rows:60px minmax(500px,1fr);
+  grid-template-rows:60px minmax(500px,1fr);;
   height: 99vh;
   padding: 0 0.5rem;
   grid-column-gap: 10px;
@@ -282,7 +282,7 @@ p.tight {
     overflow-y: scroll;
   }
 
-  .table-of, .off-canvas {
+  .table-of, .hide-for-small {
     display: none;
   }
 
@@ -305,6 +305,11 @@ p.tight {
 	.project-description {
     line-height: 1.9rem;
 		margin-top: 0;
+	}
+
+	.show {
+		height: calc(100vh - 68px);
+		overflow-y: auto;
 	}
 
 }

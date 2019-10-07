@@ -51,9 +51,9 @@ $(document).ready(function(){
 
   $('.open').on('click', function(e) {
     e.preventDefault;
-    $('.off-canvas').toggleClass('show');
+    $('.off-canvas').toggleClass('show hide-for-small');
     $('.close').on('click', function (e) {
-      $('.off-canvas').removeClass('show');
+      $('.off-canvas').removeClass('show').addClass('hide-for-small');
     });
   });
 
