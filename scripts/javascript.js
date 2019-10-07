@@ -40,11 +40,11 @@ $(document).ready(function(){
 
   //image slide (Flickity)
 
-  $('.project-photos').flickity({
+  var $photos = $('.project-photos').flickity({
     pageDots: false,
     lazyLoad: true,
-    // prevNextButtons: false,
-    wrapAround: true
+    wrapAround: true,
+    arrowShape: "M7.43277675,1 L9,2.47597098 L4.196,6.999 L33,7 L33,9 L4.196,8.999 L9,13.524029 L7.43277675,15 L0,8 L7.43277675,1 Z"
   });
 
   //open info
