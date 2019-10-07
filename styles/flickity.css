@@ -94,7 +94,7 @@ https://flickity.metafizzy.co
 }
 /* right to left */
 .flickity-prev-next-button.next:hover, .flickity-button:hover, .flickity-viewport {
-  cursor: url('content/icons/right-arrow.svg'), e-resize;
+  cursor: url('joy-jade.com/content/icons/right-arrow.svg'), e-resize;
 }
 .flickity-rtl .flickity-prev-next-button.previous {
   /* left: auto;
