@@ -1,7 +1,10 @@
 $(document).ready(function(){
+  $(".image").show();
 
-  var $projectname = $('.project-name')
+  setTimeout(function () {
+    $(".project-photos").css("height", "auto")}, 800);
 
+  var $projectname = $('.project-name');
 
   function clearSelection() {
     $projectname.removeClass('active');
@@ -47,14 +50,14 @@ $(document).ready(function(){
     arrowShape: "M7.43277675,1 L9,2.47597098 L4.196,6.999 L33,7 L33,9 L4.196,8.999 L9,13.524029 L7.43277675,15 L0,8 L7.43277675,1 Z"
   });
 
+
   //open info
 
   $('.open').on('click', function(e) {
     e.preventDefault;
     $('.off-canvas').toggleClass('show hide-for-small');
-    $('.close').on('click', function (e) {
-      $('.off-canvas').removeClass('show').addClass('hide-for-small');
-    });
+    $('.open').toggleClass('move-right');
+    $('.open img').toggleClass('rotate');
   });
 
 
