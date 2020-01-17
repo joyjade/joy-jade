@@ -55,7 +55,7 @@ $(document).ready(function(){
 
   $('.open').on('click', function(e) {
     e.preventDefault;
-    $('.off-canvas').toggleClass('show hide-for-small');
+    $('.off-canvas').toggleClass('slide hide-for-small');
     $('.open').toggleClass('move-right');
     $('.open img').toggleClass('rotate');
   });
