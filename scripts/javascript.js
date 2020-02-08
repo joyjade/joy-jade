@@ -4,7 +4,7 @@ $(document).ready(function(){
   setTimeout(function () {
     $(".project-photos").css("height", "auto")}, 800);
 
-  let $projectname = $('.project-name');
+  var $projectname = $('.project-name');
 
   function clearSelection() {
     $projectname.removeClass('active');
@@ -12,7 +12,7 @@ $(document).ready(function(){
   }
 
   $(document).click(function(e) {
-      let container = $(".projects, .contents");
+      var container = $(".projects, .contents");
       if (!container.is(e.target) && container.has(e.target).length === 0) {
         clearSelection();
       }
@@ -24,7 +24,7 @@ $(document).ready(function(){
     event.stopPropagation();
     clearSelection();
 
-    let $projectid = $(this).data('id');
+    var $projectid = $(this).data('id');
     $('.contents').scrollTo(('#' + $projectid), 800);
     $(this).addClass('active').find('.project-description').show();
   });
@@ -34,7 +34,7 @@ $(document).ready(function(){
     e.preventDefault();
     clearSelection();
 
-    let photoId = $(this).attr('id');
+    var photoId = $(this).attr('id');
     $('.contents').scrollTo(("#" + photoId), 800);
     $('.project-name[data-id="' + photoId + '"]')
       .addClass('active').find('.project-description').show();
@@ -43,10 +43,11 @@ $(document).ready(function(){
 
   //image slide (Flickity)
 
-  let $photos = $('.project-photos').flickity({
+  var $photos = $('.project-photos').flickity({
     pageDots: false,
-    // lazyLoad: true,
+    lazyLoad: true,
     wrapAround: true,
+    arrowShape: "M7.43277675,1 L9,2.47597098 L4.196,6.999 L33,7 L33,9 L4.196,8.999 L9,13.524029 L7.43277675,15 L0,8 L7.43277675,1 Z"
   });
 
 
