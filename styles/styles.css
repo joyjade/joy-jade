@@ -26,11 +26,6 @@ html, body 	{
   background-color: #ffffff;
 }
 
-.hide {
-	display: none;
-}
-
-
 /* GRID-------------------------------------- */
 
 body {
@@ -227,7 +222,8 @@ nav a:hover {
 
 .project-photos {
   position: relative;
-	height: 95vh;
+  /*height: 95vh;	*/
+  height: auto;
 }
 .project-photos:not(:last-of-type) {
   margin-bottom: 0.5rem;
@@ -237,8 +233,8 @@ nav a:hover {
 
 .image {
 	width: 100%;
-	display: none;
-	top:0.5rem;
+/*	display: none;
+*/	top:0.5rem;
 }
 
 .notice {
@@ -254,6 +250,16 @@ nav a:hover {
 	border: 2px solid #80D281;
 }
 
+.arrows {
+	position: fixed;
+	justify-content: space-between;
+    z-index: 9;
+    bottom: 1px;
+    display: flex;
+    width: 70%;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+}
 
 /* Info -------- */
 
@@ -288,6 +294,18 @@ p.tight {
   transform: translateX(0);
 	transition: transform 1.5s ease;
 }
+
+
+/* For JS */
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
 
 /* Mobile */
 
@@ -371,7 +389,5 @@ p.tight {
 	.body {
 		grid-template-columns: minmax(300px, 1.43fr) minmax (660, 3.25fr)
 	}
-
-/* info */
 
 }

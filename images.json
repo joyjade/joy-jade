@@ -1,0 +1,65 @@
+{
+	"Hoda Katebi": [
+		{"image":"hoda_archives", "alt":"archives"},
+		{"image":"hoda_home", "alt":"archives"},
+		{"image":"hoda_home2", "alt":"archives"},
+		{"image":"hoda_about", "alt":"archives"},
+		{"image":"hoda_post", "alt":"archives"},
+		{"image":"hoda_allarchives", "alt":"archives"},
+		{"image":"hoda_press", "alt":"archives"}
+		],
+	"Because We've Read": [
+		{"image":"bwr_mobile", "alt":"archives"},
+		{"image":"bwr_home", "alt":"archives"},
+		{"image":"bwr_guide", "alt":"archives"},
+		{"image":"bwr_bookdetails", "alt":"archives"}
+	],
+	"Children's Defense Fund": [
+		{"image":"cdf-01", "alt":"archives"},
+		{"image":"cdf-02", "alt":"archives"},
+		{"image":"cdf-03", "alt":"archives"}
+		],
+	"Blue Tin Productions": [
+		{"image":"blue-tin", "alt":"archives"},
+		{"image":"blue-tin-invite", "alt":"archives"}
+	],
+	"Brilliant": [
+		{"image":"brilliant_dashboard", "alt":"archives"},
+		{"image":"brill_photos", "alt":"archives", "type": "gif"},
+		{"image":"brilliant_mobile", "alt":"archives"},
+		{"image":"brilliant_catalog", "alt":"archives"}
+	],
+	"Daily Harvest": [
+		{"image":"dh", "alt":"archives"},
+		{"image":"dh-mobile", "alt":"archives"},
+		{"image":"dh-03", "alt":"archives"}
+	],
+	"Girlgaze": [
+		{"image":"ggcurated-images", "alt":"archives"},
+		{"image":"amaalsaid", "alt":"archives"},
+		{"image":"girlgaze", "alt":"archives"},
+		{"image":"ggwebsite", "alt":"archives"},
+		{"image":"gginsta", "alt":"archives"},
+		{"image":"girlgaze_story", "alt":"archives"}
+	],
+	"Hips": [
+		{"image":"get-up", "alt":"archives"},
+		{"image":"get-up-remix", "alt":"archives"}
+	],
+	"House House Sea": [
+		{"image":"househousesea_01", "alt":"archives"},
+		{"image":"househousesea_02", "alt":"archives"},
+		{"image":"househousesea_03", "alt":"archives"},
+		{"image":"househousesea_04", "alt":"archives"},
+		{"image":"househousesea_05", "alt":"archives"},
+		{"image":"househousesea_06", "alt":"archives"}
+	],		
+	"Pulp": [
+		{"image":"pulp-issuetwo", "alt":"archives"},
+		{"image":"pulp-issueone", "alt":"archives"},
+		{"image":"pulp-table", "alt":"archives"}
+	],
+	"Unique": [
+		{"image":"unique", "alt":"archives"},
+		{"image":"unique_02", "alt":"archives"}
+	]
