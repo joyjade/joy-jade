@@ -1,40 +1,40 @@
 {
-	"Hoda Katebi": [
-		{"image":"hoda_archives", "alt":"archives"},
-		{"image":"hoda_home", "alt":"archives"},
-		{"image":"hoda_home2", "alt":"archives"},
-		{"image":"hoda_about", "alt":"archives"},
-		{"image":"hoda_post", "alt":"archives"},
-		{"image":"hoda_allarchives", "alt":"archives"},
-		{"image":"hoda_press", "alt":"archives"}
+	"hoda": [
+		{"image":"hoda_archives", "alt":"hoda archives"},
+		{"image":"hoda_home", "alt":"hoda home"},
+		{"image":"hoda_home_2", "alt":"hoda events"},
+		{"image":"hoda_about", "alt":"hoda about"},
+		{"image":"hoda_post", "alt":"hoda post"},
+		{"image":"hoda_allarchives", "alt":"hoda all archives"},
+		{"image":"hoda_press", "alt":"hoda press"}
 		],
-	"Because We've Read": [
-		{"image":"bwr_mobile", "alt":"archives"},
-		{"image":"bwr_home", "alt":"archives"},
-		{"image":"bwr_guide", "alt":"archives"},
-		{"image":"bwr_bookdetails", "alt":"archives"}
+	"bwr": [
+		{"image":"bwr_mobile", "alt":"because we've read mobile"},
+		{"image":"bwr_home", "alt":"because we've read home"},
+		{"image":"bwr_guide", "alt":"because we've read archives"},
+		{"image":"bwr_bookdetails", "alt":"because we've read book details"}
 	],
-	"Children's Defense Fund": [
+	"cdf": [
 		{"image":"cdf-01", "alt":"archives"},
 		{"image":"cdf-02", "alt":"archives"},
 		{"image":"cdf-03", "alt":"archives"}
 		],
-	"Blue Tin Productions": [
+	"blue_tin": [
 		{"image":"blue-tin", "alt":"archives"},
 		{"image":"blue-tin-invite", "alt":"archives"}
 	],
-	"Brilliant": [
+	"brilliant": [
 		{"image":"brilliant_dashboard", "alt":"archives"},
 		{"image":"brill_photos", "alt":"archives", "type": "gif"},
 		{"image":"brilliant_mobile", "alt":"archives"},
 		{"image":"brilliant_catalog", "alt":"archives"}
 	],
-	"Daily Harvest": [
+	"dh": [
 		{"image":"dh", "alt":"archives"},
 		{"image":"dh-mobile", "alt":"archives"},
 		{"image":"dh-03", "alt":"archives"}
 	],
-	"Girlgaze": [
+	"girlgaze": [
 		{"image":"ggcurated-images", "alt":"archives"},
 		{"image":"amaalsaid", "alt":"archives"},
 		{"image":"girlgaze", "alt":"archives"},
@@ -42,11 +42,11 @@
 		{"image":"gginsta", "alt":"archives"},
 		{"image":"girlgaze_story", "alt":"archives"}
 	],
-	"Hips": [
+	"hips": [
 		{"image":"get-up", "alt":"archives"},
 		{"image":"get-up-remix", "alt":"archives"}
 	],
-	"House House Sea": [
+	"hhs": [
 		{"image":"househousesea_01", "alt":"archives"},
 		{"image":"househousesea_02", "alt":"archives"},
 		{"image":"househousesea_03", "alt":"archives"},
@@ -54,12 +54,13 @@
 		{"image":"househousesea_05", "alt":"archives"},
 		{"image":"househousesea_06", "alt":"archives"}
 	],		
-	"Pulp": [
+	"pulp": [
 		{"image":"pulp-issuetwo", "alt":"archives"},
 		{"image":"pulp-issueone", "alt":"archives"},
 		{"image":"pulp-table", "alt":"archives"}
 	],
-	"Unique": [
+	"unique": [
 		{"image":"unique", "alt":"archives"},
 		{"image":"unique_02", "alt":"archives"}
 	]
+}
