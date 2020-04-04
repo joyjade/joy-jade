@@ -90,6 +90,10 @@ class Slideshow {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+	let projectNames = document.querySelectorAll('.project-name');
+
+	watch(projectNames);
+
 	let images = document.querySelectorAll('.image');
 	images.forEach( image => {	
 		let img = image.querySelector('img');
@@ -97,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		let projectImages = portfolio[projectName];
 		let slideshow = new Slideshow(projectImages);
 
-		image.onclick = function(event){			
+		image.onclick = function(event){
 			slideshow.nextSlide();
 			
 			let displayedImage = event.target;
@@ -105,8 +109,60 @@ document.addEventListener("DOMContentLoaded", function() {
 			displayedImage.alt = slideshow.imageAlt();
 		}
 	})
+
+	scrollToProject(projectNames);
+
+	//check documents for outside clicks
+
 })
 
+function scrollToProject(collection) {
+	collection.forEach(item => {
+		item.onclick = function(e) {
+			clearSelection(collection, 'active')
+			this.classList.add('active');
+		}
+	})
+}
+
+function clearSelection(collection, trash) {
+	collection.forEach(item => {
+		item.classList.remove(trash);
+	})
+}
+
+function watch(collection) {
+	let projects = document.querySelector(".table-of");
+    let contents = document.querySelector(".contents");
+
+	document.addEventListener('click', function(event) {
+		let isClickInside = projects.contains(event.target) || contents.contains(event.target);
+
+		if (!isClickInside) {
+			clearSelection(collection, 'active');
+		}
+	})
+}
+
+
+// function scrollAnchors(e, respond = null) {
+// 	const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
+// 	e.preventDefault();
+// 	var targetID = (respond) ? respond.getAttribute('href') : this.getAttribute('href');
+// 	const targetAnchor = document.querySelector(targetID);
+// 	if (!targetAnchor) return;
+// 	const originalTop = distanceToTop(targetAnchor);
+// 	window.scrollBy({ top: originalTop, left: 0, behavior: 'smooth' });
+// 	const checkIfDone = setInterval(function() {
+// 		const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
+// 		if (distanceToTop(targetAnchor) === 0 || atBottom) {
+// 			targetAnchor.tabIndex = '-1';
+// 			targetAnchor.focus();
+// 			window.history.pushState('', '', targetID);
+// 			clearInterval(checkIfDone);
+// 		}
+// 	}, 100);
+// }
 
 
 
