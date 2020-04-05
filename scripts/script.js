@@ -65,6 +65,7 @@ const portfolio = {
 	]
 }
 
+// CLASSES
 class Slideshow {
 	constructor(slides) {
 		this.slide = 0;
@@ -76,7 +77,6 @@ class Slideshow {
 		} else {
 			this.slide = 0;
 		}		
-		console.log(this.slide);
 	}
 	imageSrc() {
 		let string = this.slides[this.slide].image;
@@ -89,40 +89,65 @@ class Slideshow {
 	}
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-	let projectNames = document.querySelectorAll('.project-name');
 
+// SITE FXNS
+
+document.addEventListener("DOMContentLoaded", function() {
+	let contents = document.querySelector(".contents");
+	let projectNames = document.querySelectorAll('.project-name');
 	watch(projectNames);
+
+
+	//SLIDESHOW
 
 	let images = document.querySelectorAll('.image');
 	images.forEach( image => {	
+
 		let img = image.querySelector('img');
 		let projectName = img.dataset.name;
 		let projectImages = portfolio[projectName];
 		let slideshow = new Slideshow(projectImages);
 
-		image.onclick = function(event){
-			slideshow.nextSlide();
-			
+		image.onclick = function(event) {
 			let displayedImage = event.target;
+			let projectId = displayedImage.closest('.project-photos').id;
+
+			scrollll(projectId);
+			slideshow.nextSlide();
+
 			displayedImage.src = slideshow.imageSrc();
 			displayedImage.alt = slideshow.imageAlt();
 		}
 	})
 
-	scrollToProject(projectNames);
-
-	//check documents for outside clicks
+	//SCROLLING
+	scrollNameToProject(projectNames);
 
 })
 
-function scrollToProject(collection) {
+function scrollNameToProject(collection) {
 	collection.forEach(item => {
 		item.onclick = function(e) {
 			clearSelection(collection, 'active')
 			this.classList.add('active');
+
+			let projectId = this.dataset.id;
+			scrollll(projectId);
 		}
 	})
+}
+
+function scrollll(id){
+	let contents = document.querySelector(".contents");
+
+	let work = document.getElementById(id);
+	let pixelsFromTop = work.offsetTop;
+
+	contents.scroll({
+		top: pixelsFromTop - 69,
+		behavior: 'smooth'
+	})
+
 }
 
 function clearSelection(collection, trash) {
@@ -133,7 +158,7 @@ function clearSelection(collection, trash) {
 
 function watch(collection) {
 	let projects = document.querySelector(".table-of");
-    let contents = document.querySelector(".contents");
+	let contents = document.querySelector(".contents");
 
 	document.addEventListener('click', function(event) {
 		let isClickInside = projects.contains(event.target) || contents.contains(event.target);
@@ -143,31 +168,6 @@ function watch(collection) {
 		}
 	})
 }
-
-
-// function scrollAnchors(e, respond = null) {
-// 	const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
-// 	e.preventDefault();
-// 	var targetID = (respond) ? respond.getAttribute('href') : this.getAttribute('href');
-// 	const targetAnchor = document.querySelector(targetID);
-// 	if (!targetAnchor) return;
-// 	const originalTop = distanceToTop(targetAnchor);
-// 	window.scrollBy({ top: originalTop, left: 0, behavior: 'smooth' });
-// 	const checkIfDone = setInterval(function() {
-// 		const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
-// 		if (distanceToTop(targetAnchor) === 0 || atBottom) {
-// 			targetAnchor.tabIndex = '-1';
-// 			targetAnchor.focus();
-// 			window.history.pushState('', '', targetID);
-// 			clearInterval(checkIfDone);
-// 		}
-// 	}, 100);
-// }
-
-
-
-
-
 
 
 
