@@ -90,7 +90,7 @@ class Slideshow {
 }
 
 
-// SITE FXNS
+//MAIN
 
 document.addEventListener("DOMContentLoaded", function() {
 	let contents = document.querySelector(".contents");
@@ -98,8 +98,36 @@ document.addEventListener("DOMContentLoaded", function() {
 	watch(projectNames);
 
 
-	//SLIDESHOW
+	clickNameScrollProject(projectNames);
+	imageSlideAndScroll(projectNames);
 
+	let open = document.querySelector('.open');
+	open.onclick = function (e) {
+		e.preventDefault;
+		let info = document.querySelector('.off-canvas');
+	    info.classList.toggle('slide');
+	    info.classList.toggle('hide-for-small');
+	    open.classList.toggle('move-right');
+	    open.querySelector('img').classList.toggle('rotate');
+	}
+})
+
+
+// SITE FXNS
+
+function clickNameScrollProject(collection) {
+	collection.forEach(item => {
+		item.onclick = function(e) {
+			dehighlight(collection, 'active');
+			highlight(this);
+
+			let projectId = this.dataset.id;
+			scrollll(projectId);
+		}
+	})
+}
+
+function imageSlideAndScroll(collection){
 	let images = document.querySelectorAll('.image');
 	images.forEach( image => {	
 
@@ -113,29 +141,27 @@ document.addEventListener("DOMContentLoaded", function() {
 			let projectId = displayedImage.closest('.project-photos').id;
 
 			scrollll(projectId);
-			slideshow.nextSlide();
+			let projects = document.querySelector(".table-of");
 
+			let indexName = projects.querySelector(`[data-id="${projectId}"]`);
+			dehighlight(collection);
+			highlight(indexName);
+
+
+
+			slideshow.nextSlide();
 			displayedImage.src = slideshow.imageSrc();
 			displayedImage.alt = slideshow.imageAlt();
 		}
 	})
-
-	//SCROLLING
-	scrollNameToProject(projectNames);
-
-})
-
-function scrollNameToProject(collection) {
-	collection.forEach(item => {
-		item.onclick = function(e) {
-			clearSelection(collection, 'active')
-			this.classList.add('active');
-
-			let projectId = this.dataset.id;
-			scrollll(projectId);
-		}
-	})
 }
+
+
+
+
+
+
+//BASIC FXNS
 
 function scrollll(id){
 	let contents = document.querySelector(".contents");
@@ -150,9 +176,15 @@ function scrollll(id){
 
 }
 
-function clearSelection(collection, trash) {
+function highlight(item) {
+	item.classList.add('active');
+	item.querySelector('.project-description').style.display = 'block';
+}
+
+function dehighlight(collection) {
 	collection.forEach(item => {
-		item.classList.remove(trash);
+		item.classList.remove('active');
+		item.querySelector('.project-description').style.display = 'none';
 	})
 }
 
@@ -164,7 +196,7 @@ function watch(collection) {
 		let isClickInside = projects.contains(event.target) || contents.contains(event.target);
 
 		if (!isClickInside) {
-			clearSelection(collection, 'active');
+			dehighlight(collection, 'active');
 		}
 	})
 }
