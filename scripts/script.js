@@ -138,15 +138,22 @@ function imageSlideAndScroll(collection){
 
 		image.onclick = function(event) {
 			let displayedImage = event.target;
+
 			let projectId = displayedImage.closest('.project-photos').id;
+			
 
 			scrollll(projectId);
+
 			let projects = document.querySelector(".table-of");
+			let contents = document.querySelector(".contents");
 
 			let indexName = projects.querySelector(`[data-id="${projectId}"]`);
 			dehighlight(collection);
 			highlight(indexName);
 
+			let mobileName = contents.querySelector(`[data-id="${projectId}"]`);
+			dehighlight(collection);
+			highlight(mobileName);
 
 
 			slideshow.nextSlide();

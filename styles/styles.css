@@ -339,7 +339,7 @@ p.tight {
 	}
 
 	.project-photos:not(:last-of-type) {
-	    margin-bottom: 0.3rem;
+	    margin: 0.5rem 0 0.3rem;
 	}
 
 	.project-description {
