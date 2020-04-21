@@ -140,7 +140,6 @@ function imageSlideAndScroll(collection){
 			let displayedImage = event.target;
 
 			let projectId = displayedImage.closest('.project-photos').id;
-			
 
 			scrollll(projectId);
 
@@ -151,8 +150,8 @@ function imageSlideAndScroll(collection){
 			dehighlight(collection);
 			highlight(indexName);
 
+
 			let mobileName = contents.querySelector(`[data-id="${projectId}"]`);
-			dehighlight(collection);
 			highlight(mobileName);
 
 
