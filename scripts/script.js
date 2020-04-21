@@ -1,4 +1,9 @@
 const portfolio = {
+	"crg": [
+		{"image":"crg_01", "alt":"crg home"},
+		{"image":"crg_02", "alt":"crg home"},
+		{"image":"crg_readings", "alt":"crg readings"},
+	],
 	"hoda": [
 		{"image":"hoda_archives", "alt":"hoda archives"},
 		{"image":"hoda_home", "alt":"hoda home"},
