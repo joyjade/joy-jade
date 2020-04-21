@@ -184,7 +184,7 @@ function scrollll(id){
 
 function highlight(item) {
 	item.classList.add('active');
-	item.querySelector('.project-description').style.display = 'block';
+	item.querySelector('.project-description').style.display = 'inline';
 }
 
 function dehighlight(collection) {
