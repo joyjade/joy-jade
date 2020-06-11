@@ -122,6 +122,15 @@ nav {
   color: white;
 }
 
+a {
+	color: #80D281;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #0022DE;
+}
+
 /* .arrow {cursor: e-resize;} */
 
 
@@ -141,6 +150,7 @@ nav a {
 	color: #80D281;
 	font-size: 1.9rem;	
 	position: relative;
+	text-decoration: none;
 }
 
 nav a:hover {
