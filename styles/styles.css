@@ -396,15 +396,6 @@ p.tight {
 	body {
 		grid-template-columns: minmax(300px,1fr) minmax(660px,3fr);
 	}
-	.project-name h1 {
-		font-size: 1.2em;
-		line-height: 1.5;
-	}
-
-	.project-name {
-		/* padding: 0.7rem; */
-	}
-
 	.body {
 		grid-template-columns: minmax(300px, 1.43fr) minmax (660, 3.25fr)
 	}
