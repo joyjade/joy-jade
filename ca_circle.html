@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles/cssreset.css" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
+</head>
+<body class="no-grid">
+    <div >
+        <p class="miller display">Sign up to receive forwards of small actions I partake in around LA/CA</p>
+        <form name="submit-to-sheets">
+            <input type="text" name="name" placeholder="Name" id="name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div> 
+</body>
+<script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+<script>
+    const sheetsScript = 'https://script.google.com/macros/s/AKfycbwRuMyiouRyYykzXBZeG_CYdqfFcDRFlAlcw0jgm_zYZfw9V-zT/exec'
+    const form = document.forms['submit-to-sheets']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(sheetsScript, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+
+</script>
+</html>

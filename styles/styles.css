@@ -325,6 +325,9 @@ p.tight {
 	display: block;
 }
 
+.no-grid {
+	display: block;
+}
 
 /* Mobile */
 
