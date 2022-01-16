@@ -1,8 +1,28 @@
 const portfolio = {
+	"laca": [
+		{"image":"lacawine_01", "alt":"laca wine store home page"},
+		{"image":"lacawine_03", "alt":"laca wine store mobile designs"},
+		{"image":"lacawine_04", "alt":"laca wine store"},
+		{"image":"lacawine_06", "alt":"laca wine store"},
+	],
+	"division": [
+		{"image":"division_01", "alt":"movie nights at divison place"},
+		{"image":"divison_02", "alt":"movie nights at divison place"},
+		{"image":"division_03", "alt":"movie nights at divison place"},
+		{"image":"divison_04", "alt":"movie nights at divison place"},
+	],
+	"protocols": [
+		{"image":"prtcls_01", "alt":"protocols issue ten"},
+		{"image":"prtcls_2", "alt":"protocols journal"},
+		{"image":"prtcls_3", "alt":"protocols journal"},
+		{"image":"prtcls_4", "alt":"protocols journal"},
+		{"image":"prtcls_6", "alt":"protocols journal"},
+	],
 	"crg": [
 		{"image":"crg_01", "alt":"crg home"},
 		{"image":"crg_02", "alt":"crg home"},
-		{"image":"crg_readings", "alt":"crg readings"},
+		{"image":"crg_03", "alt":"crg home"},
+		{"image":"crg_04", "alt":"crg home"},
 	],
 	"hoda": [
 		{"image":"hoda_archives", "alt":"hoda archives"},
@@ -29,10 +49,12 @@ const portfolio = {
 		{"image":"blue-tin-invite", "alt":"archives"}
 	],
 	"brilliant": [
-		{"image":"brilliant_dashboard", "alt":"archives"},
-		{"image":"brill_photos", "alt":"archives", "type": "gif"},
-		{"image":"brilliant_mobile", "alt":"archives"},
-		{"image":"brilliant_catalog", "alt":"archives"}
+		{"image":"brill_06", "alt":"archives"},
+		{"image":"brill_07", "alt":"archives"},
+		{"image":"brill_01", "alt":"archives"},
+		{"image":"brill_03", "alt":"archives"},
+		{"image":"brill_04", "alt":"archives"},
+		{"image":"bril_05", "alt":"archives"},
 	],
 	"dh": [
 		{"image":"dh", "alt":"archives"},

@@ -17,11 +17,12 @@
 	src: url('/styles/fonts/miller-italic.otf');
 }
 
-
 /* GLOBAL -------------------------------------- */
 * {
 	padding: 0;
 	margin: 0;
+  --main-color: black;
+  --hue: #80D281;
 }
 
 html, body 	{
@@ -73,8 +74,9 @@ nav {
 /* STYLES-------------------------------------- */
 
 .agipo {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	color: #80D281;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+  color: var(--main-color);
 	font-size: 1.2rem;
   font-weight: 400;
 }
@@ -87,7 +89,7 @@ nav {
 
 .miller {
 	font-family: 'Miller', serif;
-	color: #80D281;
+	color: var(--main-color);
 	font-size: 1.2rem;
 }
 
@@ -99,7 +101,7 @@ nav {
 .mono {
   font-family: 'agipo-mono', monospace;
 	font-style: normal;
-	color: #80D281;
+	color: var(--main-color);
 }
 
 .text {
@@ -116,17 +118,17 @@ nav {
 }
 
 *::selection {
-  background: #0022DE;
+  background: var(--hue);
   color: white;
 }
 
 a {
-	color: #80D281;
+	color: var(--main-color);
 	text-decoration: underline;
 }
 
 a:hover {
-	color: #0022DE;
+	color: var(--hue);
 }
 
 /* .arrow {cursor: e-resize;} */
@@ -145,18 +147,18 @@ nav li {
 }
 
 nav a {
-	color: #80D281;
+	color: var(--main-color);
 	font-size: 1.3rem;	
 	position: relative;
 	text-decoration: none;
 }
 
 nav a:hover {
-	color: #80D281;
+	color: var(--main-color);
 }
 
 nav a:hover::after {
-  border-bottom: 0.12rem solid #80D281;
+  border-bottom: 0.12rem solid var(--main-color);
   content: "";
   left: 0;
   position: absolute;
@@ -268,7 +270,7 @@ nav a:hover::after {
 	position: absolute;
 	bottom: 25px;
 	right: 25px;
-	color: #80D281;
+	color: var(--main-color);
 	background-color: transparent;
 	z-index: 10;
 	font-size: 0.85rem;
@@ -286,7 +288,7 @@ p {
 	line-height: 1.25;
 }
 
-p:nth-of-type(3) {
+p:nth-of-type(4) {
   flex-grow: 1;
 }
 
