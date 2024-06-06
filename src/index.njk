@@ -1,0 +1,60 @@
+---
+layout: layout.njk
+title: ~° joy jade 
+---
+
+{% include "nav.njk" %}
+
+<!-- Table of Contents -->
+<section class="table-of agipo display borders">
+  {% for proj in projects %}
+    <div class="project">
+      <div class="project-name" data-id="id-{{loop.index}}">
+        <h1>
+          <span class="cut">{{loop.index}}. {{ proj.title }} </span>
+          <span class="project-description italic"><a href="{{ proj.link }}">{{ proj.client }}{{ proj.description }}</a></span>
+        </h1>
+      </div>
+    </div>
+  {% endfor %}
+</section>
+
+<!-- Info -->
+<section class="off-canvas borders hide-for-small">
+  <div class="info text agipo">
+    <p>Joy / Jade designs and codes for organizers, collectives, artists, publications, and projects invested in abolition, critical inquiry, art, and something more sustainable.</p>
+    <p>She lives and climbs in Los Angeles.</p>
+    <p class="tight">Reach me @ info@joy-jade.com</p>
+    <span class="byline small-text">
+      Endnotes: This site was designed and built from scratch in 2019 by yours truly. Updated in 2022
+      | The typefaces? Plain-old Arial Narrow. And Miller Italic | 
+        Most of the photography credit belongs to others, with the exception of a few art direction projects (Daily Harvest + Brilliant) | 
+        BWR was built by <a href="https://abdelrazaq.com/" target="_blank">Adlai</a> | 
+        Original Protocols website was built by Adam Berman | 
+        Otherwise I designed and developed projects 00-04!
+
+    </span>
+  </div>
+</section>
+
+<!-- Work Images-->
+<section class="contents borders">
+  <div class="projects-container" id="show-top">
+      {% for work in projects %}
+        <div class="project-photos" id="id-{{ loop.index }}">
+          <div class="image">
+              <img src="{{ work.images }}" alt="{{ work.alt }}" width="100%" data-name="{{ work.label }}">
+          </div>
+        </div>
+        <div class="project-name agipo display borders small-only" data-id="id-{{ loop.index }}">
+          <h1>
+            <span class="cut">{{ work.title }}</span>
+            <span class="project-description italic">{{ work.description }}</span>
+          </h1>
+        </div>
+      {% endfor %}
+  </div>
+
+</section>
+
+

@@ -1,0 +1,42 @@
+---
+
+  - title: Worthy Wine Works
+    client: Los Angeles Contemporary Archive, East of Borneo
+    description: Los Angeles Contemporary Archive's natural wine fundraiser.
+    link: https://worthywineworks.com/
+    images: content/lacawine_01.jpg
+    alt: laca wine store
+    label: laca
+
+  - title: Movie Nights at Divison Place
+    client: 
+    description: Movie series screening independently made films from and adjacent to Southeast Asia
+    link: https://exit-lane.com/divisionplace
+    images: content/division_01.jpg
+    alt: movie nights at division place
+    label: division
+
+  - title: Protocols
+    client: 
+    description: Online journal featuring provocative art and writing from across the global Jewish diaspora
+    link: https://prtcls.com/
+    images: content/prtcls_01.jpg
+    alt: protocols website
+    label: protocols
+
+  - title: Community Reading Group
+    client: 
+    description: Critical Reading and Study Gathering
+    link: http://www.communityreadinggroup.com/
+    images: content/crg_01.jpg
+    alt: crg_websites
+    label: crg
+
+  - title: Because We've Read
+    client: 
+    description: Radical Int'l Bookclub. 
+    link: https://becauseweveread.com/
+    images: content/bwr_mobile.jpg
+    alt: becausewe'veread
+    label: bwr
+
