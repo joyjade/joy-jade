@@ -1,6 +1,6 @@
 /* TYPEFACES-------------------------------------- */
 @font-face {
-	font-family: 'hal mono';
+	font-family: 'hal-mono';
 	src: url('/styles/fonts/haltimezone_mono.otf');
 }
 
@@ -9,23 +9,23 @@
 	src: url('/styles/fonts/poly.ttf');
 }
 
-/* 	
-  font-family: 'Arial', sans-serif;
-  font-weight: bold;
-*/
-
 /* GLOBAL -------------------------------------- */
+:root {
+  --dark-color: #2E2121;
+  --main-color: #E8E8E8;
+  --hue: #FDC2FE;
+  --body: 14px;
+}
+
 * {
 	padding: 0;
 	margin: 0;
-  --main-color: black;
-  --hue: #80D281;
 }
 
 html, body 	{
 	margin: 0;
 	height: 100%;
-  background-color: #ffffff;
+  background-color: var(--dark-color);
 }
 
 /* GRID-------------------------------------- */
@@ -45,7 +45,7 @@ nav {
 }
 
 nav a {
-  font-family: 'hal mono', monospace;
+  font-family: 'hal-mono', monospace;
 	color: var(--main-color);
 	font-size: 14px;
 }
@@ -61,7 +61,7 @@ nav a {
 
 .info {
   position: absolute;
-  background-color: #ffffff;
+  background-color: var(--dark-color);
   padding: 0.35rem 0.5rem;
   height: 100%;
   display: flex;
@@ -76,11 +76,11 @@ nav a {
 
 /* STYLES-------------------------------------- */
 
-.agipo {
-  font-family: Arial, sans-serif;
+.table-of {
   color: var(--main-color);
-	font-size: 1.2rem;
-  font-weight: 400;
+  font-family: 'hal-mono', monospace;
+	font-size: var(--body);
+  font-weight: 100;
 }
 
 .poly {
@@ -92,18 +92,12 @@ nav a {
 .italic {
   font-family: 'hal mono', Arial, sans-serif;
 	font-style: italic;
-  font-weight: 400;
+  font-weight: 100;
 }
 
 .display {
   text-decoration: none;
   letter-spacing: 0.3px;
-}
-
-.mono {
-  font-family: 'agipo-mono', monospace;
-	font-style: normal;
-	color: var(--main-color);
 }
 
 .text {
@@ -115,7 +109,7 @@ nav a {
 }
 
 .borders {
-  border-top: 2px solid #80D281;
+  border-top: 1px solid var(--hue);
   /* border-bottom: 1px solid black; */
 }
 
@@ -198,24 +192,23 @@ nav a:hover::after {
   grid-row: 2/3;
 	padding: 1rem 0.5rem 0.75rem;
 	z-index: 1;
-  /* display: grid;
-  grid-template-rows: repeat(12, 1fr); */
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
   align-content: left;
 }
 .project {
   padding: 2px 0;
   display: flex;
   flex: 1;
-  align-items: center;
+  /* align-items: center; */
 	cursor: pointer;
 }
 
 .project-description {
   display: none;
-  text-transform: capitalize;
   margin-top: 0.4em;
 	padding-left: 0.15rem;
-	font-size: 1.2rem;
 }
  
 .arrow-case {

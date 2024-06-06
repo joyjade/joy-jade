@@ -6,13 +6,17 @@ title: ~° joy jade
 {% include "nav.njk" %}
 
 <!-- Table of Contents -->
-<section class="table-of agipo display borders">
+<section class="table-of display borders">
   {% for proj in projects %}
     <div class="project">
       <div class="project-name" data-id="id-{{loop.index}}">
         <h1>
           <span class="cut">{{loop.index}}. {{ proj.title }} </span>
-          <span class="project-description italic"><a href="{{ proj.link }}">{{ proj.client }}{{ proj.description }}</a></span>
+          <span class="project-description italic">{{ proj.client }}{{ proj.description }}
+            {% if proj.link %}
+            <a href="{{ proj.link }}" target="_blank">Visit</a>
+            {% endif %}  
+          </span>
         </h1>
       </div>
     </div>
@@ -43,7 +47,7 @@ title: ~° joy jade
       {% for work in projects %}
         <div class="project-photos" id="id-{{ loop.index }}">
           <div class="image">
-              <img src="{{ work.images }}" alt="{{ work.alt }}" width="100%" data-name="{{ work.label }}">
+              <img src="{{ work.cover }}" alt="{{ work.alt }}" width="100%" data-name="{{ work.label }}">
           </div>
         </div>
         <div class="project-name agipo display borders small-only" data-id="id-{{ loop.index }}">

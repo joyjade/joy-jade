@@ -1,4 +1,16 @@
 const portfolio = {
+  "ohbook": [
+		{"image":"ohbook_cover", "alt":"Speaking the Matter book cover"},
+		{"image":"ohbook_workbooks", "alt":"Speaking the Matter book cover"},
+		{"image":"ohbook_preparation", "alt":"Speaking the Matter book cover"},
+		{"image":"ohbook_motives", "alt":"Speaking the Matter book cover"},
+		{"image":"ohbook_intro", "alt":"Speaking the Matter book cover"},
+		{"image":"ohbook_framesofmind", "alt":"Speaking the Matter book cover"},
+		{"image":"ohbook_forms", "alt":"Speaking the Matter book cover"},
+		{"image":"ohbook_endnotes", "alt":"Speaking the Matter book cover"},
+		{"image":"ohbook_consider", "alt":"Speaking the Matter book cover"},
+		{"image":"ohbook_backcover", "alt":"Speaking the Matter book cover"},
+	],
 	"laca": [
 		{"image":"lacawine_01", "alt":"laca wine store home page"},
 		{"image":"lacawine_03", "alt":"laca wine store mobile designs"},
@@ -24,71 +36,11 @@ const portfolio = {
 		{"image":"crg_03", "alt":"crg home"},
 		{"image":"crg_04", "alt":"crg home"},
 	],
-	"hoda": [
-		{"image":"hoda_archives", "alt":"hoda archives"},
-		{"image":"hoda_home", "alt":"hoda home"},
-		{"image":"hoda_home_2", "alt":"hoda events"},
-		{"image":"hoda_about", "alt":"hoda about"},
-		{"image":"hoda_post", "alt":"hoda post"},
-		{"image":"hoda_allarchives", "alt":"hoda all archives"},
-		{"image":"hoda_press", "alt":"hoda press"}
-		],
 	"bwr": [
 		{"image":"bwr_mobile", "alt":"archives"},
 		{"image":"bwr_home", "alt":"archives"},
 		{"image":"bwr_guide", "alt":"archives"},
 		{"image":"bwr_bookdetails", "alt":"archives"}
-	],
-	"cdf": [
-		{"image":"cdf-01", "alt":"archives"},
-		{"image":"cdf-02", "alt":"archives"},
-		{"image":"cdf-03", "alt":"archives"}
-		],
-	"blue_tin": [
-		{"image":"blue-tin", "alt":"archives"},
-		{"image":"blue-tin-invite", "alt":"archives"}
-	],
-	"brilliant": [
-		{"image":"brill_06", "alt":"archives"},
-		{"image":"brill_07", "alt":"archives"},
-		{"image":"brill_01", "alt":"archives"},
-		{"image":"brill_03", "alt":"archives"},
-		{"image":"brill_04", "alt":"archives"},
-		{"image":"bril_05", "alt":"archives"},
-	],
-	"dh": [
-		{"image":"dh", "alt":"archives"},
-		{"image":"dh-mobile", "alt":"archives"},
-		{"image":"dh-03", "alt":"archives"}
-	],
-	"girlgaze": [
-		{"image":"ggcurated-images", "alt":"archives"},
-		{"image":"amaalsaid", "alt":"archives"},
-		{"image":"girlgaze", "alt":"archives"},
-		{"image":"ggwebsite", "alt":"archives"},
-		{"image":"gginsta", "alt":"archives"},
-		{"image":"girlgaze_story", "alt":"archives"}
-	],
-	"hips": [
-		{"image":"get-up", "alt":"archives"},
-		{"image":"get-up-remix", "alt":"archives"}
-	],
-	"hhs": [
-		{"image":"househousesea_01", "alt":"archives"},
-		{"image":"househousesea_02", "alt":"archives"},
-		{"image":"househousesea_03", "alt":"archives"},
-		{"image":"househousesea_04", "alt":"archives"},
-		{"image":"househousesea_05", "alt":"archives"},
-		{"image":"househousesea_06", "alt":"archives"}
-	],		
-	"pulp": [
-		{"image":"pulp-issuetwo", "alt":"archives"},
-		{"image":"pulp-issueone", "alt":"archives"},
-		{"image":"pulp-table", "alt":"archives"}
-	],
-	"unique": [
-		{"image":"unique", "alt":"archives"},
-		{"image":"unique_02", "alt":"archives"}
 	]
 }
 
@@ -159,6 +111,7 @@ function imageSlideAndScroll(collection){
 	images.forEach( image => {	
 
 		let img = image.querySelector('img');
+
 		let projectName = img.dataset.name;
 		let projectImages = portfolio[projectName];
 		let slideshow = new Slideshow(projectImages);

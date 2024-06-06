@@ -1,10 +1,26 @@
 ---
 
+  - title: Speaking the Matter
+    client: 
+    description: An oral history workbook co-published by Los Angeles Contemporary Archive and East of Borneo
+    link: 
+    cover: content/ohbook_cover.jpg
+    alt: laca wine store
+    label: ohbook
+
+  - title: Inverse Surveillance Project
+    client: 
+    description: A multi-media art installation by Assia Boundaoui
+    link: 
+    cover: content/isp_banner.jpg
+    alt: laca wine store
+    label: isp
+
   - title: Worthy Wine Works
-    client: Los Angeles Contemporary Archive, East of Borneo
+    client: Los Angeles Contemporary Archive
     description: Los Angeles Contemporary Archive's natural wine fundraiser.
     link: https://worthywineworks.com/
-    images: content/lacawine_01.jpg
+    cover: content/lacawine_01.jpg
     alt: laca wine store
     label: laca
 
@@ -12,7 +28,7 @@
     client: 
     description: Movie series screening independently made films from and adjacent to Southeast Asia
     link: https://exit-lane.com/divisionplace
-    images: content/division_01.jpg
+    cover: content/division_01.jpg
     alt: movie nights at division place
     label: division
 
@@ -20,7 +36,7 @@
     client: 
     description: Online journal featuring provocative art and writing from across the global Jewish diaspora
     link: https://prtcls.com/
-    images: content/prtcls_01.jpg
+    cover: content/prtcls_01.jpg
     alt: protocols website
     label: protocols
 
@@ -28,7 +44,7 @@
     client: 
     description: Critical Reading and Study Gathering
     link: http://www.communityreadinggroup.com/
-    images: content/crg_01.jpg
+    cover: content/crg_01.jpg
     alt: crg_websites
     label: crg
 
@@ -36,7 +52,7 @@
     client: 
     description: Radical Int'l Bookclub. 
     link: https://becauseweveread.com/
-    images: content/bwr_mobile.jpg
+    cover: content/bwr_mobile.jpg
     alt: becausewe'veread
     label: bwr
 
