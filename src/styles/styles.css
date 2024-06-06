@@ -1,21 +1,13 @@
 /* TYPEFACES-------------------------------------- */
-@font-face {
-	font-family: 'agipo';
-	src: url('/styles/fonts/agipo_regular.otf'),
-			 url('/styles/fonts/agipo.woff') format('woff'),
-			 url('/styles/fonts/agipo.woff') format('woff2');
+/* @font-face {
+	font-family: 'hal mono';
+	src: url('/styles/fonts/haltimezone_mono.otf');
+} */
 
-}
-
-@font-face {
-	font-family: 'agipo-mono';
-	src: url('/styles/fonts/agipo_mono.otf');
-}
-
-@font-face {
-	font-family: 'miller';
-	src: url('/styles/fonts/miller-italic.otf');
-}
+/* 	
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+*/
 
 /* GLOBAL -------------------------------------- */
 * {
@@ -74,23 +66,23 @@ nav {
 /* STYLES-------------------------------------- */
 
 .agipo {
-  font-family: "Arial Narrow", Arial, sans-serif;
-  text-transform: uppercase;
+  font-family: Arial, sans-serif;
   color: var(--main-color);
 	font-size: 1.2rem;
   font-weight: 400;
 }
 
 .italic {
-/*  font-family: 'Miller', serif;*/
+  font-family: 'hal mono', Arial, sans-serif;
 	font-style: italic;
   font-weight: 400;
 }
 
 .miller {
-	font-family: 'Miller', serif;
+	font-family: 'Arial', sans-serif;
+  font-weight: bold;
 	color: var(--main-color);
-	font-size: 1.2rem;
+	font-size: 0.9rem;
 }
 
 .display {
