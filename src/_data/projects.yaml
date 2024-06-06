@@ -11,7 +11,7 @@
 
   - title: L.A. Times
     client: 
-    description: Storiessss
+    description: Shape Your L.A., Repowering the West, Immigrant Dreams, A.I. in L.A., Metro Story, Monterey Park Tribute
     link: 
     cover: content/isp_banner.jpg
     alt: laca wine store
@@ -54,9 +54,9 @@
     label: crg
     year: 2021
 
-  - title: Protocols
+  - title: and more
     client: 
-    description: Online journal featuring provocative art and writing from across the global Jewish diaspora
+    description: Hoda Katebi, Believers Bail Out, Blue Tin Production, Because We've Read, Protocols, an online journal featuring provocative art and writing from across the global Jewish diaspora
     link: https://prtcls.com/
     cover: content/prtcls_01.jpg
     alt: protocols website
