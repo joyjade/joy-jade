@@ -9,12 +9,53 @@
 	src: url('/styles/fonts/poly.ttf');
 }
 
+@font-face {
+	font-family: 'review-mono';
+	src: url('/styles/fonts/reviewmono.woff');
+}
+
+@font-face {
+	font-family: 'review-mono';
+  font-style: italic;
+	src: url('/styles/fonts/reviewmono_cursive.woff');
+}
+
+@font-face {
+	font-family: 'review-mono-condensed';
+  font-style: italic;
+	src: url('/styles/fonts/reviewmono_condensed.woff');
+}
+
+@font-face {
+	font-family: 'philita';
+	src: url('/styles/fonts/PhiliItaRus.woff');
+}
+
+@font-face {
+	font-family: 'review-mono-condensed';
+  font-style: italic;
+	src: url('/styles/fonts/reviewmono_condensed.otf');
+}
+
+@font-face {
+	font-family: 'fluxis';
+  font-style: italic;
+	src: url('/styles/fonts/FluxischElse-Regular.woff');
+}
+
 /* GLOBAL -------------------------------------- */
 :root {
   --dark-color: #2E2121;
   --main-color: #E8E8E8;
   --hue: #FDC2FE;
-  --body: 14px;
+  --border-style: 1.5px solid var(--hue);
+  
+  --body: 15px;
+  /* --font: 'hal-mono', monospace; */
+  /* --font: Arial, sans-serif; */
+  /* --font: 'review-mono', monospace; */
+  /* --font: 'philita', serif; */
+  --font: 'fluxis';
 }
 
 * {
@@ -45,7 +86,7 @@ nav {
 }
 
 nav a {
-  font-family: 'hal-mono', monospace;
+  font-family: var(--font);
 	color: var(--main-color);
 	font-size: 14px;
 }
@@ -78,7 +119,7 @@ nav a {
 
 .table-of {
   color: var(--main-color);
-  font-family: 'hal-mono', monospace;
+  font-family: var(--font);
 	font-size: var(--body);
   font-weight: 100;
 }
@@ -90,14 +131,13 @@ nav a {
 }
 
 .italic {
-  font-family: 'hal mono', Arial, sans-serif;
+  font-family: var(--font);
 	font-style: italic;
   font-weight: 100;
 }
 
 .display {
   text-decoration: none;
-  letter-spacing: 0.3px;
 }
 
 .text {
@@ -109,8 +149,7 @@ nav a {
 }
 
 .borders {
-  border-top: 1px solid var(--hue);
-  /* border-bottom: 1px solid black; */
+  border-top: var(--border-style);
 }
 
 *::selection {
@@ -140,10 +179,10 @@ nav ul {
 
 nav li {
    padding: 0.75rem;
+   color: var(--main-color);
 }
 
 nav a {
-	color: var(--main-color);
 	position: relative;
 	text-decoration: none;
 }
@@ -153,13 +192,12 @@ nav a:hover {
 }
 
 nav a:hover::after {
-  border-bottom: 0.12rem solid var(--main-color);
+  border-bottom: var(--border-style);
   content: "";
   left: 0;
   position: absolute;
   right: 0;
-  top: 61%;
-
+  top: 55%;
 }
 
 .open {
@@ -172,6 +210,7 @@ nav a:hover::after {
 	padding: 0 10px;
 	transform: 0;
 	transition: transform 1.5s ease;
+  width: 45px;
 }
 
 .rotate {
@@ -270,7 +309,7 @@ nav a:hover::after {
 	font-size: 0.85rem;
 	padding: 5px 10px;
 	border-radius: 50px;
-	border: 2px solid #80D281;
+	border: 1px solid #80D281;
 }
 
 /* Info -------- */

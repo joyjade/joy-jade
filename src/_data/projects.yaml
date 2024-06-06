@@ -7,7 +7,17 @@
     cover: content/ohbook_cover.jpg
     alt: laca wine store
     label: ohbook
+    year: 2023
 
+  - title: L.A. Times
+    client: 
+    description: Storiessss
+    link: 
+    cover: content/isp_banner.jpg
+    alt: laca wine store
+    label: isp
+    year: 2023
+  
   - title: Inverse Surveillance Project
     client: 
     description: A multi-media art installation by Assia Boundaoui
@@ -15,6 +25,7 @@
     cover: content/isp_banner.jpg
     alt: laca wine store
     label: isp
+    year: 2021
 
   - title: Worthy Wine Works
     client: Los Angeles Contemporary Archive
@@ -23,14 +34,25 @@
     cover: content/lacawine_01.jpg
     alt: laca wine store
     label: laca
+    year: 2021
 
-  - title: Movie Nights at Divison Place
+  - title: Movie Nights at Division Place
     client: 
     description: Movie series screening independently made films from and adjacent to Southeast Asia
     link: https://exit-lane.com/divisionplace
     cover: content/division_01.jpg
     alt: movie nights at division place
     label: division
+    year: 2021
+
+  - title: Community Reading Group
+    client: 
+    description: Critical Reading and Study Gathering
+    link: http://www.communityreadinggroup.com/
+    cover: content/crg_01.jpg
+    alt: crg_websites
+    label: crg
+    year: 2021
 
   - title: Protocols
     client: 
@@ -40,19 +62,4 @@
     alt: protocols website
     label: protocols
 
-  - title: Community Reading Group
-    client: 
-    description: Critical Reading and Study Gathering
-    link: http://www.communityreadinggroup.com/
-    cover: content/crg_01.jpg
-    alt: crg_websites
-    label: crg
-
-  - title: Because We've Read
-    client: 
-    description: Radical Int'l Bookclub. 
-    link: https://becauseweveread.com/
-    cover: content/bwr_mobile.jpg
-    alt: becausewe'veread
-    label: bwr
 
