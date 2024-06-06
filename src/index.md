@@ -1,12 +1,12 @@
 ---
 layout: layout.njk
-title: Joy Park
+title: ~° joy jade 
 ---
 
-<nav class='miller display'>
+<nav class='display'>
   <ul>
-    <li class="open"><a>Info</a><img src="content/icons/green_arrow.svg"></li>
-    <li><a href="/">Selected Work</a></li>
+    <li class="open"><a>Info,</a><img src="content/icons/green_arrow.svg"><a>Work</a>, <a>Index</a></li>
+    <li><a class="poly" href="/">jj</a></li>
   </ul>
 </nav>
 

@@ -1,8 +1,13 @@
 /* TYPEFACES-------------------------------------- */
-/* @font-face {
+@font-face {
 	font-family: 'hal mono';
 	src: url('/styles/fonts/haltimezone_mono.otf');
-} */
+}
+
+@font-face {
+	font-family: 'poly';
+	src: url('/styles/fonts/poly.ttf');
+}
 
 /* 	
   font-family: 'Arial', sans-serif;
@@ -39,6 +44,12 @@ nav {
   padding: 0.5em 0.1rem;
 }
 
+nav a {
+  font-family: 'hal mono', monospace;
+	color: var(--main-color);
+	font-size: 14px;
+}
+
 .off-canvas {
   position: relative;
   grid-column: 1/2;
@@ -72,17 +83,16 @@ nav {
   font-weight: 400;
 }
 
+.poly {
+  font-family: 'poly', arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 0;
+}
+
 .italic {
   font-family: 'hal mono', Arial, sans-serif;
 	font-style: italic;
   font-weight: 400;
-}
-
-.miller {
-	font-family: 'Arial', sans-serif;
-  font-weight: bold;
-	color: var(--main-color);
-	font-size: 0.9rem;
 }
 
 .display {
@@ -140,7 +150,6 @@ nav li {
 
 nav a {
 	color: var(--main-color);
-	font-size: 1.3rem;	
 	position: relative;
 	text-decoration: none;
 }
