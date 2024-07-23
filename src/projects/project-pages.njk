@@ -1,0 +1,25 @@
+---
+pagination:
+  data: projects
+  size: 1
+  alias: proj
+permalink: "projects/{{ proj.title | slugify }}/"
+layout: toc.njk
+
+---
+
+{% set path="http://localhost:8081/content/"%}
+
+<section class="contents borders">
+    <div class="projects-container">
+      <h1>{{proj.title}} !!!~ | hello? {{proj.description}}</h1>
+
+      <div class="project-imgs">
+          {% for img in proj.image_files %}
+            <div class="image">
+                <img src="{{path+img.src+".jpg"}}" alt="{{ img.alt }}" width="100%">
+            </div>
+          {% endfor %}
+      </div>
+    </div>
+</section>

@@ -47,7 +47,7 @@
 :root {
   --dark-color: #2E2121;
   --main-color: #E8E8E8;
-  --hue: #FDC2FE;
+  --hue: #E8E8E8; /*#FDC2FE;*/
   --border-style: 1.5px solid var(--hue);
   
   --body: 15px;
@@ -67,6 +67,11 @@ html, body 	{
 	margin: 0;
 	height: 100%;
   background-color: var(--dark-color);
+}
+
+section {
+  color: var(--main-color);
+  font-family: var(--font);
 }
 
 /* GRID-------------------------------------- */

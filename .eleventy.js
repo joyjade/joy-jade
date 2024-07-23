@@ -1,4 +1,14 @@
 const yaml = require("js-yaml");
+const site = require('./src/_data/site');
+
+/**
+ * Prefixes the given URL with the site's base URL.
+ * @param {string} url
+ */
+const toAbsoluteUrl = (url) => {
+  return new URL(url, site.baseUrl).href;
+}
+
 
 module.exports = function(eleventyConfig) {
   // Set custom directories for input, output, includes, and data
@@ -8,6 +18,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
 
+  eleventyConfig.addFilter('toAbsoluteUrl', toAbsoluteUrl);
 
   return {
     // When a passthrough file is modified, rebuild the pages:

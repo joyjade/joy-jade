@@ -1,3 +1,4 @@
+{# I don't think this is active #}
 ---
 layout: toc.njk
 title: jj
@@ -17,8 +18,10 @@ title: jj
         </div>
         <div class="project-name agipo display borders small-only" data-id="id-{{ loop.index }}">
           <h1>
-            <span class="cut">{{ work.title }}</span>
+            <a href="projects/{{ work.title | slugify }}/">
+            <span class="cut">{{ work.title }} AM I ACTIVE?</span>
             <span class="project-description italic">{{ work.description }}</span>
+            </a>
           </h1>
         </div>
       {% endfor %}

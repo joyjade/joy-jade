@@ -2,6 +2,7 @@
 layout: layout.njk
 ---
 
+
 <body>
   {% include "nav.njk" %}
 
@@ -11,7 +12,7 @@ layout: layout.njk
       <div class="project">
         <div class="project-name" data-id="id-{{loop.index}}">
           <h1>
-            <span class="cut">{{loop.index}}. {{ proj.title }} </span>
+            <span class="cut">{{loop.index}}. <a href="../../projects/{{ proj.title | slugify }}/">{{ proj.title }}</a></span>
             <span class="project-description italic">{{ proj.client }}{{ proj.description }}
               {% if proj.link %}
               <a href="{{ proj.link }}" target="_blank">Visit</a>
