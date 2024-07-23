@@ -287,8 +287,8 @@ nav a:hover::after {
   height: auto;
   cursor: url('/content/icons/arrow.svg'), auto;	
 }
-.project-photos:not(:last-of-type) {
-  margin-bottom: 0.5rem;
+.project-photos {
+  margin-top: 0.3rem;
 }
 
 /* image-slider */
@@ -310,6 +310,24 @@ nav a:hover::after {
 	padding: 5px 10px;
 	border-radius: 50px;
 	border: 1px solid #80D281;
+}
+
+/* Work Spreadsheet -------- */
+
+
+.image.spreadsheet {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.spreadsheet::-webkit-scrollbar {
+  display: none;
+}
+
+.image.spreadsheet img {
+  height: 100px;
+  width: auto;
+  padding-right: 0.3rem;
 }
 
 /* Info -------- */

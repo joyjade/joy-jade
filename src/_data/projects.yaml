@@ -8,6 +8,27 @@
     alt: laca wine store
     label: ohbook
     year: 2023
+    image_files: 
+      - src: ohbook_cover
+        alt: Speaking the Matter book cover
+      - src: ohbook_workbooks
+        alt: Speaking the Matter book cover
+      - src: ohbook_preparation
+        alt: Speaking the Matter book cover
+      - src: ohbook_motives
+        alt: Speaking the Matter book cover
+      - src: ohbook_intro
+        alt: Speaking the Matter book cover
+      - src: ohbook_framesofmind
+        alt: Speaking the Matter book cover
+      - src: ohbook_forms
+        alt: Speaking the Matter book cover
+      - src: ohbook_endnotes
+        alt: Speaking the Matter book cover
+      - src: ohbook_consider
+        alt: Speaking the Matter book cover
+      - src: ohbook_backcover
+        alt: Speaking the Matter book cover
 
   - title: L.A. Times
     client: 
@@ -17,6 +38,10 @@
     alt: laca wine store
     label: isp
     year: 2023
+    image_files: 
+      - src: lat_rpw_homepage
+        ext: .gif
+        alt: Speaking the Matter book cover
   
   - title: Inverse Surveillance Project
     client: 
@@ -26,6 +51,12 @@
     alt: laca wine store
     label: isp
     year: 2021
+    image_files: 
+      - src: isp_banner
+        alt: Inverse Surveillance Project website
+      - src: isp_mobile
+        ext: .png
+        alt: Inverse Surveillance Project website
 
   - title: Worthy Wine Works
     client: Los Angeles Contemporary Archive
@@ -35,6 +66,15 @@
     alt: laca wine store
     label: laca
     year: 2021
+    image_files: 
+      - src: lacawine_01
+        alt: laca wine store home page
+      - src: lacawine_03
+        alt: laca wine store mobile designs
+      - src: lacawine_04
+        alt: laca wine store 
+      - src: lacawine_06
+        alt: laca wine store
 
   - title: Movie Nights at Division Place
     client: 
@@ -44,6 +84,15 @@
     alt: movie nights at division place
     label: division
     year: 2021
+    image_files: 
+      - src: division_01
+        alt: movie nights at divison place
+      - src: divison_02
+        alt: movie nights at divison place
+      - src: division_03
+        alt: movie nights at divison place
+      - src: divison_04
+        alt: movie nights at divison place
 
   - title: Community Reading Group
     client: 
@@ -53,6 +102,15 @@
     alt: crg_websites
     label: crg
     year: 2021
+    image_files: 
+      - src: crg_01
+        alt: crg home
+      - src: crg_02
+        alt: crg home
+      - src: crg_03
+        alt: crg home
+      - src: crg_04
+        alt: crg home
 
   - title: and more
     client: 
@@ -61,5 +119,10 @@
     cover: content/prtcls_01.jpg
     alt: protocols website
     label: protocols
+    image_files: 
+      - src: bwr_mobile
+        alt: Because We've Read mobile screens
+      - src: prtcls_01
+        alt: protocols website
 
 

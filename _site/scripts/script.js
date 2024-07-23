@@ -82,6 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	let open = document.querySelector('.open');
 	open.onclick = function (e) {
+    console.log('clickedbitch')
 		e.preventDefault;
 		let info = document.querySelector('.off-canvas');
 	    info.classList.toggle('slide');
@@ -111,8 +112,12 @@ function imageSlideAndScroll(collection){
 	images.forEach( image => {	
 
 		let img = image.querySelector('img');
+    let projectName;
 
-		let projectName = img.dataset.name;
+    if (image.dataset.name) {
+      projectName = image.dataset.name;
+    }
+
 		let projectImages = portfolio[projectName];
 		let slideshow = new Slideshow(projectImages);
 
