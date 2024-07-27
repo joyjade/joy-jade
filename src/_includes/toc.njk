@@ -2,26 +2,35 @@
 layout: layout.njk
 ---
 
-
 <body>
   {% include "nav.njk" %}
 
   <!-- Table of Contents -->
   <section class="table-of display borders">
-    {% for proj in projects %}
-      <div class="project">
-        <div class="project-name" data-id="id-{{loop.index}}">
-          <h1>
-            <span class="cut">{{loop.index}}. <a href="../../projects/{{ proj.title | slugify }}/">{{ proj.title }}</a></span>
-            <span class="project-description italic">{{ proj.client }}{{ proj.description }}
-              {% if proj.link %}
-              <a href="{{ proj.link }}" target="_blank">Visit</a>
-              {% endif %}  
-            </span>
-          </h1>
+    {% if page.url == "/" %}
+      {% for proj in projects %}
+        <div class="project">
+          <div class="project-name" data-id="id-{{loop.index}}">
+            <h1>
+              <span class="cut">{{loop.index}}. 
+                <a href="/projects/{{ proj.title | slugify }}">{{ proj.title }}</a>
+              </span>
+              <span class="project-description italic">{{ proj.client }}{{ proj.description }}
+                {% if proj.link %}
+                <a href="{{ proj.link }}" target="_blank">Visit</a>
+                {% endif %}  
+              </span>
+            </h1>
+          </div>
         </div>
-      </div>
-    {% endfor %}
+      {% endfor %}
+    {% else %}
+      {% for hoja in pagination.pages %}
+        <li>
+          <a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>{{ loop.index }}. {{hoja.title}}</a>
+          </li>
+      {% endfor %}
+    {% endif %}
   </section>
 
   <!-- Info -->
