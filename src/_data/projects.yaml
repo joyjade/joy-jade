@@ -4,7 +4,7 @@
     client: 
     description: An oral history workbook co-published by Los Angeles Contemporary Archive and East of Borneo
     link: 
-    cover: content/ohbook_cover.jpg
+    cover: ohbook_cover
     alt: laca wine store
     label: ohbook
     year: 2023
@@ -34,7 +34,7 @@
     client: 
     description: Shape Your L.A., Repowering the West, Immigrant Dreams, A.I. in L.A., Metro Story, Monterey Park Tribute
     link: 
-    cover: content/isp_banner.jpg
+    cover: isp_banner
     alt: laca wine store
     label: isp
     year: 2023
@@ -47,7 +47,7 @@
     client: 
     description: A multi-media art installation by Assia Boundaoui
     link: 
-    cover: content/isp_banner.jpg
+    cover: isp_banner
     alt: laca wine store
     label: isp
     year: 2021
@@ -62,7 +62,7 @@
     client: Los Angeles Contemporary Archive
     description: Los Angeles Contemporary Archive's natural wine fundraiser.
     link: https://worthywineworks.com/
-    cover: content/lacawine_01.jpg
+    cover: lacawine_01
     alt: laca wine store
     label: laca
     year: 2021
@@ -80,7 +80,7 @@
     client: 
     description: Movie series screening independently made films from and adjacent to Southeast Asia
     link: https://exit-lane.com/divisionplace
-    cover: content/division_01.jpg
+    cover: division_01
     alt: movie nights at division place
     label: division
     year: 2021
@@ -98,7 +98,7 @@
     client: 
     description: Critical Reading and Study Gathering
     link: http://www.communityreadinggroup.com/
-    cover: content/crg_01.jpg
+    cover: crg_01
     alt: crg_websites
     label: crg
     year: 2021
@@ -116,7 +116,7 @@
     client: 
     description: Hoda Katebi, Believers Bail Out, Blue Tin Production, Because We've Read, Protocols, an online journal featuring provocative art and writing from across the global Jewish diaspora
     link: https://prtcls.com/
-    cover: content/prtcls_01.jpg
+    cover: prtcls_01
     alt: protocols website
     label: protocols
     image_files: 

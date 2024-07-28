@@ -3,6 +3,7 @@ layout: toc.njk
 title: ~° joy jade 
 
 ---
+{% set relpath = "src/content/img/" %}
 
 <!-- Work Images-->
 {% image "src/content/img/bwr2.jpg", "test" %}
@@ -11,9 +12,10 @@ title: ~° joy jade
   <div class="projects-container" id="show-top">
       {% for work in projects %}
         <div class="project-photos" id="id-{{ loop.index }}">
-          <div class="image">
+          {% image relpath+work.cover+".jpg", work.alt %}
+          {# <div class="image">
               <img src="{{ work.cover }}" alt="{{ work.alt }}" width="100%" data-name="{{ work.label }}">
-          </div>
+          </div> #}
         </div>
         <div class="project-name agipo display borders small-only" data-id="id-{{ loop.index }}">
           <h1>
