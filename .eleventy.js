@@ -1,6 +1,8 @@
 const yaml = require("js-yaml");
 require('dotenv').config();
 
+const pluginImages = require("./eleventy.config.images.js");
+
 
 // const site = require('./src/_data/site');
 // const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
@@ -19,8 +21,11 @@ const toAbsoluteUrl = (url) => {
 
 module.exports = function(eleventyConfig) {
   // Set custom directories for input, output, includes, and data
-  eleventyConfig.addPassthroughCopy("src/styles");
+  // eleventyConfig.addPassthroughCopy({
+	// 	"./public/": "/",
+	// });
   eleventyConfig.addPassthroughCopy("src/content");
+  eleventyConfig.addPassthroughCopy("src/styles");
   eleventyConfig.addPassthroughCopy("src/scripts");
 
   eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
@@ -38,8 +43,13 @@ module.exports = function(eleventyConfig) {
     }
   });
 
+  
+  
   eleventyConfig.addFilter('toAbsoluteUrl', toAbsoluteUrl);
   // eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+  
+  //App plugins
+  eleventyConfig.addPlugin(pluginImages);
 
   return {
     // When a passthrough file is modified, rebuild the pages:
@@ -50,6 +60,8 @@ module.exports = function(eleventyConfig) {
 			"njk",
 			"html"
 		],
+
+    htmlTemplateEngine: "njk",
 
     dir: {
       input: "src",
