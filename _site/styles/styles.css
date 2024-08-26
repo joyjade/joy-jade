@@ -335,6 +335,13 @@ nav a:hover::after {
   padding-right: 0.3rem;
 }
 
+/* Update Work Images -------- */
+
+picture img {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
 /* Info -------- */
 
 p {
