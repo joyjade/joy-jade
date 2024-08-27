@@ -30,18 +30,6 @@
       - src: ohbook_backcover
         alt: Speaking the Matter book cover
 
-  - title: L.A. Times
-    client: 
-    description: Shape Your L.A., Repowering the West, Immigrant Dreams, A.I. in L.A., Metro Story, Monterey Park Tribute
-    link: 
-    cover: isp_banner
-    alt: laca wine store
-    label: isp
-    year: 2023
-    image_files: 
-      - src: lat_rpw_homepage
-        ext: .gif
-        alt: Speaking the Matter book cover
   
   - title: Inverse Surveillance Project
     client: 
@@ -57,7 +45,6 @@
       - src: isp_mobile
         ext: .png
         alt: Inverse Surveillance Project website
-
   - title: Worthy Wine Works
     client: Los Angeles Contemporary Archive
     description: Los Angeles Contemporary Archive's natural wine fundraiser.
@@ -76,23 +63,31 @@
       - src: lacawine_06
         alt: laca wine store
 
-  - title: Movie Nights at Division Place
+  - title: Shape Your L.A.
     client: 
-    description: Movie series screening independently made films from and adjacent to Southeast Asia
-    link: https://exit-lane.com/divisionplace
-    cover: division_01
-    alt: movie nights at division place
-    label: division
-    year: 2021
+    description: Shape Your L.A., Repowering the West, Immigrant Dreams, A.I. in L.A., Metro Story, Monterey Park Tribute
+    link: 
+    cover: isp_banner
+    alt: laca wine store
+    label: isp
+    year: 2023
     image_files: 
-      - src: division_01
-        alt: movie nights at divison place
-      - src: divison_02
-        alt: movie nights at divison place
-      - src: division_03
-        alt: movie nights at divison place
-      - src: divison_04
-        alt: movie nights at divison place
+      - src: lat_rpw_homepage
+        ext: .gif
+        alt: Speaking the Matter book cover
+  
+  - title: Repowering the West
+    client: 
+    description: Shape Your L.A., Repowering the West, Immigrant Dreams, A.I. in L.A., Metro Story, Monterey Park Tribute
+    link: 
+    cover: isp_banner
+    alt: laca wine store
+    label: isp
+    year: 2023
+    image_files: 
+      - src: lat_rpw_homepage
+        ext: .gif
+        alt: Speaking the Matter book cover
 
   - title: Community Reading Group
     client: 
@@ -111,6 +106,43 @@
         alt: crg home
       - src: crg_04
         alt: crg home
+
+  - title: Immigrant Dreams
+    client: 
+    description: Movie series screening independently made films from and adjacent to Southeast Asia
+    link: https://exit-lane.com/divisionplace
+    cover: division_01
+    alt: movie nights at division place
+    label: division
+    year: 2021
+    image_files: 
+      - src: division_01
+        alt: movie nights at divison place
+      - src: divison_02
+        alt: movie nights at divison place
+      - src: division_03
+        alt: movie nights at divison place
+      - src: divison_04
+        alt: movie nights at divison place
+  
+  - title: Movie Nights at Division Place
+    client: 
+    description: Movie series screening independently made films from and adjacent to Southeast Asia
+    link: https://exit-lane.com/divisionplace
+    cover: division_01
+    alt: movie nights at division place
+    label: division
+    year: 2021
+    image_files: 
+      - src: division_01
+        alt: movie nights at divison place
+      - src: divison_02
+        alt: movie nights at divison place
+      - src: division_03
+        alt: movie nights at divison place
+      - src: divison_04
+        alt: movie nights at divison place
+
 
   - title: and more
     client: 

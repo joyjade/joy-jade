@@ -1,54 +1,36 @@
 ---
 layout: layout.njk
 ---
+{% set relpath = "src/content/img/" %}
 
 <body>
   {% include "nav.njk" %}
 
   <!-- Table of Contents -->
   <section class="table-of display borders">
+    <ul>
     {% if page.url == "/" %}
+      <!-- WARNING: EDITS HERE MUST BE MADE FOR HOME PAGE AND PROJECT PAGES -->
       {% for proj in projects %}
-        <div class="project">
-          <div class="project-name" data-id="id-{{loop.index}}">
-            <h1>
-              <span class="cut">{{loop.index}}. 
-                <a href="/projects/{{ proj.title | slugify }}">{{ proj.title }}</a>
-              </span>
-              <span class="project-description italic">{{ proj.client }}{{ proj.description }}
-                {% if proj.link %}
-                <a href="{{ proj.link }}" target="_blank">Visit</a>
-                {% endif %}  
-              </span>
-            </h1>
+        <li class="project">
+          <a href="/projects/{{ proj.title | slugify }}">{{ proj.title }}</a>
+          <div class="thumbnail">
+            {% image relpath+proj.cover+".jpg", proj.alt %}
           </div>
-        </div>
+        </li>
       {% endfor %}
+
     {% else %}
       {% for hoja in pagination.pages %}
-        <li>
-          <a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>{{ loop.index }}. {{hoja.title}}</a>
-          </li>
+        <li class="project-name">
+          <a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>{{hoja.title}}</a>
+          <div class="thumbnail">
+            {% image relpath+hoja.cover+".jpg", hoja.alt %}
+          </div>
+        </li>
       {% endfor %}
     {% endif %}
-  </section>
-
-  <!-- Info -->
-  <section class="off-canvas borders hide-for-small">
-    <div class="info text agipo">
-      <p>Joy / Jade designs and codes for organizers, collectives, artists, publications, and projects invested in abolition, critical inquiry, art, and something more sustainable.</p>
-      <p>She lives and climbs in Los Angeles.</p>
-      <p class="tight">Reach me @ info@joy-jade.com</p>
-      <span class="byline small-text">
-        Endnotes: This site was designed and built from scratch in 2019 by yours truly. Updated in 2022
-        | The typefaces? Plain-old Arial Narrow. And Miller Italic | 
-          Most of the photography credit belongs to others, with the exception of a few art direction projects (Daily Harvest + Brilliant) | 
-          BWR was built by <a href="https://abdelrazaq.com/" target="_blank">Adlai</a> | 
-          Original Protocols website was built by Adam Berman | 
-          Otherwise I designed and developed projects 00-04!
-
-      </span>
-    </div>
+    </ul>
   </section>
 
   {{ content | safe }}

@@ -20,7 +20,6 @@ layout: toc.njk
           {% for img in proj.image_files %}
             <div class="image">      
                 {% set ext = (img.ext if img.ext else ".jpg") %}    
-      
                 {% image relpath+img.src+ext, img.alt %}
             </div>
           {% endfor %}
