@@ -22,7 +22,7 @@ layout: layout.njk
 
     {% else %}
       {% for hoja in pagination.pages %}
-        <li class="project-name">
+        <li class="project">
           <a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>{{hoja.title}}</a>
           <div class="thumbnail">
             {% image relpath+hoja.cover+".jpg", hoja.alt %}

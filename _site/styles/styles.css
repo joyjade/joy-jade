@@ -15,6 +15,7 @@
   --dark-color: #FDC2FE; /* #2E2121; */
   --main-color: black; 
   --hue: black; /* #E8E8E8;*/
+  --thumbnail-bg: #F3ECEC;
   --border-style: 1.5px solid var(--hue);
   
   --body: 15px;
@@ -123,6 +124,10 @@ a:hover {
 	color: var(--hue);
 }
 
+picture img {
+  object-fit: contain;
+}
+
 
 /* NAV ------------*/
 
@@ -203,9 +208,11 @@ OLD INFO SLIDE
 
 .table-of a {
   text-decoration: none;
+  display: block;
+  padding-bottom: 1rem;
 }
 
-.table-of a:hover {
+.table-of a:hover, .table-of a[aria-current] {
   text-decoration: line-through;
 }
 
@@ -213,17 +220,18 @@ OLD INFO SLIDE
   padding: 0.5rem 0.75rem;
   border-bottom: var(--border-style);
 }
-/* 
-.project {
 
+.table-of li .thumbnail {
+  display: inline-block;
+  padding: 5px;
+  background-color: var(--thumbnail-bg);
+  height: 115px;
 }
 
-.active {
-  display: flex;
-  flex-direction: row;
-  flex: 1;
+.table-of picture img {
+  width: auto;
+  height: 100%;
 }
-
 
 /*WORK ----------*/
 
@@ -240,6 +248,23 @@ OLD INFO SLIDE
 .project-photos {
   margin-top: 0.3rem;
 }
+
+.projects-container picture img {
+  width: 100%;
+  height: auto;
+}
+
+
+/* PROJECT PAGES */
+.project-imgs {
+  display: grid;
+  grid-template-columns: 3fr minmax(350px, 1fr);
+}
+
+.project-imgs .image {
+  grid-column: 1/2;
+}
+
 
 /* image-slider */
 
@@ -262,7 +287,7 @@ OLD INFO SLIDE
 	border: 1px solid #80D281;
 }
 
-/* Work Spreadsheet -------- */
+/* Work SpreadsheetNOT ACRTIVE-------- */
 
 
 .image.spreadsheet {
@@ -278,14 +303,6 @@ OLD INFO SLIDE
   height: 100px;
   width: auto;
   padding-right: 0.3rem;
-}
-
-/* Update Work Images -------- */
-
-picture img {
-  object-fit: contain;
-  width: 100%;
-  height: auto;
 }
 
 /* Info -------- */
