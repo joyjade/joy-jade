@@ -1,58 +1,66 @@
 ---
 
   - title: Speaking the Matter
-    client: 
-    description: An oral history workbook co-published by Los Angeles Contemporary Archive and East of Borneo
-    link: 
-    cover: ohbook_cover
-    alt: laca wine store
-    label: ohbook
     year: 2023
+    thumbnail: 
+      src: ohbook_thumbnail
+      alt: a tiny stamp of a spiral and an ear on a green cover
+    description: A skill-building and reference book for artists developing oral histories and interview-based projects. This workbook approaches the practice and application of oral narratives as a co-constructed creative endeavor rather than reparative ‘truth’ work. Resisting the idea that a recorded interview is a neutral historical document, this skill-building workbook instead shares perspectives on listening, remembering, gossiping, questioning, and framing, with the aim of telling our stories not as fixed subjects but as artists who are alive and breathing.
+    orgs: 
+      - Los Angeles Contemporary Archive  
+      - East of Borneo
+    collaborators: Hailey Loman,  Saida Largaespada, Adriana Widdoes
+    role: Book and Identity Design
+    credits: Edited by Andrew Freire, Harris Bauer, Vivian Chang, Photos by Alex Delapena
+    link: 
+    label: ohbook
     image_files: 
-      - src: ohbook_cover
+      - src: oh_cover
         alt: Speaking the Matter book cover
-      - src: ohbook_workbooks
+      - src: oh_motives
         alt: Speaking the Matter book cover
-      - src: ohbook_preparation
+      - src: oh_worksheets
         alt: Speaking the Matter book cover
-      - src: ohbook_motives
+      - src: oh_endnotes
         alt: Speaking the Matter book cover
-      - src: ohbook_intro
+      - src: oh_intro
         alt: Speaking the Matter book cover
-      - src: ohbook_framesofmind
+      - src: oh_deeds
         alt: Speaking the Matter book cover
-      - src: ohbook_forms
+      - src: oh_inprep
         alt: Speaking the Matter book cover
-      - src: ohbook_endnotes
+      - src: oh_back
         alt: Speaking the Matter book cover
-      - src: ohbook_consider
+      - src: oh_framesofmind
         alt: Speaking the Matter book cover
-      - src: ohbook_backcover
-        alt: Speaking the Matter book cover
-
   
   - title: Inverse Surveillance Project
-    client: 
+    year: 2021
+    orgs: 
+      - The Feeling of Being Watched 
     description: A multi-media art installation by Assia Boundaoui
     link: 
-    cover: isp_banner
-    alt: laca wine store
+    thumbnail: 
+      src: isp_banner
+      alt: a tiny stamp of a spiral and an ear on a green cover
     label: isp
-    year: 2021
     image_files: 
       - src: isp_banner
         alt: Inverse Surveillance Project website
       - src: isp_mobile
         ext: .png
         alt: Inverse Surveillance Project website
+
   - title: Worthy Wine Works
-    client: Los Angeles Contemporary Archive
+    year: 2021
+    orgs: 
+      - Los Angeles Contemporary Archive
     description: Los Angeles Contemporary Archive's natural wine fundraiser.
     link: https://worthywineworks.com/
-    cover: lacawine_01
-    alt: laca wine store
+    thumbnail: 
+      src: lacawine_01
+      alt: a tiny stamp of a spiral and an ear on a green cover
     label: laca
-    year: 2021
     image_files: 
       - src: lacawine_01
         alt: laca wine store home page
@@ -64,39 +72,44 @@
         alt: laca wine store
 
   - title: Shape Your L.A.
-    client: 
+    year: 2023
+    orgs:
+      - L.A. Times 
     description: Shape Your L.A., Repowering the West, Immigrant Dreams, A.I. in L.A., Metro Story, Monterey Park Tribute
     link: 
-    cover: isp_banner
+    thumbnail: 
+      src: isp_banner
+      alt: thumnbail
     alt: laca wine store
     label: isp
-    year: 2023
     image_files: 
       - src: lat_rpw_homepage
         ext: .gif
         alt: Speaking the Matter book cover
   
   - title: Repowering the West
-    client: 
-    description: Shape Your L.A., Repowering the West, Immigrant Dreams, A.I. in L.A., Metro Story, Monterey Park Tribute
-    link: 
-    cover: isp_banner
-    alt: laca wine store
-    label: isp
     year: 2023
+    orgs:
+      - L.A. Times 
+    description: Shape Your L.A., Repowering the West, Immigrant Dreams, A.I. in L.A., Metro Story, Monterey Park Tribute
+    thumbnail: 
+      src: isp_banner
+      alt: thumnbail
+    label: isp
+    link: 
     image_files: 
       - src: lat_rpw_homepage
         ext: .gif
         alt: Speaking the Matter book cover
 
   - title: Community Reading Group
-    client: 
+    year: 2021     
     description: Critical Reading and Study Gathering
     link: http://www.communityreadinggroup.com/
-    cover: crg_01
-    alt: crg_websites
+    thumbnail: 
+      src: crg_01
+      alt: crg_websites
     label: crg
-    year: 2021
     image_files: 
       - src: crg_01
         alt: crg home
@@ -108,13 +121,15 @@
         alt: crg home
 
   - title: Immigrant Dreams
-    client: 
+    year: 2021
+    orgs: 
+      - L.A. Times
+    thumbnail:
+      src: division_01
+      alt: movie nights at division place
     description: Movie series screening independently made films from and adjacent to Southeast Asia
     link: https://exit-lane.com/divisionplace
-    cover: division_01
-    alt: movie nights at division place
     label: division
-    year: 2021
     image_files: 
       - src: division_01
         alt: movie nights at divison place
@@ -125,14 +140,14 @@
       - src: divison_04
         alt: movie nights at divison place
   
-  - title: Movie Nights at Division Place
-    client: 
+  - title: Movie Nights at Division Place 
+    year: 2021
+    thumbnail: 
+      src: division_01
+      alt: movie nights at division place
     description: Movie series screening independently made films from and adjacent to Southeast Asia
     link: https://exit-lane.com/divisionplace
-    cover: division_01
-    alt: movie nights at division place
     label: division
-    year: 2021
     image_files: 
       - src: division_01
         alt: movie nights at divison place
@@ -145,11 +160,12 @@
 
 
   - title: and more
-    client: 
+    orgs: 
     description: Hoda Katebi, Believers Bail Out, Blue Tin Production, Because We've Read, Protocols, an online journal featuring provocative art and writing from across the global Jewish diaspora
     link: https://prtcls.com/
-    cover: prtcls_01
-    alt: protocols website
+    thumbnail: 
+      src: prtcls_01
+      alt: protocols website
     label: protocols
     image_files: 
       - src: bwr_mobile

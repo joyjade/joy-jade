@@ -12,9 +12,9 @@ layout: toc.njk
 {% set relpath = "src/content/img/" %}
 
 
-<section class="contents borders">
+<section class="contents">
     <div class="projects-container">
-      <div class="project-imgs">
+      <div class="proj-imgs">
           {# <h2>{{ page.url }}</h2>
           <h1>DEBUGGING !! {{"hello!!!!!!" | linkungan }}</h1> #}
           {% for img in proj.image_files %}
@@ -23,6 +23,36 @@ layout: toc.njk
                 {% image relpath+img.src+ext, img.alt %}
             </div>
           {% endfor %}
+      </div>
+      <div class="proj-desc">
+        <h1 class="sxn">{{proj.title}}</h1>
+      
+        {% if proj.orgs %}
+          <ul class="sxn"> 
+            {% for org in proj.orgs %}
+              <li> {{org}} </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+        
+        <div class="sxn">
+          <h5>date</h5>
+          <date>{{proj.year}}</date>
+        </div>
+        <div class="sxn">
+          <h5>Description </h5>
+          <p> {{proj.description}}</p>
+          {% if proj.collaborators %}
+            <h5>Collaborators</h5><p> {{proj.collaborators}}</p>
+          {% endif %}
+          <h5>Role </h5><p> {{proj.role}}</p>
+          {% if proj.orgs %}
+            <h5>Organizations </h5><p> {{proj.orgs}}</p>
+          {% endif %}
+          {% if proj.credits %}
+            <h5>Other Credits</h5><p> {{proj.credits}}</p>
+          {% endif %}
+        </div>
       </div>
     </div>
 </section>

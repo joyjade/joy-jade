@@ -7,7 +7,7 @@ layout: layout.njk
   {% include "nav.njk" %}
 
   <!-- Table of Contents -->
-  <section class="table-of display borders">
+  <section class="table-of display">
     <ul>
     {% if page.url == "/" %}
       <!-- WARNING: EDITS HERE MUST BE MADE FOR HOME PAGE AND PROJECT PAGES -->
@@ -15,7 +15,7 @@ layout: layout.njk
         <li class="project">
           <a href="/projects/{{ proj.title | slugify }}">{{ proj.title }}</a>
           <div class="thumbnail">
-            {% image relpath+proj.cover+".jpg", proj.alt %}
+            {% image relpath+proj.thumbnail.src+".jpg", proj.thumbnail.alt %}
           </div>
         </li>
       {% endfor %}
@@ -25,7 +25,7 @@ layout: layout.njk
         <li class="project">
           <a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>{{hoja.title}}</a>
           <div class="thumbnail">
-            {% image relpath+hoja.cover+".jpg", hoja.alt %}
+            {% image relpath+hoja.thumbnail.src+".jpg", hoja.thumbnail.alt %}
           </div>
         </li>
       {% endfor %}
