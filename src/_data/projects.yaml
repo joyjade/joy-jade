@@ -133,21 +133,14 @@
     orgs: 
       - L.A. Times
     thumbnail:
-      src: division_01
-      alt: movie nights at division place
-    description: Movie series screening independently made films from and adjacent to Southeast Asia
-    link: https://exit-lane.com/divisionplace
-    label: division
+      src: division_thumbnail
+      alt: Stories about immigrants in the U.S. alongside a 2023 nation-wide poll from Kaiser Permanente 
+    description: Something else tbd
+    link: https://www.latimes.com/immigrant-dreams
     image_files: 
-      - src: division_01
+      - src: division01
         alt: movie nights at divison place
-      - src: divison_02
-        alt: movie nights at divison place
-      - src: division_03
-        alt: movie nights at divison place
-      - src: divison_04
-        alt: movie nights at divison place
-  
+    
   - title: Movie Nights at Division Place 
     year: 2021
     thumbnail: 
@@ -155,17 +148,15 @@
       alt: movie nights at division place
     description: Movie series screening independently made films from and adjacent to Southeast Asia
     link: https://exit-lane.com/divisionplace
-    label: division
     image_files: 
-      - src: division_01
+      - src: division03
         alt: movie nights at divison place
-      - src: divison_02
+      - src: division01
         alt: movie nights at divison place
-      - src: division_03
+      - src: division04
         alt: movie nights at divison place
-      - src: divison_04
+      - src: division02
         alt: movie nights at divison place
-
 
   - title: and more
     orgs: 
