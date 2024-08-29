@@ -12,8 +12,7 @@
     collaborators: Hailey Loman,  Saida Largaespada, Adriana Widdoes
     role: Book and Identity Design
     credits: Edited by Andrew Freire, Harris Bauer, Vivian Chang, Photos by Alex Delapena
-    link: 
-    label: ohbook
+    link:
     image_files: 
       - src: oh_cover
         alt: Speaking the Matter book cover
@@ -38,16 +37,22 @@
     year: 2021
     orgs: 
       - The Feeling of Being Watched 
-    description: A multi-media art installation by Assia Boundaoui
-    link: 
+    description: TBD A multi-media art installation by Assia Boundaoui
+    collaborators: Assia Boundaoui, Nouha Boundaoui
+    credits: Collaborating Artists - Yucef Merhi, Shirin Anlen. Katerina Cizek, Wafa Ghnaim, and Dr. Kameelah Mu’Min Rashad.
+    role: Visual Identity, Web Design and Development
+    link: https://www.inversesurveillance.com/
     thumbnail: 
-      src: isp_banner
-      alt: a tiny stamp of a spiral and an ear on a green cover
-    label: isp
+      src: isp_thumbnail
+      alt: a small photo of a rearview mirror, where in the background, a masjid and a black car
     image_files: 
       - src: isp_banner
         alt: Inverse Surveillance Project website
+        ext: .png
       - src: isp_mobile
+        ext: .png
+        alt: Inverse Surveillance Project website
+      - src: isp_placeholder
         ext: .png
         alt: Inverse Surveillance Project website
 
@@ -58,8 +63,9 @@
     description: Los Angeles Contemporary Archive's natural wine fundraiser.
     link: https://worthywineworks.com/
     thumbnail: 
-      src: lacawine_01
-      alt: a tiny stamp of a spiral and an ear on a green cover
+      src: lacawine_thumbnail
+      alt: A layout of three bottles of wine with artwork from artists Alex Heilborn, Cassie and L
+      ext: .png
     label: laca
     image_files: 
       - src: lacawine_01
@@ -75,13 +81,13 @@
     year: 2023
     orgs:
       - L.A. Times 
+    thumbnail: 
+      src: syla_thumbnail
+      alt: an illustration with floating items and letters that spell Shape Your L.A.
+      ext: .png
     description: Shape Your L.A., Repowering the West, Immigrant Dreams, A.I. in L.A., Metro Story, Monterey Park Tribute
     link: 
-    thumbnail: 
-      src: isp_banner
-      alt: thumnbail
     alt: laca wine store
-    label: isp
     image_files: 
       - src: lat_rpw_homepage
         ext: .gif
@@ -93,8 +99,9 @@
       - L.A. Times 
     description: Shape Your L.A., Repowering the West, Immigrant Dreams, A.I. in L.A., Metro Story, Monterey Park Tribute
     thumbnail: 
-      src: isp_banner
+      src: rpw_thumbnail
       alt: thumnbail
+      # ext: .png
     label: isp
     link: 
     image_files: 
@@ -107,8 +114,9 @@
     description: Critical Reading and Study Gathering
     link: http://www.communityreadinggroup.com/
     thumbnail: 
-      src: crg_01
+      src: crg_thumbnail
       alt: crg_websites
+      ext: .png
     label: crg
     image_files: 
       - src: crg_01
@@ -143,7 +151,7 @@
   - title: Movie Nights at Division Place 
     year: 2021
     thumbnail: 
-      src: division_01
+      src: division_thumbnail
       alt: movie nights at division place
     description: Movie series screening independently made films from and adjacent to Southeast Asia
     link: https://exit-lane.com/divisionplace

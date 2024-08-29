@@ -79,7 +79,7 @@ nav a {
 .projects-container {
   display: grid;
   grid-template-columns: 7fr minmax(250px, 3fr);
-  height: 100%;
+  height: calc(100% - var(--nav-height));
   border-left: var(--border-style);
   overflow-y: scroll;
 }
