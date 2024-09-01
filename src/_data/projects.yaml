@@ -52,8 +52,8 @@
       - src: isp_mobile
         ext: .png
         alt: Inverse Surveillance Project website
-      - src: isp_placeholder
-        ext: .png
+      - src: isp_projectoverview
+        type: vid
         alt: Inverse Surveillance Project website
 
   - title: Worthy Wine Works

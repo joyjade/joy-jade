@@ -325,24 +325,6 @@ OLD INFO SLIDE
 	border: 1px solid #80D281;
 }
 
-/* Work SpreadsheetNOT ACRTIVE-------- */
-
-
-.image.spreadsheet {
-  display: flex;
-  overflow-x: scroll;
-}
-
-.spreadsheet::-webkit-scrollbar {
-  display: none;
-}
-
-.image.spreadsheet img {
-  height: 100px;
-  width: auto;
-  padding-right: 0.3rem;
-}
-
 /* Info -------- */
 
 .info {

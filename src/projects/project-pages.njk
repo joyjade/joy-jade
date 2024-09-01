@@ -8,7 +8,8 @@ layout: toc.njk
 
 ---
 
-{# {% set relpath="http://localhost:8080/content/img/"%} #}
+{% import 'video.njk' as vid %}
+
 {% set relpath = "src/content/img/" %}
 
 
@@ -19,8 +20,12 @@ layout: toc.njk
           <h1>DEBUGGING !! {{"hello!!!!!!" | linkungan }}</h1> #}
           {% for img in proj.image_files %}
             <div class="image">      
-                {% set ext = (img.ext if img.ext else ".jpg") %}    
-                {% image relpath+img.src+ext, img.alt %}
+                {% if img.type == "vid" %}
+                  {{ vid.media(img.src, relpath)}}
+                {% else %}
+                  {% set ext = (img.ext if img.ext else ".jpg") %}    
+                  {% image relpath+img.src+ext, img.alt %}
+                {% endif %}
             </div>
           {% endfor %}
       </div>
