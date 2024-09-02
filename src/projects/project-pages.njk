@@ -21,7 +21,7 @@ layout: toc.njk
           {% for img in proj.image_files %}
             <div class="image">      
                 {% if img.type == "vid" %}
-                  {{ vid.media(img.src, relpath)}}
+                  {{ vid.media(img.src, relpath, img.format)}}
                 {% else %}
                   {% set ext = (img.ext if img.ext else ".jpg") %}    
                   {% image relpath+img.src+ext, img.alt %}
@@ -30,7 +30,7 @@ layout: toc.njk
           {% endfor %}
       </div>
       <div class="proj-desc">
-        <h1 class="sxn">{{proj.title}}</h1>
+        <h1 class="sxn"><a href="{{proj.link}}">{{proj.title}}</a></h1>
       
         {% if proj.orgs %}
           <ul class="sxn"> 
@@ -46,16 +46,16 @@ layout: toc.njk
         </div>
         <div class="sxn">
           <h5>Description </h5>
-          <p> {{proj.description}}</p>
+          <p> {{proj.description | safe}}</p>
           {% if proj.collaborators %}
-            <h5>Collaborators</h5><p> {{proj.collaborators}}</p>
+            <h5>Collaborators</h5><p> {{proj.collaborators | safe}}</p>
           {% endif %}
-          <h5>Role </h5><p> {{proj.role}}</p>
+          <h5>Role </h5><p> {{proj.role | safe}}</p>
           {% if proj.orgs %}
-            <h5>Organizations </h5><p> {{proj.orgs}}</p>
+            <h5>Organizations </h5><p> {{proj.orgs | safe}}</p>
           {% endif %}
           {% if proj.credits %}
-            <h5>Other Credits</h5><p> {{proj.credits}}</p>
+            <h5>Other Credits</h5><p> {{proj.credits | safe}}</p>
           {% endif %}
         </div>
       </div>

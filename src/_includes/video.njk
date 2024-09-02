@@ -1,10 +1,10 @@
-{% macro media(src, path) %}
+{% macro media(src, path, format) %}
 
 {# <figure style='--ratio:{{ ratio }};' class='video media {{effects}}'> #}
 {% set path="http://localhost:8080/content/img/" %}  
 {% set autoplay = true  %}
 
-<figure style='' class='video media'>
+<figure style='' class='video media {{format}}'>
     <video preload="none" {% if autoplay %} autoplay {% endif %} muted playsinline loop >
       {# SET THIS LATER, ADD AN IMAGE poster="{{ path }}video/{{ src }}.jpg" #}
 
