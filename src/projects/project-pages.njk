@@ -40,7 +40,7 @@ layout: toc.njk
           </ul>
         {% endif %}
         
-        <div class="sxn">
+        <div class="sxn date">
           <h5>date</h5>
           <date>{{proj.year}}</date>
         </div>
@@ -51,9 +51,9 @@ layout: toc.njk
             <h5>Collaborators</h5><p> {{proj.collaborators | safe}}</p>
           {% endif %}
           <h5>Role </h5><p> {{proj.role | safe}}</p>
-          {% if proj.orgs %}
+          {# {% if proj.orgs %}
             <h5>Organizations </h5><p> {{proj.orgs | safe}}</p>
-          {% endif %}
+          {% endif %} #}
           {% if proj.credits %}
             <h5>Other Credits</h5><p> {{proj.credits | safe}}</p>
           {% endif %}

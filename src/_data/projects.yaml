@@ -12,10 +12,10 @@
     collaborators: Hailey Loman,  Saida Largaespada, Adriana Widdoes
     role: Book and Identity Design
     credits: Edited by Andrew Freire, Harris Bauer, Vivian Chang, Photos by Alex Delapena
-    link:
+    link: https://eastofborneo.org/shop/speaking-the-matter/
     image_files: 
       - src: oh_cover
-        alt: Speaking the Matter book cover
+        alt: TBD Speaking the Matter book cover
       - src: oh_motives
         alt: Speaking the Matter book cover
       - src: oh_worksheets
@@ -88,7 +88,7 @@
       ext: .png
     description: Shape Your L.A. is an online civic engagement tool for residents of Los Angeles County. L.A. County is a behemoth, patchwork government system “overseeing” 10 million folks and 88 cities (not to mention large swathes of unincorporated areas). This app was made to help break down and navigate that system. Enter your address to learn more which power structures handle the issues that matter to you, and how to do things in your neighborhood. <br/> This project was created by a small team of cross-disciplinary journalists, data workers, designers, and developers in late 2023, and continues to be updated and maintained by the L.A. Times’ Data and Graphics Team. In January 2024, we made the app available in Spanish. 
     collaborators: <a href="www.alextatusian.com">Alex Tatusian</a>, Matt Ballinger, Iris Lee, Vanessa Martínez, Hanna Sender
-    link: www.latimes.com/shapeyourla
+    link: https://www.latimes.com/shapeyourla
     image_files: 
       - src: syla_experience
         type: vid
@@ -119,7 +119,7 @@
       alt: thumnbail
       # ext: .png
     label: isp
-    link: 
+    link: https://www.latimes.com/repowering-the-west/
     image_files: 
       - src: lat_rpw_homepage
         ext: .gif
