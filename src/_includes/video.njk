@@ -1,4 +1,4 @@
-{% macro media(src, path, format) %}
+{% macro single(src, path, format) %}
 
 {# <figure style='--ratio:{{ ratio }};' class='video media {{effects}}'> #}
 {% set path="http://localhost:8080/content/img/" %}  
@@ -16,4 +16,21 @@
     {% endif%} #}
   </figure>
 
+{% endmacro %}
+
+
+{% macro triptych(srcs, path) %}
+
+{% set path="http://localhost:8080/content/img/" %}  
+{% set autoplay = true  %}
+
+  <div class="triptych">
+    {% for src in srcs %}
+      <figure class="video">
+        <video preload="none" {% if autoplay %} autoplay {% endif %} muted playsinline loop>
+          <source src="{{ path }}{{ src }}.mp4" type="video/mp4">
+        </video>
+      </figure>
+    {% endfor %}
+  </div>
 {% endmacro %}

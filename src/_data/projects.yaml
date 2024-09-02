@@ -121,9 +121,20 @@
     label: isp
     link: https://www.latimes.com/repowering-the-west/
     image_files: 
-      - src: lat_rpw_homepage
-        ext: .gif
+      - src: rpw_experience
+        type: vid
+        format: mobile
         alt: Speaking the Matter book cover
+      - type: triptych
+        srcs: 
+          - rpw_farmingempire
+          - rpw_solarsprawl
+          - rpw_redgreen
+      - src: rpw_gif
+        type: vid
+        format: frame
+        alt: Speaking the Matter book cover
+
 
   - title: Community Reading Group
     year: 2021     
@@ -174,10 +185,33 @@
       - src: division02
         alt: movie nights at divison place
 
-  - title: and more
+  - title: Protocols
     orgs: 
-    description: Hoda Katebi, Believers Bail Out, Blue Tin Production, Because We've Read, Protocols, an online journal featuring provocative art and writing from across the global Jewish diaspora
+    description: Protocols, an online journal featuring provocative art and writing from across the global Jewish diaspora
     link: https://prtcls.com/
+    thumbnail: 
+      src: prtcls_01
+      alt: protocols website
+    label: protocols
+    image_files: 
+      - src: prtcls_01
+        alt: protocols website
+      - src: prtcls_2
+        alt: protocols website
+      - src: prtcls_3
+        alt: protocols website
+      - src: prtcls_4
+        alt: protocols website
+      - src: prtcls_6
+        alt: protocols website
+
+  - title: Hoda Katebi
+    orgs: 
+      - Believers Bail Out
+      - Blue Tin Production
+      - Because We've Read
+    description: 
+    link: 
     thumbnail: 
       src: prtcls_01
       alt: protocols website
@@ -185,7 +219,7 @@
     image_files: 
       - src: bwr_mobile
         alt: Because We've Read mobile screens
-      - src: prtcls_01
-        alt: protocols website
+
+
 
 

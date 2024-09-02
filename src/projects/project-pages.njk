@@ -21,7 +21,9 @@ layout: toc.njk
           {% for img in proj.image_files %}
             <div class="image">      
                 {% if img.type == "vid" %}
-                  {{ vid.media(img.src, relpath, img.format)}}
+                  {{ vid.single(img.src, relpath, img.format)}}
+                {% elif img.type == "triptych" %}
+                  {{ vid.triptych(img.srcs)}}
                 {% else %}
                   {% set ext = (img.ext if img.ext else ".jpg") %}    
                   {% image relpath+img.src+ext, img.alt %}

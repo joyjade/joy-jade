@@ -349,13 +349,25 @@ figure.mobile video {
   width: 260px;
 }
 
-/* image-slider */
-
-.image {
-	width: 100%;
-/*	display: none;*/	
-	top:0.5rem;
+.image .triptych {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  background-color: black;
+  padding: 1.8rem;
 }
+
+.image .triptych figure {
+  display: flex;
+  justify-content: center;
+}
+
+.image .triptych video {
+  width: 90%
+  /* width: 28%; */
+}
+
+/* image-slider */
 
 .notice {
 	position: absolute;
