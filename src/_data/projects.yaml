@@ -34,13 +34,11 @@
         alt: Speaking the Matter book cover
   
   - title: Inverse Surveillance Project
-    year: 2021
-    orgs: 
-      - The Feeling of Being Watched 
-    description: TBD A multi-media art installation by Assia Boundaoui
+    year: July 2022
+    description: Inverse Surveillance Project is a multi-media art installation designed and produced by the Arab and Muslim American communities in the Chicagoland area. The installation was exhibited in Bridgeview, IL in the summer of 2022. It featured a life-sized labyrinth of archival projections which repurposed thousands of records collected from the decade of FBI surveillance over their community (a topic covered by Assia Boundaoui’s first documentary, <i>The Feeling of Being Watched</i>). During the length of the exhibition, the space was used as a community art studio where free embroidery, healing and organizing workshops were offered.
     collaborators: Assia Boundaoui, Nouha Boundaoui
-    credits: Collaborating Artists - Yucef Merhi, Shirin Anlen. Katerina Cizek, Wafa Ghnaim, and Dr. Kameelah Mu’Min Rashad.
-    role: Visual Identity, Web Design and Development
+    credits: 'Collaborating artists: Yucef Merhi and Shirin Anlen. Consulting partners and subject-matter experts: Dr. Kameelah Mu’Min Rashad & the Muslim Wellness Foundation, Wafa Ghanim & Tatreez and Tea, Jumana Qawasmi & Watan, and Katerina Cizek. This art project was co-created with the Arab and Muslim American communities in Chicago.'
+    role: Visual Identity, Web Design, Web Development, From Scratch
     link: https://www.inversesurveillance.com/
     thumbnail: 
       src: isp_thumbnail
@@ -58,16 +56,18 @@
         format: frame
 
   - title: Worthy Wine Works
-    year: 2021
+    year: Winter 2021
     orgs: 
       - Los Angeles Contemporary Archive
-    description: Los Angeles Contemporary Archive's natural wine fundraiser.
+    description: "LACA’s holiday wine fundraiser! A small batch of twelve natural wines (made in California) is paired with labels made by twelve artists. The first year included art labels by Cauleen Smith, Mario Ayala, Rodrigo Valenzuela, Kang Seung Lee, Marisa Takal, Alex Heilbron, Zoe Latta, Lauren Quin, Lauren Satlowski, Cassi Namoda, Nick Sethi, and Dave Muller."
     link: https://worthywineworks.com/
     thumbnail: 
       src: lacawine_thumbnail
       alt: A layout of three bottles of wine with artwork from artists Alex Heilborn, Cassie and L
       ext: .png
-    label: laca
+    role: Web Design, Web Build
+    collaborators: Hailey Loman, Saida Largaespada
+    credits: Photography by Ian Byers-Gamber. Flyer design by Troy Curtis Kreiner. 
     image_files: 
       - src: lacawine_01
         alt: laca wine store home page
@@ -113,12 +113,13 @@
     year: 2023
     orgs:
       - L.A. Times 
-    description: Shape Your L.A., Repowering the West, Immigrant Dreams, A.I. in L.A., Metro Story, Monterey Park Tribute
-    thumbnail: 
+    description: A series of climate stories across the western U.S. exploring how energy transitions — solar and wind farms, extensive power lines — are reshaping landscapes & rural communities. Brought to you by climate reporter, Sammy Roth.
+    thumbnail:
       src: rpw_thumbnail
-      alt: thumnbail
-      # ext: .png
-    label: isp
+      alt: thumnbailß
+    collaborators: Alex Tatusian, Ashley Cai, Sammy Roth
+    role: Lead Art Director, Web Development
+    credits: Photography by Robert Gauthier and Brian van der Brug. See full credits including editing, video, story design and data graphics <a href="https://www.latimes.com/repowering-the-west/">here</a>.
     link: https://www.latimes.com/repowering-the-west/
     image_files: 
       - src: rpw_experience
@@ -143,8 +144,9 @@
     thumbnail: 
       src: crg_thumbnail
       alt: crg_websites
-      ext: .png
-    label: crg
+      ext: .png 
+    role: Visual Identity, Web Design, Web Development, From Scratch 
+    credits: 
     image_files: 
       - src: crg_01
         alt: crg home
