@@ -136,17 +136,16 @@
         format: frame
         alt: Speaking the Matter book cover
 
-
   - title: Community Reading Group
     year: 2021     
-    description: Critical Reading and Study Gathering
-    link: http://www.communityreadinggroup.com/
+    link: http://www.communityreadinggroup.com/    
+    description: A reading and study group that gathers every Sunday evening. Focusing on critical theory and other texts with philosophical, legal and aesthetic concerns, CRG has discussed texts that range from mid-century, European investigations of the origins of Facism to works-in-progress about climate change as well as popular science fiction. Started by artists, activists, and scholars who were curious about the assumptions underlying the appeals to "community" so prevalent in organizing spaces, the group continues to foster space for anyone who wants to challenge their inherited ideas about common being and loves the exercise of close reading. In 2021, the first issue of Counter was released, featuring essays by reading group members on labor organizing and work.
     thumbnail: 
       src: crg_thumbnail
       alt: crg_websites
       ext: .png 
     role: Visual Identity, Web Design, Web Development, From Scratch 
-    credits: 
+    collaborators: Andrew McNeely, Olivia Leiter, Michael Berlin
     image_files: 
       - src: crg_01
         alt: crg home
@@ -164,7 +163,7 @@
     thumbnail:
       src: division_thumbnail
       alt: Stories about immigrants in the U.S. alongside a 2023 nation-wide poll from Kaiser Permanente 
-    description: Something else tbd
+    description: A series of stories about immigrants in the U.S. alongside a 2023 nation-wide poll from Kaiser Permanente 
     link: https://www.latimes.com/immigrant-dreams
     image_files: 
       - src: division01
@@ -175,8 +174,9 @@
     thumbnail: 
       src: division_thumbnail
       alt: movie nights at division place
-    description: Movie series screening independently made films from and adjacent to Southeast Asia
+    description: Movie nights series featuring independent films from and adjacent to Southeast Asia
     link: https://exit-lane.com/divisionplace
+    role: Design, Development
     image_files: 
       - src: division03
         alt: movie nights at divison place
