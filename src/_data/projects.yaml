@@ -89,6 +89,8 @@
     description: Shape Your L.A. is an online civic engagement tool for residents of Los Angeles County. L.A. County is a behemoth, patchwork government system “overseeing” 10 million folks and 88 cities (not to mention large swathes of unincorporated areas). This app was made to help break down and navigate that system. Enter your address to learn more which power structures handle the issues that matter to you, and how to do things in your neighborhood. <br/> This project was created by a small team of cross-disciplinary journalists, data workers, designers, and developers in late 2023, and continues to be updated and maintained by the L.A. Times’ Data and Graphics Team. In January 2024, we made the app available in Spanish. 
     collaborators: <a href="www.alextatusian.com">Alex Tatusian</a>, Matt Ballinger, Iris Lee, Vanessa Martínez, Hanna Sender
     link: https://www.latimes.com/shapeyourla
+    role: Product Design, Art Direction, Front-end Development
+    credits: See the project's full credits <a href="https://www.latimes.com/shapeyourla">here<a>.
     image_files: 
       - src: syla_experience
         type: vid
@@ -157,13 +159,16 @@
         alt: crg home
 
   - title: Immigrant Dreams
-    year: 2021
+    year: 2023
     orgs: 
       - L.A. Times
     thumbnail:
-      src: division_thumbnail
-      alt: Stories about immigrants in the U.S. alongside a 2023 nation-wide poll from Kaiser Permanente 
-    description: A series of stories about immigrants in the U.S. alongside a 2023 nation-wide poll from Kaiser Permanente 
+      src: ill_thumbnail
+      ext: .png
+      alt:  blue background with an arc of stars and a question mark
+    description: "A series of stories about immigrants in the U.S. informed by and paired with findings from a landmark KFF poll. (Immigrants make up 1 out of 6 adult Americans.) This project had newsroom-wide coverage and included more than 18 stories from long-form articles, opinion pieces, how-to guides, interactive quizzes, comics, etc. <br/><br/> I art directed the series package, collaborating with and managing data reporters, developers, photographers, animators and the social team. (Tea: My one win and my own failure was this project’s name. I really wanted it to be called Immigrant Lives. I really didn't want it to be called American Dreams. You take what you can get.)"
+    role: Lead Art Director, Graphic Design, Product Design, Project Management
+    collaborators: David Lauter, Alex Tatusian, Hanna Sender, Abhinanda Bhattacharyya, Jess Hutchinson 
     link: https://www.latimes.com/immigrant-dreams
     image_files: 
       - src: division01
@@ -174,9 +179,9 @@
     thumbnail: 
       src: division_thumbnail
       alt: movie nights at division place
-    description: Movie nights series featuring independent films from and adjacent to Southeast Asia
+    description: A "hand-made" microsite for a movie series of independent films from and adjacent to Southeast Asia.
     link: https://exit-lane.com/divisionplace
-    role: Design, Development
+    role: Visual Identity, Design, Development
     image_files: 
       - src: division03
         alt: movie nights at divison place
@@ -189,12 +194,12 @@
 
   - title: Protocols
     orgs: 
-    description: Protocols, an online journal featuring provocative art and writing from across the global Jewish diaspora
+    description: Protocols is an online journal featuring provocative art and writing from across the global Jewish diaspora with specific attention to leftist and progressive politics.
     link: https://prtcls.com/
     thumbnail: 
-      src: prtcls_01
+      src: prtcls_thumbnail
       alt: protocols website
-    label: protocols
+    role: Feature Development, Design 
     image_files: 
       - src: prtcls_01
         alt: protocols website
@@ -207,20 +212,20 @@
       - src: prtcls_6
         alt: protocols website
 
-  - title: Hoda Katebi
-    orgs: 
-      - Believers Bail Out
-      - Blue Tin Production
-      - Because We've Read
-    description: 
-    link: 
-    thumbnail: 
-      src: prtcls_01
-      alt: protocols website
-    label: protocols
-    image_files: 
-      - src: bwr_mobile
-        alt: Because We've Read mobile screens
+  # - title: Hoda Katebi
+  #   orgs: 
+  #     - Believers Bail Out
+  #     - Blue Tin Production
+  #     - Because We've Read
+  #   description: 
+  #   link: 
+  #   thumbnail: 
+  #     src: prtcls_01
+  #     alt: protocols website
+  #   label: protocols
+  #   image_files: 
+  #     - src: bwr_mobile
+  #       alt: Because We've Read mobile screens
 
 
 
