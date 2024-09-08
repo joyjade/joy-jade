@@ -57,6 +57,7 @@ nav {
   /* grid-column: 1/4; */
   /* padding: 0.5em 0.1rem; */
   position: fixed;
+  top: 0;
   height: var(--nav-height);
   border-bottom: var(--border-style);
   background-color: var(--dark-color);
@@ -64,39 +65,52 @@ nav {
 
 .contents {
   /* grid-column: 2 / 4; */
-  position: fixed;
-  margin-top: var(--nav-height);
-  float: left; 
-  margin-left: var(--toc-width);
   height: 100%;
-  overflow-x: hidden;
-  /* position: fixed; */
-}
-
-.projects-container {
-  display: grid;
-  grid-template-columns: 7fr minmax(250px, 3fr);
-  height: calc(100% - var(--nav-height));
-  border-left: var(--border-style);
-  overflow-y: scroll;
 }
 
 .table-of {
-  float: left;
-  margin-top: var(--nav-height);
-  width: var(--toc-width);
   height: auto;
+  margin-top: var(--nav-height);
   /* grid-column: 1/2;
   grid-row: 2/3; */
-	z-index: 1;
-  overflow-y: scroll;
+  z-index: 1;
 }
 
-.table-of::-webkit-scrollbar,
-.contents::-webkit-scrollbar, 
-.projects-container::-webkit-scrollbar {
- display: none;
+.projects-container {
+  height: calc(100% - var(--nav-height));
 }
+
+@media screen and (min-width:57.4375em) {
+  .contents {
+    position: fixed;
+    margin-top: var(--nav-height);
+    float: left; 
+    margin-left: var(--toc-width);
+    overflow-x: hidden;
+    /* position: fixed; */
+  }
+
+  .projects-container {
+    display: grid;
+    grid-template-columns: 7fr minmax(250px, 3fr);
+    border-left: var(--border-style);
+    overflow-y: scroll;
+  }  
+
+  .table-of {
+    float: left;
+    width: var(--toc-width);
+    overflow-y: scroll;
+  }
+  
+  
+  .table-of::-webkit-scrollbar,
+  .contents::-webkit-scrollbar, 
+  .projects-container::-webkit-scrollbar {
+   display: none;
+  }
+}
+
 
 
 /* STYLES-------------------------------------- */
@@ -447,6 +461,38 @@ p.tight {
     --body-f: 12px;
     --toc-pdg: 0.4rem;
   }
+
+  /* horizontal mobile toc */
+  .table-of {
+    width: 100%;
+    overflow-x: scroll;
+    
+    /* float: unset; */
+  }
+
+  .contents {
+    margin: 0;
+    float: unset;
+  }
+
+  .table-of ul {
+    display: flex;
+    flex-flow: row;
+  }
+
+  .table-of ul li {
+    min-width: 100px;
+  }
+
+  .table-of ul li:not(:last-of-type) {
+    border-right: var(--border-style);
+  }
+
+  /* .projects-container {
+    border-left: none;
+  } */
+  /* end :horizontal */
+
 
   nav li {
     padding: 0.75rem var(--toc-pdg); 
