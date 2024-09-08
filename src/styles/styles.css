@@ -1,6 +1,6 @@
 /* TYPEFACES-------------------------------------- */
 @font-face {
-	font-family: 'poly';
+	font-family: 'poly';––
 	src: url('/styles/fonts/poly.ttf');
 }
 
@@ -16,12 +16,14 @@
   --main-color: black; 
   --hue: black; /* #E8E8E8;*/
   --thumbnail-bg: #F3ECEC;
+  --thumbnail-height: 80px; 
   --border-style: 1.5px solid var(--hue);
   
   --body-f: 15px;
   --font: 'fluxis';
   --nav-height: 40px;
   --toc-width: 250px;
+  --toc-pdg: 0.75rem;
 }
 
 * {
@@ -136,6 +138,9 @@ picture img {
   object-fit: contain;
 }
 
+.table-of a, nav a {
+  color: var(--main-color);
+}
 
 /* NAV ------------*/
 
@@ -216,13 +221,13 @@ OLD INFO SLIDE
   color: var(--main-color);
   font-family: var(--font);
 	font-size: var(--body-f);
-  font-weight: 100;r
+  font-weight: 100;
 }
 
 .table-of a {
   text-decoration: none;
   display: block;
-  padding-bottom: 0.75rem;
+  padding-bottom: var(--toc-pdg);
 }
 
 .table-of a:hover, .table-of a[aria-current] {
@@ -231,7 +236,7 @@ OLD INFO SLIDE
 }
 
 .table-of li {
-  padding: 0.75rem;
+  padding: var(--toc-pdg);
   border-bottom: var(--border-style);
 }
 
@@ -239,7 +244,7 @@ OLD INFO SLIDE
   display: inline-block;
   padding: 3px;
   background-color: var(--thumbnail-bg);
-  height: 80px;
+  height: var(--thumbnail-height);
 }
 
 .table-of picture img {
@@ -437,29 +442,56 @@ p.tight {
 
 @media screen and (max-width:57.4375em) {
   body {
-    grid-template-columns: 1fr;
+    --toc-width: 23%;
+    --thumbnail-height: 40px;
+    --body-f: 12px;
+    --toc-pdg: 0.4rem;
   }
 
-  nav {
-    grid-column: 1;
+  nav li {
+    padding: 0.75rem var(--toc-pdg); 
   }
-  .contents {
-    grid-column: 1;
-    overflow-y: scroll;
-  }
-
-  .table-of, .hide-for-small {
-    display: none;
+  
+  .table-of li .thumbnail {
+    padding: 1px;
   }
 
-	.project-photos {
-		width: 100%;
-	}
+  .projects-container {
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto;
+  }
 
-	.project-photos:not(:last-of-type) {
-	    margin: 0.5rem 0 0.3rem;
-	}
+  .proj-imgs {
+    grid-row: 1/2;
+  }
 
+  .proj-desc {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    position: relative;
+    top: unset;
+    padding-left: 0;
+  }
+
+  .proj-imgs .image:not(:last-of-type) {
+    margin-bottom: -5px;
+  }
+
+  .proj-imgs .image:last-of-type{
+    margin-bottom: 3px;
+  }
+  
+  .proj-desc h1 {
+    font-size: 1.2rem;
+  }
+
+  .proj-desc .sxn {
+    padding: 0.35rem;
+  }
+
+  .proj-desc .sxn:last-child {
+    border-bottom: none;
+  }
 }
 
 @media screen and (min-width:57.4375em) {
