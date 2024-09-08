@@ -135,10 +135,6 @@ nav {
 	padding-right: 2.5rem;
 }
 
-.small-text {
-  font-size: 0.9rem;
-}
-
 *::selection {
   background: var(--hue);
   color: white;
@@ -152,9 +148,19 @@ picture img {
   object-fit: contain;
 }
 
+
+/* links style */
+
 .table-of a, nav a {
   color: var(--main-color);
+  text-decoration: none;
 }
+
+.table-of a:hover, .table-of a[aria-current], nav a:hover {
+  color: var(--main-color);
+  text-decoration: line-through;
+}
+
 
 /* NAV ------------*/
 
@@ -172,24 +178,13 @@ nav li {
 
 nav a {
   font-family: var(--font);
-	/* color: var(--main-color); */
 	font-size: 14px;
 	position: relative;
-	text-decoration: none;
 }
 
 
 nav a:hover {
 	/* color: var(--main-color); */
-}
-
-nav a:hover::after {
-  border-bottom: var(--border-style);
-  content: "";
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 55%;
 }
 
 /* 
@@ -238,15 +233,9 @@ OLD INFO SLIDE
   font-weight: 100;
 }
 
-.table-of a {
-  text-decoration: none;
+.table-of .link-title {
   display: block;
   padding-bottom: var(--toc-pdg);
-}
-
-.table-of a:hover, .table-of a[aria-current] {
-  text-decoration: line-through;
-  color: var(--main-color);
 }
 
 .table-of li {
