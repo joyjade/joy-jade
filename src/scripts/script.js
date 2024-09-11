@@ -1,49 +1,3 @@
-const portfolio = {
-  "ohbook": [
-		{"image":"ohbook_cover", "alt":"Speaking the Matter book cover"},
-		{"image":"ohbook_workbooks", "alt":"Speaking the Matter book cover"},
-		{"image":"ohbook_preparation", "alt":"Speaking the Matter book cover"},
-		{"image":"ohbook_motives", "alt":"Speaking the Matter book cover"},
-		{"image":"ohbook_intro", "alt":"Speaking the Matter book cover"},
-		{"image":"ohbook_framesofmind", "alt":"Speaking the Matter book cover"},
-		{"image":"ohbook_forms", "alt":"Speaking the Matter book cover"},
-		{"image":"ohbook_endnotes", "alt":"Speaking the Matter book cover"},
-		{"image":"ohbook_consider", "alt":"Speaking the Matter book cover"},
-		{"image":"ohbook_backcover", "alt":"Speaking the Matter book cover"},
-	],
-	"laca": [
-		{"image":"lacawine_01", "alt":"laca wine store home page"},
-		{"image":"lacawine_03", "alt":"laca wine store mobile designs"},
-		{"image":"lacawine_04", "alt":"laca wine store"},
-		{"image":"lacawine_06", "alt":"laca wine store"},
-	],
-	"division": [
-		{"image":"division_01", "alt":"movie nights at divison place"},
-		{"image":"divison_02", "alt":"movie nights at divison place"},
-		{"image":"division_03", "alt":"movie nights at divison place"},
-		{"image":"divison_04", "alt":"movie nights at divison place"},
-	],
-	"protocols": [
-		{"image":"prtcls_01", "alt":"protocols issue ten"},
-		{"image":"prtcls_2", "alt":"protocols journal"},
-		{"image":"prtcls_3", "alt":"protocols journal"},
-		{"image":"prtcls_4", "alt":"protocols journal"},
-		{"image":"prtcls_6", "alt":"protocols journal"},
-	],
-	"crg": [
-		{"image":"crg_01", "alt":"crg home"},
-		{"image":"crg_02", "alt":"crg home"},
-		{"image":"crg_03", "alt":"crg home"},
-		{"image":"crg_04", "alt":"crg home"},
-	],
-	"bwr": [
-		{"image":"bwr_mobile", "alt":"archives"},
-		{"image":"bwr_home", "alt":"archives"},
-		{"image":"bwr_guide", "alt":"archives"},
-		{"image":"bwr_bookdetails", "alt":"archives"}
-	]
-}
-
 // CLASSES
 class Slideshow {
 	constructor(slides) {
@@ -69,29 +23,46 @@ class Slideshow {
 }
 
 
-//MAIN
-
-document.addEventListener("DOMContentLoaded", function() {
-	let contents = document.querySelector(".contents");
-	let projectNames = document.querySelectorAll('.project-name');
-	watch(projectNames);
 
 
-	clickNameScrollProject(projectNames);
-	imageSlideAndScroll(projectNames);
 
-	let open = document.querySelector('.open');
-	open.onclick = function (e) {
-    console.log('clickedbitch')
-		e.preventDefault;
-		let info = document.querySelector('.off-canvas');
-	    info.classList.toggle('slide');
-	    info.classList.toggle('hide-for-small');
-	    open.classList.toggle('move-right');
-	    open.querySelector('img').classList.toggle('rotate');
-	}
+//Remember scroll position
+
+// add if visibility changes
+let isMobile = window.matchMedia("(max-width:57.4375em)").matches;
+console.log('mobile el', isMobile);
+
+let page = document.querySelector("html");
+let pos = localStorage.getItem("pagepos");
+let mobilepos = localStorage.getItem("mobilepos");
+
+document.addEventListener("DOMContentLoaded", function() {  
+  if (isMobile) {
+    localStorage.setItem("pagepos", 0); //clear localStorage for desktop
+  
+    let toc = document.querySelector('.table-of');
+    
+    if(mobilepos !== null) {
+      toc.scrollTo(mobilepos, 0)
+    } 
+
+    window.addEventListener("beforeunload", () => {
+      localStorage.setItem("mobilepos", toc.scrollLeft);
+    });
+
+  } else {
+  
+    if (pos !== null) {
+      page.scrollTo(0, pos);
+      page.scrollTop = parseInt(pos, 10);
+    }
+    
+    window.addEventListener("beforeunload", () => {
+      localStorage.setItem("pagepos", page.scrollTop);
+    });
+
+  }
 })
-
 
 // SITE FXNS
 
