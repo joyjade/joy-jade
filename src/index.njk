@@ -1,21 +1,32 @@
 ---
 layout: toc.njk
 title: ~° joy jade 
-info: JJ is a graphic designer and web developer, working on  She makes (1) websites, (2) graphics, and sometimes (3) a book. 
 image_inset_first: 
   - src: crg_04_plain
     alt: movie nights at divison place
     caption: A website for Community Reading Group
   - src: isp_graphic
-    alt: something else
+    alt: Black and white 
     caption: Graphic for the art installation, Inverse Surveillance Project
   - src: ohbook_floatspread
     alt: An open spread of an oral history workbook
     ext: .png
     caption: An open spread of Speaking the Matter, an oral history workbook
+image_inset_second: 
+  - src: isp_graphic
+    alt: Black and white 
+    caption: Graphic for the art installation, Inverse Surveillance Project
+  - src: crg_04_plain
+    alt: movie nights at divison place
+    caption: A website for Community Reading Group
+  - src: mentalhealth_bubbles
+    alt: bubbles
+    ext: .png
+    caption: An illustration for Mental Health in Mandarin Chinese 
 
 ---
 {% import 'video.njk' as vid %}
+{% import 'image.njk' as imgs %}
 
 {% set relpath = "src/content/img/" %}
 
@@ -23,7 +34,7 @@ image_inset_first:
 <section class="contents">
   <div class="projects-container" id="show-top">
     <div class="info">
-      <p>{{info}}</p>
+      <p>JJ is a graphic designer and web developer—making websites <span class="number">(1)</span>, graphics <span class="number">(2)</span>, and books <span class="number">(3)</span> for projects about art, reading, and organizing.</p>
       <div class="image-inset">
         {% for img in image_inset_first %}
           {% set ext = (img.ext if img.ext else ".jpg") %}    
@@ -45,8 +56,30 @@ image_inset_first:
         
       </div>
       <p>
-        Most recently, JJ worked at the L.A. Times as an art director on special digital builds, a role that was always at the intersection of design and code, often collaborating with the Data and Graphics team, and journalists across the paper. 
+        Most recently: art directed at the L.A. Times for special digital builds with director, <a href="www.alextatusian.com">Alex Tatusian</a>. Collaborated with the Data and Graphics team, a multi-disciplinary team of journalist-coders. What was made? A story about commuters on the Metro system <span class="number">(4)</span>, a memorial for the victims of the Monterey Park shooting <span class="number">(5)</span>, and a <a href="https://www.latimes.com/projects/mental-health-mandarin-chinese-how-to/" target="blank">starter kit for mental health language in Mandarin Chinese</a> <span class="number">(6)</span>—to name a few. Major projects can be seen in the table of contents. 
       </span>
+      <p>
+      <div class="image-inset">
+        {% for img in image_inset_second %}
+          {% set ext = (img.ext if img.ext else ".jpg") %}    
+          <div class="image-container">
+            <span class="no">{{loop.index}})</span>
+             {% if img.type == "vid" %}
+                  {{ vid.single(img.src, relpath, img.format)}}
+              {% else %}
+                {% set ext = (img.ext if img.ext else ".jpg") %}    
+                {% image relpath+img.src+ext, img.alt %}
+              {% endif %}
+          </div>
+        {% endfor %}
+        <div class="caption-container">
+          {% for img in image_inset_second %}
+            <span>({{loop.index}}) {{img.caption}}</span>
+          {% endfor %}
+        </div>
+        
+      </div>
+
     </div>
   </div>
 

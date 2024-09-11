@@ -1,0 +1,23 @@
+{% macro triptych(data, path, index) %}
+
+<div class="image-inset">
+  {% for img in data %}
+    {% set ext = (img.ext if img.ext else ".jpg") %}    
+    <div class="image-container">
+      <span class="no">{{loop.index}})</span>
+        {% if img.type == "vid" %}
+            {{ vid.single(img.src, relpath, img.format)}}
+        {% else %}
+          {% set ext = (img.ext if img.ext else ".jpg") %}    
+          {% image relpath+img.src+ext, img.alt %}
+        {% endif %}
+    </div>
+  {% endfor %}
+  <div class="caption-container">
+    {% for img in data %}
+      <span>({{loop.index}}) {{img.caption}}</span>
+    {% endfor %}
+  </div>  
+</div>
+
+{% endmacro %}
