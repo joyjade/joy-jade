@@ -13,16 +13,22 @@ image_inset_first:
     ext: .png
     caption: An open spread of Speaking the Matter, an oral history workbook
 image_inset_second: 
-  - src: isp_graphic
-    alt: Black and white 
-    caption: Graphic for the art installation, Inverse Surveillance Project
-  - src: crg_04_plain
+  - src: metro_spotlight
+    alt: Black and white
+    type: vid 
+    caption: Metro alskdfj
+  - src: montereypark_vid
+    type: vid
     alt: movie nights at divison place
-    caption: A website for Community Reading Group
-  - src: mentalhealth_bubbles
+    caption: Digital tribute to the lives lost at Star Ballroom Monterey Park 
+  - src: mh_guilt
     alt: bubbles
-    ext: .png
-    caption: An illustration for Mental Health in Mandarin Chinese 
+    type: vid
+    caption: Mental het 
+  - src: metro_spotlight
+    alt: Black and white
+    type: vid 
+    caption: Metro alskdfj
 
 ---
 {% import 'video.njk' as vid %}
@@ -35,7 +41,7 @@ image_inset_second:
   <div class="projects-container" id="show-top">
     <div class="info">
       <p>JJ is a graphic designer and web developer—making websites <span class="number">(1)</span>, graphics <span class="number">(2)</span>, and books <span class="number">(3)</span> for projects about art, reading, and organizing.</p>
-      <div class="image-inset">
+      <div class="image-inset all-imgs">
         {% for img in image_inset_first %}
           {% set ext = (img.ext if img.ext else ".jpg") %}    
           <div class="image-container">
@@ -56,10 +62,10 @@ image_inset_second:
         
       </div>
       <p>
-        Most recently: art directed at the L.A. Times for special digital builds with director, <a href="www.alextatusian.com">Alex Tatusian</a>. Collaborated with the Data and Graphics team, a multi-disciplinary team of journalist-coders. What was made? A story about commuters on the Metro system <span class="number">(4)</span>, a memorial for the victims of the Monterey Park shooting <span class="number">(5)</span>, and a <a href="https://www.latimes.com/projects/mental-health-mandarin-chinese-how-to/" target="blank">starter kit for mental health language in Mandarin Chinese</a> <span class="number">(6)</span>—to name a few. Major projects can be seen in the table of contents. 
+        Most recently art directed at the L.A. Times for special digital builds with director, <a href="www.alextatusian.com">Alex Tatusian</a>. Collaborated with the Data and Graphics team, a multi-disciplinary team of journalist-coders. What was made? A story about commuters on the Metro system <span class="number">(4)</span>, a memorial for the victims of the Monterey Park shooting <span class="number">(5)</span>, and a <a href="https://www.latimes.com/projects/mental-health-mandarin-chinese-how-to/" target="blank">starter kit for mental health language in Mandarin Chinese</a> <span class="number">(6)</span>—to name a few. Major projects can be seen in the table of contents. 
       </span>
       <p>
-      <div class="image-inset">
+      <div class="image-inset all-vids">
         {% for img in image_inset_second %}
           {% set ext = (img.ext if img.ext else ".jpg") %}    
           <div class="image-container">
