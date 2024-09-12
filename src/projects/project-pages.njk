@@ -1,0 +1,63 @@
+---
+pagination:
+  data: projects
+  size: 1
+  alias: proj
+permalink: "projects/{{ proj.title | slugify }}/"
+layout: toc.njk
+title: ~° joy jade 
+---
+
+{% import 'video.njk' as vid %}
+
+{% set relpath = "src/content/img/" %}
+
+
+<section class="contents">
+    <div class="projects-container">
+      <div class="proj-imgs">
+          {# <h2>{{ page.url }}</h2> <h1>DEBUGGING !! {{"hello!!!!!!" | linkungan }}</h1> #}
+          {% for img in proj.image_files %}
+            <div class="image">      
+                {% if img.type == "vid" %}
+                  {{ vid.single(img.src, relpath, img.format)}}
+                {% elif img.type == "triptych" %}
+                  {{ vid.triptych(img.srcs)}}
+                {% else %}
+                  {% set ext = (img.ext if img.ext else ".jpg") %}    
+                  {% image relpath+img.src+ext, img.alt %}
+                {% endif %}
+            </div>
+          {% endfor %}
+      </div>
+      <div class="proj-desc">
+        <h1 class="sxn"><a href="{{proj.link}}">{{proj.title}}</a></h1>
+      
+        {% if proj.orgs %}
+          <ul class="sxn"> 
+            {% for org in proj.orgs %}
+              <li> {{org}} </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+        
+        <div class="sxn date">
+          <date>{{proj.year}}</date>
+        </div>
+        <div class="sxn">
+          <h5>Description </h5>
+          <p> {{proj.description | safe}}</p>
+          {% if proj.collaborators %}
+            <h5>Collaborators</h5><p> {{proj.collaborators | safe}}</p>
+          {% endif %}
+          <h5>Role </h5><p> {{proj.role | safe}}</p>
+          {# {% if proj.orgs %}
+            <h5>Organizations </h5><p> {{proj.orgs | safe}}</p>
+          {% endif %} #}
+          {% if proj.credits %}
+            <h5>Other Credits</h5><p> {{proj.credits | safe}}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+</section>

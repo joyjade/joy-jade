@@ -1,0 +1,45 @@
+---
+layout: layout.njk
+---
+{% set relpath = "src/content/img/" %}
+
+<body>
+  {% include "nav.njk" %}
+
+  <!-- Table of Contents -->
+  <section class="table-of display">
+    <ul>
+    {% if page.url == "/" %}
+      <!-- WARNING: EDITS HERE MUST BE MADE FOR HOME PAGE AND PROJECT PAGES -->
+      {% for proj in projects %}
+        <li class="project">
+          <a href="/projects/{{ proj.title | slugify }}">
+            <span class="link-title">{{ proj.title }}</span>
+            <div class="thumbnail">
+              {% set ext = (proj.thumbnail.ext if proj.thumbnail.ext else ".jpg") %}    
+              {% image relpath+proj.thumbnail.src+ext, proj.thumbnail.alt %}
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+
+    {% else %}
+      {% for hoja in pagination.pages %}
+        <li class="project">
+          <a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>
+            <span class="link-title">{{hoja.title}}</span>
+            <div class="thumbnail">
+              {% set ext = (hoja.thumbnail.ext if hoja.thumbnail.ext else ".jpg") %}    
+              {% image relpath+hoja.thumbnail.src+ext, hoja.thumbnail.alt %}
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+    {% endif %}
+    </ul>
+  </section>
+
+  {{ content | safe }}
+
+
+</body>

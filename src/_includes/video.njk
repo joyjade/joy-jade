@@ -1,0 +1,36 @@
+{% macro single(src, path, format) %}
+
+{# <figure style='--ratio:{{ ratio }};' class='video media {{effects}}'> #}
+{% set path="/content/img/" %}  
+{% set autoplay = true  %}
+
+<figure style='' class='video media {{format}}'>
+    <video preload="none" {% if autoplay %} autoplay {% endif %} muted playsinline loop >
+      {# SET THIS LATER, ADD AN IMAGE poster="{{ path }}video/{{ src }}.jpg" #}
+
+      {# <source src="{{ path }}video/{{ src }}.webm" type="video/webm"> #}
+      <source src="{{ path }}{{ src }}.mp4" type="video/mp4">
+    </video>
+    {# {% if caption %}
+      <figcaption><a href="{{ link }}" target='_blank'>{{ caption }}</a></figcaption>
+    {% endif%} #}
+  </figure>
+
+{% endmacro %}
+
+
+{% macro triptych(srcs, path) %}
+
+{% set path="/content/img/" %}  
+{% set autoplay = true  %}
+
+  <div class="triptych">
+    {% for src in srcs %}
+      <figure class="video">
+        <video preload="none" {% if autoplay %} autoplay {% endif %} muted playsinline loop>
+          <source src="{{ path }}{{ src }}.mp4" type="video/mp4">
+        </video>
+      </figure>
+    {% endfor %}
+  </div>
+{% endmacro %}
