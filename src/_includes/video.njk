@@ -1,7 +1,7 @@
 {% macro single(src, path, format) %}
 
 {# <figure style='--ratio:{{ ratio }};' class='video media {{effects}}'> #}
-{% set path="http://localhost:8080/content/img/" %}  
+{% set path="/content/img/" %}  
 {% set autoplay = true  %}
 
 <figure style='' class='video media {{format}}'>
@@ -21,7 +21,7 @@
 
 {% macro triptych(srcs, path) %}
 
-{% set path="http://localhost:8080/content/img/" %}  
+{% set path="/content/img/" %}  
 {% set autoplay = true  %}
 
   <div class="triptych">
