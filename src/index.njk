@@ -14,21 +14,21 @@ image_inset_first:
     caption: An open spread of Speaking the Matter, an oral history workbook
 image_inset_second: 
   - src: metro_spotlight
-    alt: Black and white
+    alt: Screen recording scrolling on a pale yellow background and sticky bright yellow headers
     type: vid 
-    caption: Metro alskdfj
+    caption: Who rides the Subway in Los Angeles? An interactive story reported by a cohort of L.A. Times fellows.
   - src: montereypark_vid
     type: vid
-    alt: movie nights at divison place
-    caption: Digital tribute to the lives lost at Star Ballroom Monterey Park 
+    alt: Screen recording of a story in Mandarin on a dark maroon background
+    caption: A tribute to Star Ballroom in Monterey Park and memorial to the lives lost.
   - src: mh_guilt
-    alt: bubbles
+    alt: Screen recording of an interactive audio clip reading the word for Eating Bitterness in Mandarin
     type: vid
-    caption: Mental het 
-  - src: metro_spotlight
-    alt: Black and white
+    caption: A starter kit for mental health dialogue in Mandarin with interactive audio clips for pronunciation
+  - src: aila_clip
+    alt: Screen recording of a funky story with AI generated images animating 
     type: vid 
-    caption: Metro alskdfj
+    caption: How A.I. Sees L.A. by Carolina A. Miranda, Alex Tatusian and Ashley Cai. 
 
 ---
 {% import 'video.njk' as vid %}
@@ -40,7 +40,7 @@ image_inset_second:
 <section class="contents">
   <div class="projects-container" id="show-top">
     <div class="info">
-      <p>JJ is a graphic designer and web developer—making websites <span class="number">(1)</span>, graphics <span class="number">(2)</span>, and books <span class="number">(3)</span> for projects about art, reading, and organizing.</p>
+      <p>JJ is a graphic designer and web developer—making websites <span class="number">(1)</span>, graphics <span class="number">(2)</span>, and books <span class="number">(3)</span> for projects about art, reading, and organizing.</p> 
       <div class="image-inset all-imgs">
         {% for img in image_inset_first %}
           {% set ext = (img.ext if img.ext else ".jpg") %}    
@@ -62,14 +62,15 @@ image_inset_second:
         
       </div>
       <p>
-        Most recently art directed at the L.A. Times for special digital builds with director, <a href="www.alextatusian.com">Alex Tatusian</a>. Collaborated with the Data and Graphics team, a multi-disciplinary team of journalist-coders. What was made? A story about commuters on the Metro system <span class="number">(4)</span>, a memorial for the victims of the Monterey Park shooting <span class="number">(5)</span>, and a <a href="https://www.latimes.com/projects/mental-health-mandarin-chinese-how-to/" target="blank">starter kit for mental health language in Mandarin Chinese</a> <span class="number">(6)</span>—to name a few. Major projects can be seen in the table of contents. 
+        Most recently art directed at the L.A. Times for special digital builds with director, <a href="www.alextatusian.com">Alex Tatusian</a>. Collaborated with the Data and Graphics team, a multi-disciplinary team of journalist-coders. What was made? A feature about <a href="https://www.latimes.com/projects/riding-metro-b-line-subway-los-angeles/" target="_blank">commuters on the Metro</a> <span class="number">(4)</span>, a <a href="https://www.latimes.com/projects/monterey-park-shooting-victims-tribute/" target="_blank">digital memorial</a> for the victims of the Monterey Park shooting <span class="number">(5)</span>, a <a href="https://www.latimes.com/projects/mental-health-mandarin-chinese-how-to/" target="blank">starter kit for mental health</a> in Mandarin Chinese <span class="number">(6)</span>, and a <a href="https://www.latimes.com/projects/los-angeles-poetry-midjourney-artifical-intelligence-literature/" target="_blank">wild visual poem</a> with A.I. images and Los Angeles literature <span class="number">(7)</span>—to name a few. Major project have "full spreads" accessed via the table of contents. 
       </span>
       <p>
       <div class="image-inset all-vids">
         {% for img in image_inset_second %}
+          {% set id = loop.index + 3 %}    
           {% set ext = (img.ext if img.ext else ".jpg") %}    
           <div class="image-container">
-            <span class="no">{{loop.index}})</span>
+            <span class="no">{{id}})</span>
              {% if img.type == "vid" %}
                   {{ vid.single(img.src, relpath, img.format)}}
               {% else %}
@@ -80,11 +81,15 @@ image_inset_second:
         {% endfor %}
         <div class="caption-container">
           {% for img in image_inset_second %}
-            <span>({{loop.index}}) {{img.caption}}</span>
+            {% set id = loop.index + 3 %}    
+            <span>({{id}}) {{img.caption}}</span>
           {% endfor %}
         </div>
         
       </div>
+      <p>Nothing gets going on its own. Years ago, many projects were made for friend of a friend, <a href="https://hodakatebi.com/">Hoda Katebi</a>, a writer and organizer based in Chicago, including Blue Tin Production, a worker-owned apparel studio; Believers Bail Out, a Muslim bail-fund organization; and Because We’ve Read, an international book club focused on radical texts.</p>
+      <p>Nowadays at a new project with long-time friends and collaborators, <a href="https://lacarchive.com" target="_blank">Los Angeles Contemporary Archive</a>, an art archive for contemporary art.</p>
+      {# <p>There are a lot of things graphic design cannot do. There are a lot of things tech can’t solve.</p> #}
 
     </div>
   </div>
