@@ -15,23 +15,23 @@
     link: https://eastofborneo.org/shop/speaking-the-matter/
     image_files: 
       - src: oh_cover
-        alt: TBD Speaking the Matter book cover
-      - src: oh_motives
-        alt: Speaking the Matter book cover
-      - src: oh_worksheets
-        alt: Speaking the Matter book cover
-      - src: oh_endnotes
-        alt: An open spread of an oral history workbook
-      - src: oh_intro
-        alt: Speaking the Matter book cover
-      - src: oh_deeds
-        alt: Speaking the Matter book cover
-      - src: oh_inprep
-        alt: Speaking the Matter book cover
-      - src: oh_back
-        alt: Speaking the Matter book cover
+        alt: Pale green cover of a spiral bound workbook with a small quaint stamp of an ear and spiral in the center
       - src: oh_framesofmind
-        alt: Speaking the Matter book cover
+        alt: Open spread of a divider spread with stamps and the title in cursive font
+      - src: oh_motives
+        alt: Open spread of workbook with tables and charts
+      - src: oh_intro
+        alt: Open spread of an article
+      - src: oh_inprep
+        alt: Another divider spread for the In Preparation section
+      - src: oh_worksheets
+        alt: Open spread of workbook with worksheets
+      - src: oh_deeds
+        alt: Open spread of workbook showing forms
+      - src: oh_endnotes
+        alt: An open spread of the Endnotes section in yellow
+      - src: oh_back
+        alt: The back cover of the spiral bound workbook
   
   - title: Inverse Surveillance Project
     year: July 2022
@@ -50,7 +50,7 @@
       - src: isp_mobile
         ext: .png
         alt: Inverse Surveillance Project website
-      - src: isp_projectoverview_cropped
+      - src: isp_projectoverview
         type: vid
         alt: Inverse Surveillance Project website
         format: frame

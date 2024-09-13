@@ -557,12 +557,6 @@ p {
     border-right: var(--border-style);
   }
 
-  /* .projects-container {
-    border-left: none;
-  } */
-  /* end :horizontal */
-
-
   nav li {
     padding: 0.75rem var(--toc-pdg); 
   }
@@ -608,10 +602,19 @@ p {
     border-bottom: none;
   }
 
+  figure.frame {
+    padding: 5%;
+  }
+
+  figure.mobile {
+    height: 70vh;
+  }  
+
   .info .image-inset {
     flex-flow: column;
     align-items: center;
   }
+
   .info .image-inset.all-vids {
     flex-flow: row;
     flex-wrap: wrap;
@@ -650,9 +653,19 @@ p {
     height: auto;
   }
 
+  .info .image-inset.all-imgs .image-container {
+    padding: 0;
+  }
+  
+  .info .image-inset .no {
+    font-size: 0.8rem;
+  }
+
   .projects-container .info picture img {
    max-width: 100%;
    max-height: 300px; 
+   height: 100%;
+   min-height: 180px;
   }
 
   .info .caption-container {

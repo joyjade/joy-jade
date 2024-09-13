@@ -1,13 +1,11 @@
-{% macro single(src, path, format) %}
+{% macro single(src, format) %}
 
 {# <figure style='--ratio:{{ ratio }};' class='video media {{effects}}'> #}
-{% set path="/content/img/" %}  
+{% set path="/content/video/" %}  
 {% set autoplay = true  %}
 
 <figure style='' class='video media {{format}}'>
-    <video preload="none" {% if autoplay %} autoplay {% endif %} muted playsinline loop >
-      {# SET THIS LATER, ADD AN IMAGE poster="{{ path }}video/{{ src }}.jpg" #}
-
+    <video preload="none" {% if autoplay %} autoplay {% endif %} muted playsinline loop poster="{{path}}{{ src }}.png">
       {# <source src="{{ path }}video/{{ src }}.webm" type="video/webm"> #}
       <source src="{{ path }}{{ src }}.mp4" type="video/mp4">
     </video>
@@ -19,15 +17,15 @@
 {% endmacro %}
 
 
-{% macro triptych(srcs, path) %}
+{% macro triptych(srcs) %}
 
-{% set path="/content/img/" %}  
+{% set path="/content/video/" %}  
 {% set autoplay = true  %}
 
   <div class="triptych">
     {% for src in srcs %}
       <figure class="video">
-        <video preload="none" {% if autoplay %} autoplay {% endif %} muted playsinline loop>
+        <video preload="none" {% if autoplay %} autoplay {% endif %} muted playsinline loop poster="{{path}}{{ src }}.png">
           <source src="{{ path }}{{ src }}.mp4" type="video/mp4">
         </video>
       </figure>

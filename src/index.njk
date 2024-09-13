@@ -17,7 +17,7 @@ image_inset_second:
     alt: Screen recording scrolling on a pale yellow background and sticky bright yellow headers
     type: vid 
     caption: Who rides the Subway in Los Angeles? An interactive story reported by a cohort of L.A. Times fellows.
-  - src: montereypark_vid
+  - src: montereypark
     type: vid
     alt: Screen recording of a story in Mandarin on a dark maroon background
     caption: A tribute to Star Ballroom in Monterey Park and memorial to the lives lost.
@@ -47,7 +47,7 @@ image_inset_second:
           <div class="image-container">
             <span class="no">{{loop.index}})</span>
              {% if img.type == "vid" %}
-                  {{ vid.single(img.src, relpath, img.format)}}
+                  {{ vid.single(img.src, img.format)}}
               {% else %}
                 {% set ext = (img.ext if img.ext else ".jpg") %}    
                 {% image relpath+img.src+ext, img.alt %}
@@ -72,7 +72,7 @@ image_inset_second:
           <div class="image-container">
             <span class="no">{{id}})</span>
              {% if img.type == "vid" %}
-                  {{ vid.single(img.src, relpath, img.format)}}
+                  {{ vid.single(img.src, img.format)}}
               {% else %}
                 {% set ext = (img.ext if img.ext else ".jpg") %}    
                 {% image relpath+img.src+ext, img.alt %}
