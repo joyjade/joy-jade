@@ -32,15 +32,15 @@ image_inset_second:
 
 ---
 {% import 'video.njk' as vid %}
-{% import 'image.njk' as imgs %}
 
-{% set relpath = "src/content/img/" %}
+{% set imgpath = "src/content/img/" %}
 
 <!-- Main Page-->
 <section class="contents">
   <div class="projects-container" id="show-top">
     <div class="info">
       <p>JJ is a graphic designer and web developer—making websites <span class="number">(1)</span>, graphics <span class="number">(2)</span>, and books <span class="number">(3)</span> for projects about art, reading, and organizing.</p> 
+      
       <div class="image-inset all-imgs">
         {% for img in image_inset_first %}
           {% set ext = (img.ext if img.ext else ".jpg") %}    
@@ -49,8 +49,7 @@ image_inset_second:
              {% if img.type == "vid" %}
                   {{ vid.single(img.src, img.format)}}
               {% else %}
-                {% set ext = (img.ext if img.ext else ".jpg") %}    
-                {% image relpath+img.src+ext, img.alt %}
+                {% image imgpath+img.src+ext, img.alt %}
               {% endif %}
           </div>
         {% endfor %}
@@ -67,22 +66,19 @@ image_inset_second:
       <p>
       <div class="image-inset all-vids">
         {% for img in image_inset_second %}
-          {% set id = loop.index + 3 %}    
           {% set ext = (img.ext if img.ext else ".jpg") %}    
           <div class="image-container">
-            <span class="no">{{id}})</span>
+            <span class="no">{{loop.index + 3}})</span>
              {% if img.type == "vid" %}
                   {{ vid.single(img.src, img.format)}}
               {% else %}
-                {% set ext = (img.ext if img.ext else ".jpg") %}    
-                {% image relpath+img.src+ext, img.alt %}
+                {% image imgpath+img.src+ext, img.alt %}
               {% endif %}
           </div>
         {% endfor %}
         <div class="caption-container">
           {% for img in image_inset_second %}
-            {% set id = loop.index + 3 %}    
-            <span>({{id}}) {{img.caption}}</span>
+            <span>({{loop.index + 3}}) {{img.caption}}</span>
           {% endfor %}
         </div>
         
