@@ -1,5 +1,8 @@
 const eleventyImage = require("@11ty/eleventy-img");
 
+// alternative way of bringing in the 11ty plugin 
+// import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+
 // function relativeToInputPath(inputPath, relativeFilePath) {
 // 	let split = inputPath.split("/");
 // 	split.pop();
@@ -34,7 +37,7 @@ const eleventyImage = require("@11ty/eleventy-img");
 
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addAsyncShortcode("image", async function imageShortcode(src, alt, widths, sizes) {
+  eleventyConfig.addAsyncShortcode("image", async function imageShortcode(src, alt, widths, sizes="(max-width: 800px) 100vw, 800px", loading = "lazy") {
 		let formats = ["webp", "auto", "svg"];
 		// let input;
 		// if(isFullUrl(src)) {
@@ -52,7 +55,7 @@ module.exports = function (eleventyConfig) {
 		let imageAttributes = {
 			alt,
 			sizes,
-			loading: "lazy",
+			loading: loading,
 			decoding: "async",
 		};
 
