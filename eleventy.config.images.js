@@ -37,7 +37,7 @@ const eleventyImage = require("@11ty/eleventy-img");
 
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addAsyncShortcode("image", async function imageShortcode(src, alt, widths, sizes="(max-width: 800px) 100vw, 800px", loading = "lazy") {
+  eleventyConfig.addAsyncShortcode("image", async function imageShortcode(src, alt, widths, sizes="(max-width: 800px) 100vw, 800px", loading = "lazy", cls) {
 		let formats = ["webp", "auto", "svg"];
 		// let input;
 		// if(isFullUrl(src)) {
@@ -53,6 +53,7 @@ module.exports = function (eleventyConfig) {
 		});
 
 		let imageAttributes = {
+      class: cls,
 			alt,
 			sizes,
 			loading: loading,

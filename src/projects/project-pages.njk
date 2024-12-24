@@ -25,7 +25,7 @@ title: '~*° joy jade'
                   {{ vid.triptych(img.srcs)}}
                 {% else %}
                   {% set ext = (img.ext if img.ext else ".jpg") %}    
-                  {% image relpath+img.src+ext, img.alt, [400, "auto"] %}
+                  {% image relpath+img.src+ext, img.alt, [400, "auto"], "(max-width: 800px) 100vw, 800px", "lazy", "lozad" %}
                 {% endif %}
             </div>
           {% endfor %}
