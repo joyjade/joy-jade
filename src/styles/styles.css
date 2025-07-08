@@ -311,6 +311,9 @@ OLD INFO SLIDE
   margin-bottom: -3px;
 }
 
+.proj-imgs.white { background-color: white; }
+.proj-imgs.black { background-color: black; }
+
 .proj-desc {
   grid-column: 2/3;
   position: sticky;
@@ -326,6 +329,15 @@ OLD INFO SLIDE
 .proj-desc a:hover {
 	background-color: var(--hue);
   color: white;
+}
+
+.proj-desc .sxn ul {
+  list-style: circle;
+  padding-left: 1rem; 
+}
+
+.proj-desc .sxn ul li {
+  list-style-type: disc;
 }
 
 .proj-desc .sxn {
@@ -361,7 +373,6 @@ OLD INFO SLIDE
 figure.video {
   width: 100%;
   object-fit: contain;
-  background-color: black;
 }
 
 video {
@@ -376,7 +387,7 @@ figure.mobile {
   display: flex;
   justify-content: center;
   align-items: center; 
-  height: 95vh;
+  height: 80vh;
 }
 
 figure.mobile video {
@@ -387,7 +398,6 @@ figure.mobile video {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
-  background-color: black;
   padding: 1.8rem;
 }
 
