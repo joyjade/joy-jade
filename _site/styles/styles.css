@@ -163,7 +163,9 @@ a {
 }
 
 a:hover {
-  color: darkblue;
+  text-decoration: line-through;
+  color: black;
+  cursor: pointer;
 }
 
 picture img {
@@ -181,6 +183,7 @@ picture img {
 .table-of a:hover, .table-of a[aria-current], nav a:hover {
   color: var(--main-color);
   text-decoration: line-through;
+  cursor: pointer;
 }
 
 
@@ -255,6 +258,9 @@ OLD INFO SLIDE
   font-weight: 100;
 }
 
+.table-of .link-title:hover {
+  cursor: pointer;
+}
 .table-of .link-title {
   display: block;
   padding-bottom: var(--toc-pdg);
@@ -327,8 +333,10 @@ OLD INFO SLIDE
 }
 
 .proj-desc a:hover {
-	background-color: var(--hue);
-  color: white;
+  text-decoration: line-through;
+  cursor: ne-resize;
+	/* background-color: var(--hue);
+  color: white; */
 }
 
 .proj-desc .sxn ul {

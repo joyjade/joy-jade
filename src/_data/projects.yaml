@@ -91,6 +91,7 @@
     link: https://www.latimes.com/shapeyourla
     role: Product Design, Art Direction, Front-end Development
     credits: See the project's full credits <a href="https://www.latimes.com/shapeyourla">here<a>.
+    bg: black
     image_files: 
       - src: syla_experience
         type: vid
@@ -123,6 +124,7 @@
     role: Lead Art Director, Web Development
     credits: Photography by Robert Gauthier and Brian van der Brug. See full credits including editing, video, story design and data graphics <a href="https://www.latimes.com/repowering-the-west/">here</a>.
     link: https://www.latimes.com/repowering-the-west/
+    bg: black
     image_files: 
       - src: rpw_experience
         type: vid
