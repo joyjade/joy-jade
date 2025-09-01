@@ -1,0 +1,12 @@
+
+
+.contents.sites ul {
+  width: 99vw;
+  display: flex;
+  flex-flow: column;
+}
+
+.contents.sites ul li {
+  padding: 1rem 0.75rem;
+  border-bottom: var(--border-style);
+}
