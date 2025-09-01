@@ -1,5 +1,35 @@
 ---
 
+  - title: Los Angeles Contemporary Archive
+    year: 2025
+    thumbnail: 
+      src: laca_thumb
+      alt: archive item metadata sidebar
+      ext: .png
+    description: A new website years in the making. LACA is a public archive and library dedicated to contemporary art-making. They collaborate with artists to build archival collections, which include studio leases, contracts, paystubs, performance apparel, set pieces, police reports, text messages, class syllabi, and materials from formally running art spaces. 
+    orgs: 
+      - Los Angeles Contemporary Archive  
+    collaborators: Hailey Loman,  Saida Largaespada, Julian Stein
+    role: Website Design
+    credits: Built by Julian Stein and Max Stein
+    link: https://lacarchive.com/
+    image_files: 
+      - src: laca 1
+        alt: Red shoes
+      - src: laca 2
+        alt: Red shoes
+      - src: laca 3
+        alt: Red shoes
+      - src: laca 4
+        alt: Red shoes
+      - src: laca 5
+        alt: Red shoes
+      - src: laca 6
+        alt: Red shoes
+      - src: laca_trash
+        type: vid
+        alt: Dump site
+      
   - title: Speaking the Matter
     year: 2023
     thumbnail: 
