@@ -4,9 +4,35 @@
   width: 99vw;
   display: flex;
   flex-flow: column;
+  padding-bottom: 3rem;
 }
 
 .contents.sites ul li {
   padding: 1rem 0.75rem;
   border-bottom: var(--border-style);
+}
+
+.contents.sites figure {
+  max-width: 400px;
+}
+
+.contents.sites figure img {
+  width: 100%;
+  height: auto;
+}
+
+.contents.sites ul li {
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+}
+
+.contents.sites ul li div:last-of-type {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contents.sites ul li p {
+  margin-bottom: 0;
 }

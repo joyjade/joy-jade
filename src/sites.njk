@@ -16,20 +16,26 @@ section: Sites
         {{ site.title }}
       </div>
       <div>
-        <a href="https://{{site.link}}/">{{site.link}}</a>
+        {% if site.link %}
+          <a href="https://{{site.link}}/">{{site.link}}</a>
+        {% else %}
+          <p>coming soon<span class="ellipses-loader">...<span></p>
+        {% endif %}
       </div>
       <div>
-        <figure>
-          <div class="image">      
-            {# {% set img = site.cover %} #}
-            {% if site.cover.type == "vid" %}
-              {{ vid.single(site.cover.src, site.cover.format)}}
-            {% else %}
-              {% set ext = (site.cover.ext if site.cover.ext else ".jpg") %}    
-              {% image relpath+site.cover.src+ext, site.cover.alt, [400, "auto"], "(max-width: 800px) 100vw, 800px", "lazy", "lozad" %}
-            {% endif %}
-            </div>
-        </figure>
+        {% if site.cover %}
+          <figure>
+            <div class="image">      
+              {# {% set img = site.cover %} #}
+              {% if site.cover.type == "vid" %}
+                {{ vid.single(site.cover.src, site.cover.format)}}
+              {% else %}
+                {% set ext = (site.cover.ext if site.cover.ext else ".jpg") %}    
+                {% image relpath+site.cover.src+ext, site.cover.alt, [400, "auto"], "(max-width: 800px) 100vw, 800px", "lazy", "lozad" %}
+              {% endif %}
+              </div>
+          </figure>
+        {% endif %}
       </div>
     </li>
     {% endfor %}

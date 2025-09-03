@@ -1,91 +1,71 @@
 ---
 
-  - title: Nafas
+  - title: Nafas Residency
     year: 2025
-    cover: 
-      src: laca_thumb
-      alt: archive item metadata sidebar
-      ext: .png
-    link: nafas.com
+    
+  - title: Matthan Cowart
+    year: 2025
+  
   
   - title: Los Angeles Contemporary Archive
     year: 2025
     cover: 
-      src: laca_thumb
+      src: laca_home
       alt: archive item metadata sidebar
       ext: .png
-
     link: lacarchive.com
 
   - title: Suk Ja Kang
     year: 2025
     cover: 
-      src: laca_thumb
+      src: sukja_home
       alt: archive item metadata sidebar
       ext: .png
-
     link: sukjakang.com
+
+  - title: Zavi Kang Engles
+    year: 2025
+    cover: 
+      src: zavi-landing
+      type: vid
+    link: zavizavizavi.com
   
   - title: Jean Kyoung Frazier
     year: 2025
     cover: 
-      src: laca_thumb
-      alt: archive item metadata sidebar
-      ext: .png
-
+      src: moving stars
+      type: vid
     link: yayjayfray.com
   
-  - title: Zavi Kang Engles
-    year: 2025
-    cover: 
-      src: laca_thumb
-      alt: archive item metadata sidebar
-      ext: .png
 
-    link: zavizavizavi.com
-  
-  - title: Matthan Cowart
-    year: 2025
-    cover: 
-      src: laca_thumb
-      alt: archive item metadata sidebar
-      ext: .png
-
-    link: sukjakang.com
-  
   - title: Community Reading Group
-    year: 2025
+    year: 2021
     cover: 
-      src: laca_thumb
+      src: crg_cover
       alt: archive item metadata sidebar
       ext: .png
-
-    link: sukjakang.com
+    link: communityreadinggroup
   
   - title: Inverse Surveillance Project
-    year: 2025
+    year: 2021
     cover: 
-      src: laca_thumb
+      src: isp_banner_full
       alt: archive item metadata sidebar
       ext: .png
-
-    link: sukjakang.com
+    link: inversesurveillanceproject.com
   
   - title: Movie Division
     year: 2025
     cover: 
-      src: laca_thumb
+      src: division_full
       alt: archive item metadata sidebar
-      ext: .png
-
     link: sukjakang.com
   
   - title: PROTOCOLS
     year: 2025
     cover: 
-      src: laca_thumb
+      src: prtcls_cover
       alt: archive item metadata sidebar
       ext: .png
-
     link: prtcls.com
   

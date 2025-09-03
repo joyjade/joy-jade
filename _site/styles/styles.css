@@ -31,9 +31,9 @@
   --thumbnail-height: 80px; 
   --border-style: 1.5px solid var(--hue);
   
-  --body-f: 15px;
+  --body-f: 16px;
   --font: 'fluxis';
-  --nav-height: 40px;
+  --nav-height: 42px;
   /* --toc-width: 250px; */
   --toc-width: 15vw;
   --toc-pdg: 0.75rem;
@@ -53,6 +53,21 @@ html, body 	{
 section {
   color: var(--main-color);
   font-family: var(--font);
+}
+
+.ellipses-loader {
+  animation: ellipses-loader 2s linear infinite;
+}
+
+@keyframes ellipses-loader {
+  0% { clip-path: inset(0 100% 0 0) }
+  24.9% { clip-path: inset(0 100% 0 0) }
+  25% { clip-path: inset(0 66% 0 0) }
+  49.9% { clip-path: inset(0 66% 0 0) }
+  50% { clip-path: inset(0 33% 0 0) }
+  74.9% { clip-path: inset(0 33% 0 0) }
+  75% { clip-path: inset(0 0 0 0) }
+  100% { clip-path: inset(0 0 0 0) }
 }
 
 /* GRID-------------------------------------- */
@@ -207,7 +222,7 @@ nav li {
 
 nav a {
   font-family: var(--font);
-	font-size: 14px;
+	font-size: 16px;
 	position: relative;
 }
 
@@ -259,6 +274,7 @@ OLD INFO SLIDE
   color: var(--main-color);
   font-family: var(--font);
 	font-size: var(--body-f);
+  line-height: 1.2;
   font-weight: 100;
 }
 
@@ -347,7 +363,9 @@ OLD INFO SLIDE
   list-style: circle;
   padding-left: 1rem; 
 }
-
+.proj-desc .sxn > li {
+  font-size: 16px;
+}
 .proj-desc .sxn ul li {
   list-style-type: disc;
 }
@@ -366,7 +384,7 @@ OLD INFO SLIDE
 
 .proj-desc h5 {
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 
 .proj-desc .date {
