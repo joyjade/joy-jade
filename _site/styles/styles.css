@@ -181,7 +181,7 @@ a {
   color: black;
 }
 
-a:hover {
+a:hover, a.active {
   text-decoration: line-through;
   color: black;
   cursor: pointer;
@@ -220,8 +220,11 @@ nav li {
    color: var(--main-color);
 }
 
-nav a {
+nav {
   font-family: var(--font);
+}
+
+nav a {
 	font-size: 16px;
 	position: relative;
 }
