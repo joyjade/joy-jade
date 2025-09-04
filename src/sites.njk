@@ -17,13 +17,14 @@ section: Sites
       </div>
       <div>
         {% if site.link %}
-          <a href="https://{{site.link}}/">{{site.link}}</a>
+          <a href="https://{{site.link}}/" target="_blank">{{site.link}}</a>
         {% else %}
           <p>coming soon<span class="ellipses-loader">...<span></p>
         {% endif %}
       </div>
       <div>
         {% if site.cover %}
+        {% if site.link %}<a href="https://{{site.link}}/" target="_blank">{% endif %}
           <figure>
             <div class="image">      
               {# {% set img = site.cover %} #}
@@ -35,6 +36,7 @@ section: Sites
               {% endif %}
               </div>
           </figure>
+        {% if site.link %}</a>{% endif %}
         {% endif %}
       </div>
     </li>

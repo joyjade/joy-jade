@@ -12,6 +12,10 @@
   border-bottom: var(--border-style);
 }
 
+.contents.sites ul a:hover {
+  cursor: ne-resize;
+}
+
 .contents.sites figure {
   max-width: 400px;
 }

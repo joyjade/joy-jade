@@ -54,13 +54,6 @@
       ext: .png
     link: inversesurveillanceproject.com
   
-  - title: Movie Division
-    year: 2025
-    cover: 
-      src: division_full
-      alt: archive item metadata sidebar
-    link: joy-jade.com/divisionplace
-  
   - title: PROTOCOLS
     year: 2025
     cover: 
@@ -69,3 +62,10 @@
       ext: .png
     link: prtcls.com
   
+    
+  - title: Movie Division
+    year: 2025
+    cover: 
+      src: division_full
+      alt: archive item metadata sidebar
+    link: joy-jade.com/divisionplace
