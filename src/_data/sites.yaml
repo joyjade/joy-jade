@@ -1,0 +1,71 @@
+---
+
+  - title: Nafas Residency
+    year: 2025
+    
+  - title: Matthan Cowart
+    year: 2025
+  
+  
+  - title: Los Angeles Contemporary Archive
+    year: 2025
+    cover: 
+      src: laca_home
+      alt: archive item metadata sidebar
+      ext: .png
+    link: lacarchive.com
+
+  - title: Suk Ja Kang
+    year: 2025
+    cover: 
+      src: sukja_home
+      alt: archive item metadata sidebar
+      ext: .png
+    link: sukjakang.com
+
+  - title: Zavi Kang Engles
+    year: 2025
+    cover: 
+      src: zavi-landing
+      type: vid
+    link: zavizavizavi.com
+  
+  - title: Jean Kyoung Frazier
+    year: 2025
+    cover: 
+      src: moving stars
+      type: vid
+    link: yayjayfray.com
+  
+
+  - title: Community Reading Group
+    year: 2021
+    cover: 
+      src: crg_cover
+      alt: archive item metadata sidebar
+      ext: .png
+    link: communityreadinggroup
+  
+  - title: Inverse Surveillance Project
+    year: 2021
+    cover: 
+      src: isp_banner_full
+      alt: archive item metadata sidebar
+      ext: .png
+    link: inversesurveillanceproject.com
+  
+  - title: PROTOCOLS
+    year: 2025
+    cover: 
+      src: prtcls_cover
+      alt: archive item metadata sidebar
+      ext: .png
+    link: prtcls.com
+  
+    
+  - title: Movie Division
+    year: 2025
+    cover: 
+      src: division_full
+      alt: archive item metadata sidebar
+    link: joy-jade.com/divisionplace
