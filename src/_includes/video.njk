@@ -32,3 +32,27 @@
     {% endfor %}
   </div>
 {% endmacro %}
+
+{% macro tripmix(srcs) %}
+
+{% set autoplay = true  %}
+
+  <div class="triptych">
+    {% for img in srcs %}
+      {% if img.type == "vid" %}
+        {% set path="/content/video/" %}  
+         <figure class="video">
+          <video preload="none" {% if autoplay %} autoplay {% endif %} muted playsinline loop poster="{{path}}{{ src }}.png">
+            <source src="{{ path }}{{ img.src }}.mp4" type="video/mp4">
+          </video>
+        </figure>
+      {% else %}
+        {% set relpath = "/content/img/" %}
+        {% set ext = (img.ext if img.ext else ".jpg") %}    
+        <picture>
+          <img src="{{ relpath+img.src+ext }}" alt="{{img.alt}}" />
+        </picture>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endmacro %}

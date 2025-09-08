@@ -13,22 +13,46 @@
     role: Website Design
     credits: Built by Julian Stein and Max Stein
     link: https://lacarchive.com/
+    id: laca
     image_files: 
-      - src: laca 1
-        alt: Red shoes
-      - src: laca 2
-        alt: Red shoes
-      - src: laca 3
-        alt: Red shoes
-      - src: laca 4
-        alt: Red shoes
-      - src: laca 5
-        alt: Red shoes
-      - src: laca 6
-        alt: Red shoes
+      - src: laca_1
+        alt: Search Archive landing page
+        ext: .png
       - src: laca_trash
         type: vid
         alt: Dump site
+      - src: laca red shoes
+        alt: Collection item page showing chunky red heels 
+        ext: .png
+      - src: laca pp
+        alt: Archive collection page 
+        ext: .png
+      - src: laca fccw
+        type: vid
+        alt: Dump site
+      - type: triptych
+        srcs: 
+          - laca moving
+          - laca braid
+          - laca sexy
+      - src: laca audio
+        alt: Archive item page showing audio file 
+        ext: .png
+      - src: laca about
+        alt: About page
+        ext: .png
+      - type: triptych
+        srcs: 
+          - laca cal
+          - laca call
+          - laca pp cal
+      - src: laca add
+        alt: Red shoes
+        ext: .png
+      - src: laca fixingpapers
+        type: vid
+        alt: Dump site
+        
       
   - title: Speaking the Matter
     year: 2023

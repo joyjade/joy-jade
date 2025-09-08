@@ -15,7 +15,7 @@ section: Projects
 
 <section class="contents projects">
     <div class="projects-container">
-      <div class="proj-imgs {{ proj.bg }}">
+      <div class="proj-imgs {{ proj.bg }} {{ proj.id}}">
           {# <h2>{{ page.url }}</h2> <h1>DEBUGGING !! {{"hello!!!!!!" | linkungan }}</h1> #}
           {% for img in proj.image_files %}
             <div class="image">      
@@ -23,6 +23,8 @@ section: Projects
                   {{ vid.single(img.src, img.format)}}
                 {% elif img.type == "triptych" %}
                   {{ vid.triptych(img.srcs)}}
+                {% elif img.type == "tripmix" %}
+                  {{ vid.tripmix(img.srcs)}}
                 {% else %}
                   {% set ext = (img.ext if img.ext else ".jpg") %}    
                   {% image relpath+img.src+ext, img.alt, [400, "auto"], "(max-width: 800px) 100vw, 800px", "lazy", "lozad" %}

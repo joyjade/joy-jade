@@ -564,3 +564,8 @@ p {
 }
 
 
+/* LACA */
+
+.proj-imgs.laca .image {
+  padding: var(--image-pdg);
+}
