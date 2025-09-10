@@ -41,9 +41,9 @@
   - title: Community Reading Group
     year: 2021
     cover: 
-      src: crg_cover
+      src: crg_home
       alt: archive item metadata sidebar
-      ext: .png
+      type: vid
     link: communityreadinggroup
   
   - title: Inverse Surveillance Project
