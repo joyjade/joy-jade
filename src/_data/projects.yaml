@@ -204,15 +204,48 @@
       ext: .png 
     role: Visual Identity, Web Design, Web Development, From Scratch 
     collaborators: Andrew McNeely, Olivia Leiter, Michael Berlin
+    id: crg
     image_files: 
-      - src: crg_01
+      - src: crg_home
         alt: crg home
-      - src: crg_02
+        ext: .png
+      - src: crg_caliban
         alt: crg home
-      - src: crg_03
+        ext: .png
+      - src: crg_info
+        type: vid
         alt: crg home
-      - src: crg_04
+      - type: triptych
+        srcs: 
+          - crg_mobile_annotations
+          - crg_mobile_counter
+          - crg_mobile_info
+      - src: crg_readings
         alt: crg home
+        ext: .png
+      - src: crg_counter_essay
+        alt: crg home
+        ext: .png
+      - src: crg_counter_about
+        alt: crg home
+        ext: .png
+      - type: triptych_img
+        srcs: 
+          - src: crg_mobile_leguin
+            ext: .png
+            alt: hello 
+          - src: crg_mobile_leguin2
+            ext: .png
+            alt: hello 
+          - src: crg_mobile_rdgs
+            ext: .png
+            alt: hello 
+      - src: crg_hartman
+        type: vid
+        alt: crg home
+      - src: crg_bookmarks
+        alt: crg home
+        ext: .png
 
   - title: Immigrant Dreams
     year: 2023

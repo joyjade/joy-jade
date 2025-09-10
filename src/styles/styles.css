@@ -444,6 +444,10 @@ figure.mobile video {
   /* width: 28%; */
 }
 
+.image .triptych picture {
+  padding: 0 1rem;
+}
+
 /* image-slider */
 
 .notice {
@@ -566,6 +570,6 @@ p {
 
 /* LACA */
 
-.proj-imgs.laca .image {
+.proj-imgs.laca .image, .proj-imgs.crg .image {
   padding: var(--image-pdg);
 }
