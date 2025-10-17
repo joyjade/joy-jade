@@ -5,7 +5,7 @@ section: Sites
 ---
 {% import 'video.njk' as vid %}
 
-{% set relpath = "src/content/img/" %}
+{% set relpath = "/content/img/" %}
 
 
 <section class="contents sites">
@@ -32,7 +32,8 @@ section: Sites
                 {{ vid.single(site.cover.src, site.cover.format)}}
               {% else %}
                 {% set ext = (site.cover.ext if site.cover.ext else ".jpg") %}    
-                {# {% image relpath+site.cover.src+ext, site.cover.alt, [400, "auto"], "(max-width: 800px) 100vw, 800px", "lazy", "lozad" %} #}
+                <img src="{{relpath+site.cover.src+ext}}" alt="{{site.cover.alt}}">
+                {# [400, "auto"], "(max-width: 800px) 100vw, 800px", "lazy", "lozad" %} #}
               {% endif %}
               </div>
           </figure>

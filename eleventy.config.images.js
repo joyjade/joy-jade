@@ -1,18 +1,4 @@
-// const eleventyImage = require("@11ty/eleventy-img");
 const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
-
-
-// function isFullUrl(url) {
-// 	try {
-// 		new URL(url);
-// 		return true;
-// 	} catch(e) {
-// 		return false;
-// 	}
-// }
-
-// import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
-
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyImageTransformPlugin);
