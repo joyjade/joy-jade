@@ -34,7 +34,7 @@ image_inset_second:
 ---
 {% import 'video.njk' as vid %}
 
-{% set imgpath = "src/content/img/" %}
+{% set imgpath = "/content/img/" %}
 
 <!-- Main Page-->
 <section class="contents projects">
@@ -50,7 +50,7 @@ image_inset_second:
              {% if img.type == "vid" %}
                   {{ vid.single(img.src, img.format)}}
               {% else %}
-                {% image imgpath+img.src+ext, img.alt, [400, "auto"], "eager" %}
+                  <img src="{{imgpath+img.src+ext}}" alt="{{img.alt}}"/>
               {% endif %}
           </div>
         {% endfor %}
@@ -76,7 +76,8 @@ image_inset_second:
              {% if img.type == "vid" %}
                   {{ vid.single(img.src, img.format)}}
               {% else %}
-                {% image imgpath+img.src+ext, img.alt %}
+                  <img src="{{imgpath+img.src+ext}}" alt="{{img.alt}}"/>
+                   {# [400, "auto"], "eager" #}
               {% endif %}
           </div>
         {% endfor %}

@@ -3,15 +3,6 @@ require('dotenv').config();
 
 const pluginImages = require("./eleventy.config.images.js");
 
-
-// const site = require('./src/_data/site');
-// const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
-
-// /**
-//  * Prefixes the given URL with the site's base URL.
-//  * @param {string} url
-//  */
-
 const isDev = process.env.NODE_ENV === 'development';
 const baseUrl = isDev ? `localhost:8081` : `https://www.joy-jade.com`;
 
@@ -46,6 +37,7 @@ module.exports = function(eleventyConfig) {
   
   
   eleventyConfig.addFilter('toAbsoluteUrl', toAbsoluteUrl);
+  
   // eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
   
   //App plugins

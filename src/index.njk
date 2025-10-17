@@ -6,7 +6,7 @@ section: Featured
 ---
 {% import 'video.njk' as vid %}
 
-{% set relpath = "src/content/img/" %}
+{% set relpath = "/content/img/" %}
 
 <!-- Main Page-->
 <section class="contents projects">
@@ -22,8 +22,10 @@ section: Featured
             {% for img in proj.image_files %}
               {% if not img.type %}
                 <div class="image">      
+
                     {% set ext = (img.ext if img.ext else ".jpg") %}    
-                    {% image relpath+img.src+ext, img.alt, [400, "auto"], "(max-width: 800px) 100vw, 800px", "lazy", "lozad" %}
+                    <img src="{{relpath+img.src+ext}}" alt="img.alt" class="lazy">
+          
                 </div>
               {% endif %}
             {% endfor %}

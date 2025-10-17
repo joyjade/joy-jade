@@ -1,4 +1,6 @@
-const eleventyImage = require("@11ty/eleventy-img");
+// const eleventyImage = require("@11ty/eleventy-img");
+const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
+
 
 // function isFullUrl(url) {
 // 	try {
@@ -9,31 +11,34 @@ const eleventyImage = require("@11ty/eleventy-img");
 // 	}
 // }
 
+// import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addAsyncShortcode("image", async function imageShortcode(src, alt, widths, sizes="(max-width: 800px) 100vw, 800px", loading = "lazy", cls) {
-		let formats = ["webp", "auto"];
-		// let input;
-		// if(isFullUrl(src)) {
-		// 	input = src;
-		// } else {
-		// 	input = relativeToInputPath('http://localhost:8081/img/', src);
-		// }
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin);
+  // eleventyConfig.addAsyncShortcode("image", async function imageShortcode(src, alt, widths, sizes="(max-width: 800px) 100vw, 800px", loading = "lazy", cls) {
+	// 	let formats = ["webp", "auto"];
+	// 	// let input;
+	// 	// if(isFullUrl(src)) {
+	// 	// 	input = src;
+	// 	// } else {
+	// 	// 	input = relativeToInputPath('http://localhost:8081/img/', src);
+	// 	// }
 
-		let metadata = await eleventyImage(src, {
-			widths: widths || ["auto"],
-			formats,
-			outputDir: './_site/img/' // Advanced usage note: `eleventyConfig.dir` works here because we’re using addPlugin.
-		});
+	// 	let metadata = await eleventyImage(src, {
+	// 		widths: widths || ["auto"],
+	// 		formats,
+	// 		outputDir: './_site/img/' // Advanced usage note: `eleventyConfig.dir` works here because we’re using addPlugin.
+	// 	});
 
-		let imageAttributes = {
-      class: cls,
-			alt,
-			sizes,
-			loading: loading,
-			decoding: "async",
-		};
+	// 	let imageAttributes = {
+  //     class: cls,
+	// 		alt,
+	// 		sizes,
+	// 		loading: loading,
+	// 		decoding: "async",
+	// 	};
 
-		return eleventyImage.generateHTML(metadata, imageAttributes);
-	});
+	// 	return eleventyImage.generateHTML(metadata, imageAttributes);
+	// });
 };
