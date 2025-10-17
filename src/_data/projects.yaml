@@ -111,6 +111,7 @@
         format: frame
 
   - title: Community Reading Group
+    featured: true
     year: 2021     
     link: http://www.communityreadinggroup.com/    
     description: A reading and study group that gathers every Sunday evening. Focusing on critical theory and other texts with philosophical, legal and aesthetic concerns, CRG has discussed texts that range from mid-century, European investigations of the origins of Facism to works-in-progress about climate change as well as popular science fiction. Started by artists, activists, and scholars who were curious about the assumptions underlying the appeals to "community" so prevalent in organizing spaces, the group continues to foster space for anyone who wants to challenge their inherited ideas about common being and loves the exercise of close reading. In 2021, the first issue of Counter was released, featuring essays by reading group members on labor organizing and work.
@@ -164,6 +165,7 @@
         ext: .png
 
   - title: Worthy Wine Works
+    featured: true
     year: Winter 2021
     orgs: 
       - Los Angeles Contemporary Archive
@@ -187,6 +189,7 @@
         alt: laca wine store
 
   - title: Shape Your L.A.
+    featured: true
     year: 2022-2024
     orgs:
       - L.A. Times 
@@ -221,6 +224,7 @@
         alt: Speaking the Matter book cover
 
   - title: Immigrant Dreams
+    featured: true
     year: 2023
     orgs: 
       - L.A. Times

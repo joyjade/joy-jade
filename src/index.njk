@@ -6,15 +6,29 @@ section: Featured
 ---
 {% import 'video.njk' as vid %}
 
-{% set imgpath = "src/content/img/" %}
+{% set relpath = "src/content/img/" %}
 
 <!-- Main Page-->
 <section class="contents projects">
-  <div class="featured-container">
+  <div class="featured-container container">
     Featured Projects
     {% for proj in projects %}
       {% if proj.featured %}
-        <h1>{{ proj.title }}</h1>
+        <div>
+          <h1>{{ proj.title }}</h1>
+          <h1>{{ proj.year }}</h1>
+          <h1>{{ proj.link }}</h1>
+          <div class="horizontal window">
+            {% for img in proj.image_files %}
+              {% if not img.type %}
+                <div class="image">      
+                    {% set ext = (img.ext if img.ext else ".jpg") %}    
+                    {% image relpath+img.src+ext, img.alt, [400, "auto"], "(max-width: 800px) 100vw, 800px", "lazy", "lozad" %}
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
       {% endif %}
     {% endfor %}
   </div>

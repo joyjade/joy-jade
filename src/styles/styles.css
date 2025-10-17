@@ -81,22 +81,34 @@ nav {
 }
 
 .contents {
-  /* grid-column: 2 / 4; */
   height: 100%;
 }
-
 
 .table-of {
   height: auto;
   margin-top: var(--nav-height);
-  /* grid-column: 1/2;
-  grid-row: 2/3; */
   z-index: 1;
 }
 
-.projects-container, .featured-container {
+.container {
   height: calc(100% - var(--nav-height));
+  border-left: var(--border-style);
+  overflow-y: scroll;
 }
+
+/* these are some small edits */
+.horizontal {
+  display: flex;
+}
+
+.horizontal .image {
+  width: 200px;
+}
+
+.horizontal .image img {
+  width: 200px;
+}
+/* these are some small edits */
 
 @media screen and (min-width:57.4375em) {
   .contents {
@@ -111,11 +123,9 @@ nav {
     margin-left: var(--toc-width);
   }
 
-  .projects-container, .featured-container {
+  .projects-container {
     display: grid;
     grid-template-columns: 7fr minmax(250px, 3fr);
-    border-left: var(--border-style);
-    overflow-y: scroll;
   }  
 
   .table-of {
@@ -127,11 +137,10 @@ nav {
   
   .table-of::-webkit-scrollbar,
   .contents::-webkit-scrollbar, 
-  .projects-container::-webkit-scrollbar,
-  .featured-container::-webkit-scrollbar {
+  .container::-webkit-scrollbar {
    display: none;
   }
-  .table-of, .contents, .projects-container, .featured-container {
+  .table-of, .contents, .container {
     -ms-overflow-style: none; /* IE 11 */
     scrollbar-width: none; /* Firefox 64 */
   }
