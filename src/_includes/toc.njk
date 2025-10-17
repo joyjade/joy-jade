@@ -9,7 +9,7 @@ layout: layout.njk
   <!-- Table of Contents -->
   <section class="table-of display">
     <ul>
-    {% if page.url == "/" %}
+    {% if not (page.url.startsWith("/sites/") or page.url.startsWith("/projects/")) %}
       <!-- WARNING: EDITS HERE MUST BE MADE FOR HOME PAGE AND PROJECT PAGES -->
       {% for proj in projects %}
         <li class="project">

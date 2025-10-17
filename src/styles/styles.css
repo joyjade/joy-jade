@@ -72,18 +72,7 @@ section {
 
 /* GRID-------------------------------------- */
 
-body {
-  /* display: grid;
-  grid-template-columns: minmax(300px,1fr) minmax(660px,4fr) minmax(350px,2fr);
-  grid-template-rows:60px minmax(500px,1fr);;
-  height: 100vh;
-  padding: 0 0.5rem; 
-  grid-column-gap: 10px; */
-}
-
 nav {
-  /* grid-column: 1/4; */
-  /* padding: 0.5em 0.1rem; */
   position: fixed;
   top: 0;
   height: var(--nav-height);
@@ -105,7 +94,7 @@ nav {
   z-index: 1;
 }
 
-.projects-container {
+.projects-container, .featured-container {
   height: calc(100% - var(--nav-height));
 }
 
@@ -122,7 +111,7 @@ nav {
     margin-left: var(--toc-width);
   }
 
-  .projects-container {
+  .projects-container, .featured-container {
     display: grid;
     grid-template-columns: 7fr minmax(250px, 3fr);
     border-left: var(--border-style);
@@ -138,10 +127,11 @@ nav {
   
   .table-of::-webkit-scrollbar,
   .contents::-webkit-scrollbar, 
-  .projects-container::-webkit-scrollbar {
+  .projects-container::-webkit-scrollbar,
+  .featured-container::-webkit-scrollbar {
    display: none;
   }
-  .table-of, .contents, .projects-container {
+  .table-of, .contents, .projects-container, .featured-container {
     -ms-overflow-style: none; /* IE 11 */
     scrollbar-width: none; /* Firefox 64 */
   }
