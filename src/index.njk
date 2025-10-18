@@ -6,7 +6,7 @@ section: Featured
 ---
 {% import 'video.njk' as vid %}
 
-{% set relpath = "src/content/img/" %}
+{% set relpath = "/content/img/" %}
 
 <!-- Main Page-->
 <section class="contents projects">
@@ -23,11 +23,12 @@ section: Featured
               {% if not img.type %}
                 <div class="image">      
                     {% set ext = (img.ext if img.ext else ".jpg") %}    
-                    {% image relpath+img.src+ext, img.alt, [400, "auto"], "(max-width: 800px) 100vw, 800px", "lazy", "lozad" %}
+                    <img src="{{relpath+img.src+ext}}" alt="img.alt" eleventy:widths="600,900" class="lazy" sizes="(min-width: 1280px) 300px, 50vw">
+          
                 </div>
               {% endif %}
             {% endfor %}
-          </div>
+          </div> 
         </div>
       {% endif %}
     {% endfor %}

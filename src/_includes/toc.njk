@@ -1,7 +1,7 @@
 ---
 layout: layout.njk
 ---
-{% set relpath = "src/content/img/" %}
+{% set relpath = "/content/img/" %}
 
 <body>
   {% include "nav.njk" %}
@@ -17,7 +17,7 @@ layout: layout.njk
             <span class="link-title">{{ proj.title }}</span>
             <div class="thumbnail">
               {% set ext = (proj.thumbnail.ext if proj.thumbnail.ext else ".jpg") %}    
-              {% image relpath+proj.thumbnail.src+ext, proj.thumbnail.alt %}
+              <img src="{{relpath+proj.thumbnail.src+ext}}" alt="{{proj.thumbnail.alt}}">
             </div>
           </a>
         </li>
@@ -30,7 +30,7 @@ layout: layout.njk
             <span class="link-title">{{hoja.title}}</span>
             <div class="thumbnail">
               {% set ext = (hoja.thumbnail.ext if hoja.thumbnail.ext else ".jpg") %}    
-              {% image relpath+hoja.thumbnail.src+ext, hoja.thumbnail.alt %}
+              <img src="{{relpath+hoja.thumbnail.src+ext}}" alt="{{hoja.thumbnail.alt}}">
             </div>
           </a>
         </li>

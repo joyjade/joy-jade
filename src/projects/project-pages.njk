@@ -11,7 +11,7 @@ section: Projects
 
 {% import 'video.njk' as vid %}
 
-{% set relpath = "src/content/img/" %}
+{% set relpath = "/content/img/" %}
 
 <section class="contents projects">
     <div class="projects-container container">
@@ -27,14 +27,15 @@ section: Projects
                   <div class="triptych">
                     {% for el in img.srcs %}
                       {% set dot = (el.ext if el.ext else ".jpg") %}
-                      {% image relpath+el.src+dot, el.alt, [400, "auto"], "(max-width: 800px) 100vw, 800px", "lazy", "lozad" %}
+                      <img src="{{relpath+el.src+dot}}" alt="{{el.alt}}" />
+                      {# [400, "auto"], "(max-width: 800px) 100vw, 800px", "lazy", "lozad" #}
                     {% endfor %}
                   </div>
                 {% elif img.type == "tripmix" %}
                   {{ vid.tripmix(img.srcs)}}
                 {% else %}
                   {% set ext = (img.ext if img.ext else ".jpg") %}    
-                  {% image relpath+img.src+ext, img.alt, [400, "auto"], "(max-width: 800px) 100vw, 800px", "lazy", "lozad" %}
+                  <img src="{{relpath+img.src+ext}}" alt="{{img.alt}}" />
                 {% endif %}
             </div>
           {% endfor %}
