@@ -224,7 +224,7 @@
         alt: Speaking the Matter book cover
 
   - title: Immigrant Dreams
-    featured: true
+    featured: false
     year: 2023
     orgs: 
       - L.A. Times
@@ -316,6 +316,27 @@
       - src: prtcls_01
         alt: protocols website
       - src: prtcls_2
+        alt: protocols website
+      - src: prtcls_3
+        alt: protocols website
+      - src: prtcls_4
+        alt: protocols website
+      - src: prtcls_6
+        alt: protocols website
+
+  - title: girlgaze
+    year: 2016
+    orgs: 
+    description: girlgaze was a media startup championing female and non-binary creatives. I led the visual development of the brand during its foundational years. 
+    link: https://www.instagram.com/girlgaze/?hl=en
+    thumbnail: 
+      src: prtcls_thumbnail
+      alt: protocols website
+    role: Graphic Designer
+    image_files: 
+      - src: gg_billboard
+        alt: protocols website
+      - src: gg_promo
         alt: protocols website
       - src: prtcls_3
         alt: protocols website
