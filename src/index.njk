@@ -22,14 +22,13 @@ section: Featured
             {% for img in proj.image_files %}
               {% if not img.type %}
                 <div class="image">      
-
                     {% set ext = (img.ext if img.ext else ".jpg") %}    
-                    <img src="{{relpath+img.src+ext}}" alt="img.alt" class="lazy">
+                    <img src="{{relpath+img.src+ext}}" alt="img.alt" eleventy:widths="600,900" class="lazy" sizes="(min-width: 1280px) 300px, 50vw">
           
                 </div>
               {% endif %}
             {% endfor %}
-          </div>
+          </div> 
         </div>
       {% endif %}
     {% endfor %}
