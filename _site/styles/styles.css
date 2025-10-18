@@ -95,6 +95,7 @@ nav {
   width: calc(100vw - var(--toc-width));
   border-left: var(--border-style);
   overflow-y: scroll;
+  width: calc(100vw - var(--toc-width));
   padding: var(--toc-pdg);
 
 }
@@ -108,8 +109,6 @@ nav {
 }
 
 .horizontal .image {
-  width: 300px;
-  flex-shrink: 0;
   width: 300px;
   flex-shrink: 0;
 }

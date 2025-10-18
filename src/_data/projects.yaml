@@ -87,106 +87,6 @@
         alt: An open spread of the Endnotes section in yellow
       - src: oh_back
         alt: The back cover of the spiral bound workbook
-  
-  - title: Inverse Surveillance Project
-    year: July 2022
-    description: Inverse Surveillance Project is a multi-media art installation designed and produced by the Arab and Muslim American communities in the Chicagoland area. The installation was exhibited in Bridgeview, IL in the summer of 2022. It featured a life-sized labyrinth of archival projections which repurposed thousands of records collected from the decade of FBI surveillance over their community (a topic covered by Assia Boundaoui’s first documentary, <i>The Feeling of Being Watched</i>). During the length of the exhibition, the space was used as a community art studio where free embroidery, healing and organizing workshops were offered.
-    collaborators: Assia Boundaoui, Nouha Boundaoui
-    credits: 'Collaborating artists: Yucef Merhi and Shirin Anlen. Consulting partners and subject-matter experts: Dr. Kameelah Mu’Min Rashad & the Muslim Wellness Foundation, Wafa Ghanim & Tatreez and Tea, Jumana Qawasmi & Watan, and Katerina Cizek. This art project was co-created with the Arab and Muslim American communities in Chicago.'
-    role: Visual Identity, Web Design, Web Development, From Scratch
-    link: https://www.inversesurveillance.com/
-    thumbnail: 
-      src: isp_thumbnail
-      alt: a small photo of a rearview mirror, where in the background, a masjid and a black car
-    image_files: 
-      - src: isp_banner
-        alt: Inverse Surveillance Project website
-        ext: .png
-      - src: isp_mobile
-        ext: .png
-        alt: Inverse Surveillance Project website
-      - src: isp_projectoverview
-        type: vid
-        alt: Inverse Surveillance Project website
-        format: frame
-
-  - title: Community Reading Group
-    featured: true
-    year: 2021     
-    link: http://www.communityreadinggroup.com/    
-    description: A reading and study group that gathers every Sunday evening. Focusing on critical theory and other texts with philosophical, legal and aesthetic concerns, CRG has discussed texts that range from mid-century, European investigations of the origins of Facism to works-in-progress about climate change as well as popular science fiction. Started by artists, activists, and scholars who were curious about the assumptions underlying the appeals to "community" so prevalent in organizing spaces, the group continues to foster space for anyone who wants to challenge their inherited ideas about common being and loves the exercise of close reading. In 2021, the first issue of Counter was released, featuring essays by reading group members on labor organizing and work.
-    thumbnail: 
-      src: crg_thumbnail
-      alt: crg_websites
-      ext: .png 
-    role: Visual Identity, Web Design, Web Development, From Scratch 
-    collaborators: Andrew McNeely, Olivia Leiter, Michael Berlin
-    id: crg
-    image_files: 
-      - src: crg_home
-        alt: crg home
-        ext: .png
-      - src: crg_caliban
-        alt: crg home
-        ext: .png
-      - src: crg_info
-        type: vid
-        alt: crg home
-      - type: triptych
-        srcs: 
-          - crg_mobile_annotations
-          - crg_mobile_counter
-          - crg_mobile_info
-      - src: crg_readings
-        alt: crg home
-        ext: .png
-      - src: crg_counter_essay
-        alt: crg home
-        ext: .png
-      - src: crg_counter_about
-        alt: crg home
-        ext: .png
-      - type: triptych_img
-        srcs: 
-          - src: crg_mobile_leguin
-            ext: .png
-            alt: hello 
-          - src: crg_mobile_leguin2
-            ext: .png
-            alt: hello 
-          - src: crg_mobile_rdgs
-            ext: .png
-            alt: hello 
-      - src: crg_hartman
-        type: vid
-        alt: crg home
-      - src: crg_bookmarks
-        alt: crg home
-        ext: .png
-
-  - title: Worthy Wine Works
-    featured: true
-    year: Winter 2021
-    orgs: 
-      - Los Angeles Contemporary Archive
-    description: "LACA’s holiday wine fundraiser! A small batch of twelve natural wines (made in California) is paired with labels made by twelve artists. The first year included art labels by Cauleen Smith, Mario Ayala, Rodrigo Valenzuela, Kang Seung Lee, Marisa Takal, Alex Heilbron, Zoe Latta, Lauren Quin, Lauren Satlowski, Cassi Namoda, Nick Sethi, and Dave Muller."
-    link: https://worthywineworks.com/
-    thumbnail: 
-      src: lacawine_thumbnail
-      alt: A layout of three bottles of wine with artwork from artists Alex Heilborn, Cassie and L
-      ext: .png
-    role: Web Design, Web Build
-    collaborators: Hailey Loman, Saida Largaespada
-    credits: Photography by Ian Byers-Gamber. Flyer design by Troy Curtis Kreiner. 
-    image_files: 
-      - src: lacawine_01
-        alt: laca wine store home page
-      - src: lacawine_03
-        alt: laca wine store mobile designs
-      - src: lacawine_04
-        alt: laca wine store 
-      - src: lacawine_06
-        alt: laca wine store
 
   - title: Shape Your L.A.
     featured: true
@@ -285,23 +185,51 @@
         format: frame
         alt: Speaking the Matter book cover
 
-  - title: Movie Nights at Division Place 
-    year: 2021
+  - title: Inverse Surveillance Project
+    year: July 2022
+    description: Inverse Surveillance Project is a multi-media art installation designed and produced by the Arab and Muslim American communities in the Chicagoland area. The installation was exhibited in Bridgeview, IL in the summer of 2022. It featured a life-sized labyrinth of archival projections which repurposed thousands of records collected from the decade of FBI surveillance over their community (a topic covered by Assia Boundaoui’s first documentary, <i>The Feeling of Being Watched</i>). During the length of the exhibition, the space was used as a community art studio where free embroidery, healing and organizing workshops were offered.
+    collaborators: Assia Boundaoui, Nouha Boundaoui
+    credits: 'Collaborating artists: Yucef Merhi and Shirin Anlen. Consulting partners and subject-matter experts: Dr. Kameelah Mu’Min Rashad & the Muslim Wellness Foundation, Wafa Ghanim & Tatreez and Tea, Jumana Qawasmi & Watan, and Katerina Cizek. This art project was co-created with the Arab and Muslim American communities in Chicago.'
+    role: Visual Identity, Web Design, Web Development, From Scratch
+    link: https://www.inversesurveillance.com/
     thumbnail: 
-      src: division_thumbnail
-      alt: movie nights at division place
-    description: A "hand-made" microsite for a movie series of independent films from and adjacent to Southeast Asia.
-    link: https://joy-jade.com/divisionplace
-    role: Visual Identity, Design, Development
+      src: isp_thumbnail
+      alt: a small photo of a rearview mirror, where in the background, a masjid and a black car
     image_files: 
-      - src: division03
-        alt: movie nights at divison place
-      - src: division01
-        alt: movie nights at divison place
-      - src: division04
-        alt: movie nights at divison place
-      - src: division02
-        alt: movie nights at divison place
+      - src: isp_banner
+        alt: Inverse Surveillance Project website
+        ext: .png
+      - src: isp_mobile
+        ext: .png
+        alt: Inverse Surveillance Project website
+      - src: isp_projectoverview
+        type: vid
+        alt: Inverse Surveillance Project website
+        format: frame
+
+  - title: Worthy Wine Works
+    featured: true
+    year: 2021
+    orgs: 
+      - Los Angeles Contemporary Archive
+    description: "LACA’s holiday wine fundraiser! A small batch of twelve natural wines (made in California) is paired with labels made by twelve artists. The first year included art labels by Cauleen Smith, Mario Ayala, Rodrigo Valenzuela, Kang Seung Lee, Marisa Takal, Alex Heilbron, Zoe Latta, Lauren Quin, Lauren Satlowski, Cassi Namoda, Nick Sethi, and Dave Muller."
+    link: https://worthywineworks.com/
+    thumbnail: 
+      src: lacawine_thumbnail
+      alt: A layout of three bottles of wine with artwork from artists Alex Heilborn, Cassie and L
+      ext: .png
+    role: Web Design, Web Build
+    collaborators: Hailey Loman, Saida Largaespada
+    credits: Photography by Ian Byers-Gamber. Flyer design by Troy Curtis Kreiner. 
+    image_files: 
+      - src: lacawine_01
+        alt: laca wine store home page
+      - src: lacawine_03
+        alt: laca wine store mobile designs
+      - src: lacawine_04
+        alt: laca wine store 
+      - src: lacawine_06
+        alt: laca wine store
 
   - title: Protocols
     year: 2021
@@ -324,41 +252,126 @@
       - src: prtcls_6
         alt: protocols website
 
+  - title: Community Reading Group
+    featured: true
+    year: 2021     
+    link: http://www.communityreadinggroup.com/    
+    description: A reading and study group that gathers every Sunday evening. Focusing on critical theory and other texts with philosophical, legal and aesthetic concerns, CRG has discussed texts that range from mid-century, European investigations of the origins of Facism to works-in-progress about climate change as well as popular science fiction. Started by artists, activists, and scholars who were curious about the assumptions underlying the appeals to "community" so prevalent in organizing spaces, the group continues to foster space for anyone who wants to challenge their inherited ideas about common being and loves the exercise of close reading. In 2021, the first issue of Counter was released, featuring essays by reading group members on labor organizing and work.
+    thumbnail: 
+      src: crg_thumbnail
+      alt: crg_websites
+      ext: .png 
+    role: Visual Identity, Web Design, Web Development, From Scratch 
+    collaborators: Andrew McNeely, Olivia Leiter, Michael Berlin
+    id: crg
+    image_files: 
+      - src: crg_home
+        alt: crg home
+        ext: .png
+      - src: crg_caliban
+        alt: crg home
+        ext: .png
+      - src: crg_info
+        type: vid
+        alt: crg home
+      - type: triptych
+        srcs: 
+          - crg_mobile_annotations
+          - crg_mobile_counter
+          - crg_mobile_info
+      - src: crg_readings
+        alt: crg home
+        ext: .png
+      - src: crg_counter_essay
+        alt: crg home
+        ext: .png
+      - src: crg_counter_about
+        alt: crg home
+        ext: .png
+      - type: triptych_img
+        srcs: 
+          - src: crg_mobile_leguin
+            ext: .png
+            alt: hello 
+          - src: crg_mobile_leguin2
+            ext: .png
+            alt: hello 
+          - src: crg_mobile_rdgs
+            ext: .png
+            alt: hello 
+      - src: crg_hartman
+        type: vid
+        alt: crg home
+      - src: crg_bookmarks
+        alt: crg home
+        ext: .png
+
+  - title: Movie Nights at Division Place 
+    year: 2021
+    thumbnail: 
+      src: division_thumbnail
+      alt: movie nights at division place
+    description: A "hand-made" microsite for a movie series of independent films from and adjacent to Southeast Asia.
+    link: https://joy-jade.com/divisionplace
+    role: Visual Identity, Design, Development
+    image_files: 
+      - src: division03
+        alt: movie nights at divison place
+      - src: division01
+        alt: movie nights at divison place
+      - src: division04
+        alt: movie nights at divison place
+      - src: division02
+        alt: movie nights at divison place
+
+  - title: "#Because We've Read"
+    orgs: 
+      - Believers Bail Out
+      - Blue Tin Production
+      - Because We've Read
+    description: Because We've Read is a online book club
+    link: 
+    thumbnail: 
+      src: prtcls_01
+      alt: protocols website
+    label: protocols
+    image_files: 
+      - src: bwr_mobile
+        alt: Because We've Read mobile screens
+      - src: bwr_guide
+        alt: Because We've Read mobile screens
+      - src: bwr_home
+        alt: Because We've Read mobile screens
+      - src: bwr_mobile
+        alt: Because We've Read mobile screens
+      - src: bwr2
+        alt: Because We've Read mobile screens
+
   - title: girlgaze
     year: 2016
     orgs: 
     description: girlgaze was a media startup championing female and non-binary creatives. I led the visual development of the brand during its foundational years. 
     link: https://www.instagram.com/girlgaze/?hl=en
     thumbnail: 
-      src: prtcls_thumbnail
+      src: gg_thumb
       alt: protocols website
+      ext: .png
     role: Graphic Designer
     image_files: 
       - src: gg_billboard
         alt: protocols website
-      - src: gg_promo
+      - src: gg_promophotos
         alt: protocols website
-      - src: prtcls_3
+      - src: gg_web_1
         alt: protocols website
-      - src: prtcls_4
+      - src: gg_web_2
         alt: protocols website
-      - src: prtcls_6
+      - src: gg_webbree_3
+        alt: protocols website
+      - src: gg_webshop_4
         alt: protocols website
 
-  # - title: Hoda Katebi
-  #   orgs: 
-  #     - Believers Bail Out
-  #     - Blue Tin Production
-  #     - Because We've Read
-  #   description: 
-  #   link: 
-  #   thumbnail: 
-  #     src: prtcls_01
-  #     alt: protocols website
-  #   label: protocols
-  #   image_files: 
-  #     - src: bwr_mobile
-  #       alt: Because We've Read mobile screens
+
 
 
 
