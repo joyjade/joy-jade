@@ -25,6 +25,7 @@
       - src: laca red shoes
         alt: Collection item page showing chunky red heels 
         ext: .png
+        ft: true
       - src: laca pp
         alt: Archive collection page 
         ext: .png
