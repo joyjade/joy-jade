@@ -94,6 +94,7 @@
     year: 2022-2024
     orgs:
       - L.A. Times 
+    id: syla
     thumbnail: 
       src: syla_thumbnail
       alt: an illustration with floating items and letters that spell Shape Your L.A.
@@ -105,24 +106,35 @@
     credits: See the project's full credits <a href="https://www.latimes.com/shapeyourla">here<a>.
     bg: black
     image_files: 
-      - src: syla_experience
-        type: vid
-        alt: A screen recording showing an overview of the Shape Your L.A. app
-        format: mobile
-      - src: syla_mobile
+      - src: syla_cover
         ext: .png
-        alt: Speaking the Matter book cover
-      - src: syla_midcity
-        type: vid
-        format: frame
-        alt: TBD Speaking the Matter book cover
+        alt: placeholder
+      - src: syla_shapes
+        ext: .png
+        alt: placeholder
+      - src: syla_getinvolved
+        ext: .png
+        alt: placeholder
+      - src: syla_slides 
+        ext: .png
+        alt: placeholder
       - src: syla_bos
         type: vid
         format: mobile
         alt: A screen recording
-      - src: syla_cities
+      - src: syla_reps
         ext: .png
-        alt: Speaking the Matter book cover
+        alt: placeholder
+      - src: syla_feedback
+        ext: .png
+        alt: placeholder
+      - src: syla_experience
+        type: vid
+        alt: A screen recording showing an overview of the Shape Your L.A. app
+        format: mobile
+      # - src: syla_cities
+      #   ext: .png
+      #   alt: Speaking the Matter book cover
 
   - title: Immigrant Dreams
     featured: false

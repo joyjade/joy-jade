@@ -97,7 +97,7 @@ nav {
   overflow-y: scroll;
   width: calc(100vw - var(--toc-width));
   padding: var(--toc-pdg);
-
+  padding-right: calc(2 * var(--toc-pdg));
 }
 
 @media screen and (min-width:57.4375em) {
@@ -266,6 +266,7 @@ nav a {
   --image-pdg: 0.5rem;
   --body-f: 14px;
   padding: var(--image-pdg);
+  padding-right: calc(2 * var(--toc-pdg));
   font-size: var(--body-f);
 }
 
@@ -419,10 +420,6 @@ figure.mobile video {
 
 /* Featured -------- */
 
-.featured-container {
-  padding-right: calc(2 * var(--toc-pdg));
-}
-
 .featured {
   margin-bottom: 2rem;
 }
@@ -559,4 +556,16 @@ p {
 
 .proj-imgs.laca .image, .proj-imgs.crg .image {
   padding: var(--image-pdg);
+}
+
+.syla figure.mobile video {
+  width: 208px;
+}
+
+.syla figure.mobile {
+  height: 100%;
+}
+
+.proj-imgs.syla .image:last-of-type {
+  padding-bottom: 5rem;
 }
