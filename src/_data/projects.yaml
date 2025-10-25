@@ -25,7 +25,7 @@
       - src: laca red shoes
         alt: Collection item page showing chunky red heels 
         ext: .png
-        ft: true
+        feat: true
       - src: laca pp
         alt: Archive collection page 
         ext: .png
@@ -109,6 +109,7 @@
       - src: syla_cover
         ext: .png
         alt: placeholder
+        feat: true
       - src: syla_shapes
         ext: .png
         alt: placeholder

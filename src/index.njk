@@ -21,7 +21,7 @@ section: Featured
           </div>
           <div class="horizontal window">
             {% for img in proj.image_files %}
-              {% if img.ft %}
+              {% if img.feat %}
                 <div class="image">      
                     {% set ext = (img.ext if img.ext else ".jpg") %}    
                     <img src="{{relpath+img.src+ext}}" alt="img.alt" eleventy:widths="900, 1200" class="lazy" sizes="(min-width: 1280px) 300px, 50vw">
