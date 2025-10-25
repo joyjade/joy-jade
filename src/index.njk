@@ -11,26 +11,32 @@ section: Featured
 <!-- Main Page-->
 <section class="contents projects">
   <div class="featured-container container">
-    Featured Projects
-    <br /><br /><br />
+    <h1>Featured Projects</h1>
     {% for proj in projects %}
       {% if proj.featured %}
         <div class="featured">
           <div>
-            <h1><a href="/projects/{{ proj.title | slugify }}">{{ proj.title }}</a></h1>
           </div>
           <div class="horizontal window">
             {% for img in proj.image_files %}
               {% if img.feat %}
                 <div class="image">      
                     {% set ext = (img.ext if img.ext else ".jpg") %}    
-                    <img src="{{relpath+img.src+ext}}" alt="img.alt" eleventy:widths="900, 1200" class="lazy" sizes="(min-width: 1280px) 300px, 50vw">
-          
+                    <img src="{{relpath+img.src+ext}}" alt="img.alt" eleventy:widths="400,2000" class="lazy" sizes="(min-width: 1280px) 300px, 50vw">
                 </div>
               {% endif %}
             {% endfor %}
           </div> 
           <div class="subheading">
+            <div class="">
+              {# <span>{{ proj.year }}</span> #}
+              <h2>
+                  <a href="/projects/{{ proj.title | slugify }}">{{ proj.title }}</a>              
+              </h2>
+              {% if proj.link %}
+                <a class="button" href="{{ proj.link }}">↗</a>
+              {% endif %}
+            </div>
             <div>
               <h2>
               {% if proj.role %}
@@ -38,12 +44,7 @@ section: Featured
               {% endif %}
               </h2>
             </div>
-            <div class="">
-              <span>{{ proj.year }}</span>
-              {% if proj.link %}
-                <a class="button" href="{{ proj.link }}">Visit ↗</a>
-              {% endif %}
-            </div>
+
           </div> 
         </div>
       {% endif %}

@@ -11,7 +11,7 @@
     orgs: 
       - Los Angeles Contemporary Archive  
     collaborators: Hailey Loman,  Saida Largaespada, Julian Stein
-    role: Website Design
+    role: Design Direction, Web Design,  UI/UX
     credits: Built by Julian Stein and Max Stein
     link: https://lacarchive.com/
     id: laca
@@ -102,14 +102,13 @@
     description: Shape Your L.A. is an online civic engagement tool for residents of Los Angeles County. L.A. County is a behemoth, patchwork government system “overseeing” 10 million folks and 88 cities (not to mention large swathes of unincorporated areas). This app was made to help break down and navigate that system. Enter your address to learn more which power structures handle the issues that matter to you, and how to do things in your neighborhood. <br/> This project was created by a small team of cross-disciplinary journalists, data workers, designers, and developers in late 2023, and continues to be updated and maintained by the L.A. Times’ Data and Graphics Team. In January 2024, we made the app available in Spanish. 
     collaborators: <a href="www.alextatusian.com">Alex Tatusian</a>, Matt Ballinger, Iris Lee, Vanessa Martínez, Hanna Sender
     link: https://www.latimes.com/shapeyourla
-    role: Product Design, Art Direction, Front-end Development
+    role: Design Direction, UI/UX, Front-End Code
     credits: See the project's full credits <a href="https://www.latimes.com/shapeyourla">here<a>.
     bg: black
     image_files: 
       - src: syla_cover
         ext: .png
         alt: placeholder
-        feat: true
       - src: syla_shapes
         ext: .png
         alt: placeholder
@@ -133,6 +132,10 @@
         type: vid
         alt: A screen recording showing an overview of the Shape Your L.A. app
         format: mobile
+      - src: syla_featured
+        alt: A screen recording showing an overview of the Shape Your L.A. app
+        ext: .png
+        feat: true
       # - src: syla_cities
       #   ext: .png
       #   alt: Speaking the Matter book cover
@@ -244,6 +247,10 @@
         alt: laca wine store 
       - src: lacawine_06
         alt: laca wine store
+      - src: lacawine_home
+        alt: laca wine store
+        ext: .png
+        feat: true
 
   - title: Protocols
     year: 2021
@@ -275,13 +282,14 @@
       src: crg_thumbnail
       alt: crg_websites
       ext: .png 
-    role: Visual Identity, Web Design, Web Development, From Scratch 
+    role: Visual Identity, Web Design + Development
     collaborators: Andrew McNeely, Olivia Leiter, Michael Berlin
     id: crg
     image_files: 
       - src: crg_home
         alt: crg home
         ext: .png
+        feat: true
       - src: crg_caliban
         alt: crg home
         ext: .png
